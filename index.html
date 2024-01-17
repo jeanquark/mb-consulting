@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        /* .scroller {
+            height: 300px;
+            overflow-y: scroll;
+            scroll-snap-type: y mandatory;
+        }
+
+        .scroller section {
+            scroll-snap-align: start;
+        } */
+    </style>
+</head>
+
+<body>
+    <!-- <div id="navbar" style="border: 2px solid blue;">
+        <a href="#default" id="logo">MBConsulting</a>
+        <div id="navbar-right">
+            <a class="active" href="">Accueil</a>
+            <a href="#services" onclick="scrollToSection('services')">Services</a>
+            <a href="#about">A propos</a>
+            <a href="#moreInfo">En savoir plus</a>
+            <a href="#partners">Partenariat</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+    <div class="navbar-mobile" style="border: 2px solid purple;">
+        <a href="#home" class="active">MBConsulting</a>
+        <div id="myLinks" class="">
+            <a href="#services">Services</a>
+            <a href="#about">A propos</a>
+            <a href="#moreInfo">En savoir plus</a>
+            <a href="#partners">Partenariat</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="toggleNavigationMenu()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div> -->
+
+    <!-- <div class="row" id="content" style="border: 2px solid red">
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 box blue" style="border: 1px dashed orange; padding: 20px;">1
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 box green" style="border: 1px dashed orange; padding: 20px;">2
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 box yellow" style="border: 1px dashed orange; padding: 20px;">3
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 box orange" style="border: 1px dashed orange; padding: 20px;">4
+        </div>
+    </div> -->
+
+
+
+    <div id="parent" class=""
+        style="position: relative; width: 100%; height: 100vh; scroll-behavior: smooth; scroll-padding-top: 100px; overflow: auto; scroll-snap-type: y mandatory;">
+
+        <nav id="navbar" style="position: sticky; top: 0; background: #FFF; height: 100px;  border: 2px solid blue;">
+            <a href="#default" id="logo">MBConsulting</a>
+            <ul id="navbar-right">
+                <li class="nav-item"><a href="#services">Services</a></li>
+                <li class="nav-item"><a href="#about">A propos</a></li>
+                <li class="nav-item"><a href="#moreInfo">En savoir plus</a></li>
+                <li class="nav-item"><a href="#partners">Partenariat</a></li>
+                <li class="nav-item"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <nav id="navbar-mobile"
+            style="position: sticky; top: 0; background: #FFF; height: 100px; border: 2px solid purple;">
+            <div style="display: inline;">
+                <a href="/" class="">MBConsulting</a>
+                <a href="javascript:void(0);" class="icon" style="float: right; font-size: 2.5em; padding: 0 .5em;"
+                    onclick="toggleNavigationMenu()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+            <ul id="navbar-links" class="">
+                <li class="nav-item"><a href="#services">Services</a></li>
+                <li class="nav-item"><a href="#about">A propos</a></li>
+                <li class="nav-item"><a href="#moreInfo">En savoir plus</a></li>
+                <li class="nav-item"><a href="#partners">Partenariat</a></li>
+                <li class="nav-item"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <section id="services" class="row"
+            style="height: 300px; background: lightblue;  width: 100%; height: 100vh; scroll-snap-align: start;">
+            <div class="col-md-12 justify-center">
+                <h3 class="">Services</h3>
+            </div>
+        </section>
+        <section id="about" class="row"
+            style="height: 300px; background: lightyellow; width: 100%; height: 100vh; scroll-snap-align: start;">
+            <div class="col-md-12 justify-center">
+                <h3 class="">A propos</h3>
+            </div>
+        </section>
+        <section id="moreInfo" class="row"
+            style="height: 300px; background: lightgreen; width: 100%; height: 100vh; scroll-snap-align: start;">
+            <div class="col-md-12 justify-center">
+                <h3 class="text-center">En savoir plus</h3>
+            </div>
+        </section>
+        <section id="partners" class="row"
+            style="height: 200px; background: lightsalmon; width: 100%; height: 100vh; scroll-snap-align: start;">
+            <div class="col-md-12 justify-center">
+                <h3 class="text-center">Partenariat</h3>
+            </div>
+        </section>
+        <section id="contact" class="row"
+            style="height: 400px; background: lightslategray; width: 100%; height: 100vh; scroll-snap-align: start;">
+            <div class="col-md-12 justify-center">
+                <h3 class="text-center">Contact</h3>
+            </div>
+        </section>
+        <footer class="row" style="height: 80px; background: lightseagreen; scroll-snap-align: start;">
+            <div class="col-md-12 justify-center">
+                <h3 class="text-center">Footer</h3>
+            </div>
+        </footer>
+    </div>
+
+
+
+    <!-- <div style="margin-top:210px;padding:15px 15px 2500px;font-size:30px">
+        <p><b>This example demonstrates how to shrink a navigation bar when the user starts to scroll the page.</b></p>
+        <p>Scroll down this frame to see the effect!</p>
+        <p>Scroll to the top to remove the effect.</p>
+        <p><b>Note:</b> We have also made the navbar responsive, resize the browser window to see the effect.</p>
+        <p>Lorem ipsum dolor dummy text to enable scrolling, sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+            ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div> -->
+
+    <script src="script.js"></script>
+    <script>
+        window.addEventListener('scroll', function () {
+            console.log('scrolling');
+        });
+    </script>
+
+</body>
+
+</html>
