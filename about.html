@@ -18,7 +18,7 @@
             display: block;
             overflow: hidden;
             background-color: #f1f1f1;
-            padding: 90px 10px;
+            /* padding: 90px 10px; */
             transition: 0.4s;
             position: fixed;
             width: 100%;
@@ -65,7 +65,16 @@
             }
 
             .nav-item {
-                padding: 10px;
+                padding: 20px;
+            }
+
+            #navbar-right {
+                float: right;
+                list-style-type: none;
+            }
+
+            #navbar-right>li {
+                display: inline;
             }
         }
     </style>
@@ -73,19 +82,23 @@
 
 <body>
     <div id="wrapper"
-        style="position: relative; width: 100%; height: 100vh; scroll-snap-type: y mandatory; scroll-behavior: smooth; scroll-padding-top: 75px; overflow: auto;">
-        <nav id="navbar" style="position: sticky; top: 0; background: #fff; height: 100px; border: 2px solid blue">
-            <a href="#default" class="logo">MBConsulting</a>
-            <ul id="navbar-right">
-                <li class="nav-item"><a href="#services">Services</a></li>
-                <li class="nav-item"><a href="#about">A propos</a></li>
-                <li class="nav-item"><a href="#moreInfo">En savoir plus</a></li>
-                <li class="nav-item"><a href="#partners">Partenariat</a></li>
-                <li class="nav-item"><a href="#contact">Contact</a></li>
-            </ul>
+        style="position: relative; width: 100%; height: 100vh; scroll-snap-type: y mandatory; scroll-behavior: smooth; scroll-padding-top: 45px; overflow: auto;">
+
+        <nav id="navbar" style="position: sticky; top: 0; background: #FFF; border: 2px solid blue">
+            <div style="display: flex; justify-content: space-between; border: 1px dashed grey;">
+                <a href="#default" class="logo" style="border: 2px solid salmon">MBConsulting</a>
+                <ul id="nav-items"
+                    style="display: flex; list-style-type: none; margin: 0; padding: 0; border: 2px solid green;">
+                    <li class="nav-item" style="padding: 10px;"><a href="#services">Services</a></li>
+                    <li class="nav-item" style="padding: 10px;"><a href="#about">A propos</a></li>
+                    <li class="nav-item" style="padding: 10px;"><a href="#moreInfo">En savoir plus</a></li>
+                    <li class="nav-item" style="padding: 10px;"><a href="#partners">Partenariat</a></li>
+                    <li class="nav-item" style="padding: 10px;"><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
         </nav>
 
-        <nav id="navbarMobile" style="display: block; position: sticky; top: 0; border: 2px solid purple;">
+        <nav id="navbarMobile" style="position: sticky; top: 0; border: 2px solid purple;">
             <div style="display: flex; justify-content: space-between; border: 2px solid red;">
                 <a href="/" id="logoMobileNavbar" class="" style="">MBConsulting</a>
                 <a href="javascript:void(0);" class="icon" style="float: right; font-size: 2.5em; padding: 0 .5em;"
@@ -93,8 +106,8 @@
                     <i class="fa fa-bars"></i>
                 </a>
             </div>
-            <ul id="nav-items" class=""
-                style="display: none; list-style-type: none; margin: 0; border: 2px solid green;">
+            <ul id="nav-items-mobile" class="" style="max-height: 0; visibility: hidden; opacity: 0;
+                transform: translateY(-100%); list-style-type: none; margin: 0; border: 2px solid green;">
                 <li class="nav-item"><a href="#services">Services</a></li>
                 <li class="nav-item"><a href="#about">A propos</a></li>
                 <li class="nav-item"><a href="#moreInfo">En savoir plus</a></li>
@@ -165,25 +178,24 @@
         */
         function toggleNavigationMenu() {
             console.log('toggleNavigationMenu')
-            var x = document.getElementById('nav-items')
-            // if (x.style.display === 'block') {
+            var x = document.getElementById('nav-items-mobile')
             if (x.style.opacity == 1) {
-                // x.style.display = 'none'
-                x.style.display = 'block'
-                x.style.height = 0
-                x.style.opacity = 0
+                x.style.maxHeight = 0
+                x.style.transition = 'max-height 1s ease-out'
                 x.style.overflow = 'hidden'
-                x.style.transition = 'all 2s ease-out'
-                // x.style.translateY = '100%'
-                // x.style.visibility = 'hidden'
-                // x.style.transform = 'translateY(0)'
                 document.getElementById('services').style.marginTop = '0px'
+                setTimeout(() => {
+                    x.style.opacity = 0
+                    x.style.transform = 'translateY(-100%)'
+                    x.style.visibility = 'hidden'
+                }, 1000)
             } else {
-                x.style.display = 'block'
+                document.getElementById('navbarMobile').style.backgroundColor = 'rgba(255, 255, 255, 1)'
                 x.style.opacity = 1
-                x.style.height = 'auto'
-                // x.style.transform = 'translateY(100%)'
-                // x.style.visibility = 'visible'
+                x.style.maxHeight = '500px'
+                x.style.transform = 'translateY(0%)'
+                x.style.visibility = 'visible'
+                x.style.transition = 'max-height 1.5s ease-in, opacity 1.5s ease-in'
             }
         }
 
@@ -217,12 +229,19 @@
                         // document.getElementById('navbar-mobile').style.padding = '35px 10px'
                         // document.getElementById('wrapper').style.scrollPaddingTop = '115px'
                         // document.getElementById('logo').style.fontSize = '35px'
-                        document.getElementById('logoMobileNavbar').style.fontSize = '18px'
+                        document.getElementById('logoMobileNavbar').style.fontSize = '20px'
                         document.getElementById('navbarMobile').style.backgroundColor = 'rgba(255, 255, 255, 1)'
                     }
+
                     // Hide nav items
-                    // var x = document.getElementById('nav-items')
-                    // x.style.display = 'none'
+                    var x = document.getElementById('nav-items-mobile')
+                    x.style.maxHeight = 0
+                    x.style.opacity = 0
+                    x.style.transform = 'translateY(-100%)'
+                    x.style.visibility = 'hidden'
+                    x.style.overflow = 'hidden'
+                    x.style.transition = 'none'
+
                     navItems.forEach((elem) => {
                         elem.children[0].getAttribute("href")
                         if (`#${sectionId}` === elem.children[0].getAttribute("href")) {
