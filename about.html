@@ -1,23 +1,58 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-        <style>
-            * {
-                box-sizing: border-box;
-            }
 
-            body {
-                margin: 0;
-                font-family: Arial, Helvetica, sans-serif;
-            }
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <style>
+        * {
+            box-sizing: border-box;
+        }
 
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #navbar {
+            display: block;
+            overflow: hidden;
+            background-color: #f1f1f1;
+            padding: 90px 10px;
+            transition: 0.4s;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 99;
+        }
+
+        #navbarMobile {
+            display: none;
+        }
+
+        #navbar-right {
+            float: right;
+        }
+
+        .margin-top {
+            margin-top: 149px;
+        }
+
+        .active {
+            background-color: #04AA6D;
+            color: white;
+        }
+
+        @media screen and (max-width: 580px) {
             #navbar {
+                display: none;
+            }
+
+            #navbarMobile {
                 display: block;
                 overflow: hidden;
-                background-color: #f1f1f1;
-                padding: 90px 10px;
+                background-color: yellow;
+                padding: 10px 10px;
                 transition: 0.4s;
                 position: fixed;
                 width: 100%;
@@ -25,45 +60,22 @@
                 z-index: 99;
             }
 
-            #navbar-mobile {
-                display: none;
-            }
-
-            #navbar-right {
-                float: right;
-            }
-
             .margin-top {
-                margin-top: 149px;
+                margin-top: 384px;
             }
 
-            @media screen and (max-width: 580px) {
-                #navbar {
-                    display: none;
-                }
-                #navbar-mobile {
-                    display: block;
-                    overflow: hidden;
-                    background-color: #f1f1f1;
-                    padding: 30px 10px;
-                    transition: 0.4s;
-                    position: fixed;
-                    width: 100%;
-                    top: 0;
-                    z-index: 99;
-                }
-                .margin-top {
-                    margin-top: 384px;
-                }
-                .nav-item {
-                    padding: 10px;
-                }
+            .nav-item {
+                padding: 10px;
             }
-        </style>
-    </head>
-    <body>
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper"
+        style="position: relative; width: 100%; height: 100vh; scroll-snap-type: y mandatory; scroll-behavior: smooth; scroll-padding-top: 75px; overflow: auto;">
         <nav id="navbar" style="position: sticky; top: 0; background: #fff; height: 100px; border: 2px solid blue">
-            <a href="#default" id="logo">MBConsulting</a>
+            <a href="#default" class="logo">MBConsulting</a>
             <ul id="navbar-right">
                 <li class="nav-item"><a href="#services">Services</a></li>
                 <li class="nav-item"><a href="#about">A propos</a></li>
@@ -73,15 +85,16 @@
             </ul>
         </nav>
 
-        <nav id="navbar-mobile" style="position: sticky; top: 0; background: #FFF; border: 2px solid purple;">
+        <nav id="navbarMobile" style="display: block; position: sticky; top: 0; border: 2px solid purple;">
             <div style="display: flex; justify-content: space-between; border: 2px solid red;">
-                <a href="/" class="" style="">MBConsulting</a>
+                <a href="/" id="logoMobileNavbar" class="" style="">MBConsulting</a>
                 <a href="javascript:void(0);" class="icon" style="float: right; font-size: 2.5em; padding: 0 .5em;"
                     onclick="toggleNavigationMenu()">
                     <i class="fa fa-bars"></i>
                 </a>
             </div>
-            <ul id="nav-items" class="" style="list-style-type: none; margin: 0; border: 2px solid green;">
+            <ul id="nav-items" class=""
+                style="display: none; list-style-type: none; margin: 0; border: 2px solid green;">
                 <li class="nav-item"><a href="#services">Services</a></li>
                 <li class="nav-item"><a href="#about">A propos</a></li>
                 <li class="nav-item"><a href="#moreInfo">En savoir plus</a></li>
@@ -90,62 +103,141 @@
             </ul>
         </nav>
 
-        <section id="services" class="margin-top" style="height: 400px; background: lightblue; text-align: center">
+        <section id="services" class=""
+            style="height: 400px; background: lightblue; text-align: center; scroll-snap-align: start;">
             <h3 style="margin: 0 auto">Services</h3>
         </section>
 
-        <section id="about" style="height: 300px; background: lightgreen; text-align: center">
+        <section id="about"
+            style="height: 300px; background: lightgreen; text-align: center; scroll-snap-align: start;">
             <h3 style="margin: 0 auto">About</h3>
         </section>
 
-        <section id="moreInfo" style="height: 300px; background: lightpink; text-align: center">
+        <section id="moreInfo"
+            style="height: 300px; background: lightpink; text-align: center; scroll-snap-align: start;">
             <h3 style="margin: 0 auto">More Info</h3>
         </section>
 
-        <section id="partners" style="height: 300px; background: lightsalmon; text-align: center">
+        <section id="partners"
+            style="height: 300px; background: lightsalmon; text-align: center; scroll-snap-align: start;">
             <h3 style="margin: 0 auto">Partners</h3>
         </section>
 
-        <section id="contact" style="height: 300px; background: lightyellow; text-align: center">
+        <section id="contact"
+            style="height: 300px; background: lightyellow; text-align: center; scroll-snap-align: start;">
             <h3 style="margin: 0 auto">Contact</h3>
         </section>
 
-        <script>
-            // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
-            window.onscroll = function () {
-                scrollFunction()
-            }
+        <footer class="" style="height: 80px; background: lightseagreen; text-align: center; scroll-snap-align: start;">
+            <h3 style="margin: 0 auto">Footer</h3>
+            <p>Image by <a
+                    href="https://www.freepik.com/free-vector/flat-working-day-scenes-collection_14064667.htm#query=business%20svg&position=2&from_view=keyword&track=ais&uuid=1ce6e4bc-3744-4cce-a178-e96e96f2f708">Freepik</a>
+            </p>
+        </footer>
+    </div>
 
-            function scrollFunction() {
-                if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-                    document.getElementById('navbar-mobile').style.padding = '10px 10px'
-                    document.getElementById('logo').style.fontSize = '25px'
-                } else {
-                    document.getElementById('navbar-mobile').style.padding = '30px 10px'
-                    document.getElementById('logo').style.fontSize = '35px'
-                }
-            }
+    <script>
+        // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+        const wrapper = document.getElementById('wrapper')
+        wrapper.onscroll = function () {
+            scrollFunction()
+        }
 
-            /*
-                Toggle hamburger menu on mobile
-            */
-            function toggleNavigationMenu() {
-                console.log('toggleNavigationMenu')
-                var x = document.getElementById('nav-items')
-                if (x.style.visibility === 'visible') {
+        function scrollFunction() {
+            console.log('scrollFunction()');
+            // console.log('wrapper.scrollTop: ', wrapper.scrollTop);
+            // if (wrapper.scrollTop > 80) {
+            //     document.getElementById('navbar-mobile').style.padding = '8px 10px'
+            // } else {
+            //     document.getElementById('navbar-mobile').style.padding = '35px 10px'
+            // }
+            // if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+            //     document.getElementById('navbar-mobile').style.padding = '8px 10px'
+            //     document.getElementById('logo').style.fontSize = '25px'
+            // } else {
+            //     document.getElementById('navbar-mobile').style.padding = '35px 10px'
+            //     document.getElementById('logo').style.fontSize = '35px'
+            // }
+        }
+
+        /*
+            Toggle hamburger menu on mobile
+        */
+        function toggleNavigationMenu() {
+            console.log('toggleNavigationMenu')
+            var x = document.getElementById('nav-items')
+            // if (x.style.display === 'block') {
+            if (x.style.opacity == 1) {
+                // x.style.display = 'none'
+                x.style.display = 'block'
+                x.style.height = 0
+                x.style.opacity = 0
+                x.style.overflow = 'hidden'
+                x.style.transition = 'all 2s ease-out'
+                // x.style.translateY = '100%'
+                // x.style.visibility = 'hidden'
+                // x.style.transform = 'translateY(0)'
+                document.getElementById('services').style.marginTop = '0px'
+            } else {
+                x.style.display = 'block'
+                x.style.opacity = 1
+                x.style.height = 'auto'
+                // x.style.transform = 'translateY(100%)'
+                // x.style.visibility = 'visible'
+            }
+        }
+
+        /* 
+        Toggle active class on scroll 
+    */
+        const sections = document.querySelectorAll("section")
+        const navItems = document.querySelectorAll(".nav-item")
+
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: .5,
+        };
+
+        function observerCallback(entries, observer) {
+            // console.log('observer: ', observer);
+            entries.forEach((entry) => {
+                // console.log('entry: ', entry);
+                if (entry.isIntersecting) {
+                    let sectionId = entry.target.id
+                    if (sectionId === 'about') {
+                        // Shrink navbar
+                        // document.getElementById('navbar-mobile').style.padding = '8px 10px'
+                        // document.getElementById('wrapper').style.scrollPaddingTop = '70px'
+                        document.getElementById('logoMobileNavbar').style.fontSize = '16px'
+                        document.getElementById('navbarMobile').style.backgroundColor = 'rgba(255, 255, 255, 0.5)'
+                    }
+                    if (sectionId === 'services') {
+                        // Expand navbar
+                        // document.getElementById('navbar-mobile').style.padding = '35px 10px'
+                        // document.getElementById('wrapper').style.scrollPaddingTop = '115px'
+                        // document.getElementById('logo').style.fontSize = '35px'
+                        document.getElementById('logoMobileNavbar').style.fontSize = '18px'
+                        document.getElementById('navbarMobile').style.backgroundColor = 'rgba(255, 255, 255, 1)'
+                    }
+                    // Hide nav items
+                    // var x = document.getElementById('nav-items')
                     // x.style.display = 'none'
-                    x.style.visibility = 'hidden'
-                    x.style.opacity = 0
-                    // x.style.transition = 'visibility 1s, opacity 1.5s linear'
-                    // x.style.transform = 'translateY(-100%)'
-                    x.style.transition = 'all 1s ease-in-out'
-                    document.getElementById('services').style.marginTop = '0px'
-                } else {
-                    // x.style.display = 'block'
-                    x.style.visibility = 'visible'
-                    x.style.opacity = 1
+                    navItems.forEach((elem) => {
+                        elem.children[0].getAttribute("href")
+                        if (`#${sectionId}` === elem.children[0].getAttribute("href")) {
+                            elem.classList.add('active')
+                        } else {
+                            elem.classList.remove('active')
+                        }
+                    });
                 }
-            }
-        </script>
-    </body>
+            });
+        }
+        const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+        sections.forEach((section) => observer.observe(section));
+    </script>
+</body>
+
 </html>

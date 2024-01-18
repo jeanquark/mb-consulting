@@ -42,9 +42,21 @@ const observerOptions = {
 };
 
 function observerCallback(entries, observer) {
+    // console.log('observer: ', observer);
     entries.forEach((entry) => {
+        // console.log('entry: ', entry);
         if (entry.isIntersecting) {
             let sectionId = entry.target.id
+            if (sectionId === 'about') {
+                // Shrink navbar
+                // document.getElementById("navbar").style.height = "50px";
+                // document.getElementById("parent").style.scrollPaddingTop = "50px";
+            }
+            if (sectionId === 'services') {
+                // Expand navbar
+                // document.getElementById("navbar").style.height = "100px";
+                // document.getElementById("parent").style.scrollPaddingTop = "100px";
+            }
             navItems.forEach((elem) => {
                 elem.children[0].getAttribute("href")
                 if (`#${sectionId}` === elem.children[0].getAttribute("href")) {
@@ -64,6 +76,28 @@ sections.forEach((sec) => observer.observe(sec));
 /*
     Miscellaneous
 */
-window.addEventListener('scroll', function () {
-    console.log('scrolling');
+const parentElement = document.getElementById("parent")
+parentElement.addEventListener('scroll', function () {
+    // console.log('scrolling');
+    // console.log('document.body.scrollTop: ', document.body.scrollTop);
 });
+
+document.body.addEventListener('scroll', function () {
+    // console.log('scrolling: ', scrolling);
+})
+
+// parentElement.onscroll = function (el) {
+//     console.log('scrolling')
+//     console.log('el.scrollTop: ', el.scrollTop);
+//     console.log('parentElement.scrollTop: ', parentElement.scrollTop);
+//     if (parentElement.scrollTop > 150) {
+//         // Shrink navbar
+//         // document.getElementById("navbar").style.height = "50px";
+//         document.getElementById("navbar").style.height = "50px";
+//         document.getElementById("parent").style.scrollPaddingTop = "50px";
+//     } else {
+//         // Expand navbar
+//         // document.getElementById("navbar").style.height = "100px";
+//         // document.getElementById("parent").style.scrollPaddingTop = "100px";
+//     }
+// }

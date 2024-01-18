@@ -2,7 +2,7 @@
 
 MB Consulting, votre assistance dans la gestion administrative courante, soutien et accompagnement dans la mise en place de formations, Traduction de documents de français en portugais ou de portugais en français et bien plus encore.
 
-![homepage](public/images/homepage.jpg)
+![homepage](static/images/homepage.jpg)
 
 ### Developement
 
