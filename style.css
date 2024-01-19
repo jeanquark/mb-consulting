@@ -53,11 +53,6 @@ body {
     border: 2px solid red;
 }
 
-.row {
-    display: flex;
-    flex-wrap: wrap;
-}
-
 /* margins */
 .my-1 {
     margin-top: .3em;
@@ -103,6 +98,12 @@ body {
 .orange {
     background: lightsalmon;
 }
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 
 /* col */
 .col-12 {
