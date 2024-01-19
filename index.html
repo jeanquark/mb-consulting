@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="form.css">
     <style>
 
     </style>
@@ -134,8 +135,7 @@
             </div>
         </section>
 
-        <section id="moreInfo"
-            style="height: 3000px; background: lightpink; text-align: center; scroll-snap-align: start;">
+        <section id="moreInfo" style="background: lightpink; text-align: center; scroll-snap-align: start;">
             <div class="row">
                 <div class="col-12 my-2">
                     <h3 class="text-center" style="">More Info</h3>
@@ -167,7 +167,7 @@
             </div>
             <div class="row">
                 <div class="col-6 col-sm-12">
-                    <img src="/static/images/dj_fiduciaire.webp" width="100%" alt="DJ Fiduciaire" />
+                    <img src="static/images/dj_fiduciaire.webp" width="100%" alt="DJ Fiduciaire" />
                 </div>
                 <div class="col-6 col-sm-12">
                     <p>Comptabilité, Fiscalité et Gérances
@@ -206,12 +206,36 @@
                         www.bab-consulting.com</p>
                 </div>
                 <div class="col-6 col-sm-12">
-                    <img src="/static/images/bab_consulting.webp" width="100%" alt="BAB Consulting" />
+                    <img src="static/images/bab_consulting.webp" width="100%" alt="BAB Consulting" />
                 </div>
             </div>
             <div class="row">
                 <div class="col-6 col-sm-12">
-                    <img src="/static/images/traductions_lausanne.webp" width="100" alt="Traductions Lausanne" />
+                    <img src="static/images/traductions_lausanne.webp" width="100" alt="Traductions Lausanne" />
+                </div>
+                <div class="col-6 col-sm-12">
+                    <p>TRADUCTIONS-LAUSANNE
+                        Entreprises et particuliers
+                        Plus de 40 ans d'expérience dans de nombreux domaines et combinaisons de langues, un large
+                        réseau de traducteurs
+                        diplômés et spécialisés. Une seule interlocutrice : Jeanne Davalle, traductrice d'anglais et
+                        d'espagnol en français et
+                        membre de l'Association des Interprètes et Traducteurs de Genève.
+
+                        Leur expertise et leurs compétences à votre service pour vous proposer des traductions
+                        professionnelles de qualité, dans
+                        les délais et à un tarif compétitif.
+                        Expertise, proximité, compétitivité et confidentialité sont leurs meilleurs atouts!</p>
+
+                    <p>Jeanne Davalle<br />
+                        info@traductions-lausanne.com<br />
+                        +41 (0)79 279 20 88<br />
+                        www.traductions-lausanne.com</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6 col-sm-12">
+                    <img src="static/images/traductions_lausanne.webp" width="100" alt="Traductions Lausanne" />
                 </div>
                 <div class="col-6 col-sm-12">
                     <p>TRADUCTIONS-LAUSANNE
@@ -235,7 +259,7 @@
             </div>
         </section>
 
-        <section id="contact" style="background: lightyellow; text-align: center; scroll-snap-align: start;">
+        <section id="contact" style="background: lightyellow; scroll-snap-align: start;">
             <div class="row">
                 <div class="col-12 my-2">
                     <h3 class="text-center" style="">Contact</h3>
@@ -254,11 +278,19 @@
                 <div class="col-6 col-sm-12 border">
                     <form action="">
                         <div class="row">
-                            <div class="col-6 col-sm-6">
-                                <input type="text" id="firstname" name="firstname" placeholder="Prénom">
+                            <div class="col-6 col-sm-6 px-2">
+                                <!-- <input type="text" id="firstname" name="firstname" placeholder="Prénom"> -->
+                                <div class="form-group">
+                                    <input type="text" required="required" />
+                                    <label for="input" class="control-label">Prénom</label><i class="bar"></i>
+                                </div>
                             </div>
-                            <div class="col-6 col-sm-6">
-                                <input type="text" id="lastname" name="lastname" placeholder="Nom de famille">
+                            <div class="col-6 col-sm-6 px-2">
+                                <!-- <input type="text" id="lastname" name="lastname" placeholder="Nom de famille"> -->
+                                <div class="form-group">
+                                    <input type="text" required="required" />
+                                    <label for="input" class="control-label">Nom</label><i class="bar"></i>
+                                </div>
                             </div>
                             <div class="col-6 col-sm-6">
                                 <input type="text" id="email" name="email" placeholder="E-mail" style="width: 100%;">

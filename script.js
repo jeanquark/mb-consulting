@@ -55,8 +55,10 @@ const navItems = document.querySelectorAll(".nav-item")
 
 const observerOptions = {
     root: null,
+    // root: '#wrapper',
     rootMargin: '0px',
-    threshold: .5,
+    // threshold: .5,
+    threshold: 0.5, // The threshold of 1 means that our callback will trigger when the video is fully visible, or it stops being fully visible
 };
 
 function observerCallback(entries, observer) {
@@ -65,6 +67,7 @@ function observerCallback(entries, observer) {
         // console.log('entry: ', entry);
         if (entry.isIntersecting) {
             let sectionId = entry.target.id
+            console.log('sectionId: ', sectionId);
             if (sectionId === 'about') {
                 // Shrink navbar
                 // document.getElementById('navbar-mobile').style.padding = '8px 10px'
