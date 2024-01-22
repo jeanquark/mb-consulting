@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="form.css" />
+        <link rel="stylesheet" href="index.css">
+        <style></style>
+    </head>
+
+    <body>
+        <div id="wrapper" style="position: relative; width: 100%; scroll-snap-type: y mandatory; scroll-behavior: smooth; scroll-padding-top: 108px; overflow: auto">
+            <nav id="navbar" class="background-red" style="position: sticky; top: 0; border: 2px solid blue">
+                <div style="display: flex; justify-content: space-between; padding: 30px 0px; border: 1px dashed grey">
+                    <a href="#default" class="logo" style="border: 2px solid salmon">MBConsulting</a>
+                    <ul id="nav-items" style="display: flex; list-style-type: none; margin: 0; padding: 0; border: 2px solid green">
+                        <li class="nav-item" style="padding: 10px"><a href="#services">Services</a></li>
+                        <li class="nav-item" style="padding: 10px"><a href="#about">A propos</a></li>
+                        <li class="nav-item" style="padding: 10px"><a href="#moreInfo">En savoir plus</a></li>
+                        <li class="nav-item" style="padding: 10px"><a href="#partners">Partenariat</a></li>
+                        <li class="nav-item" style="padding: 10px"><a href="#contact">Contact</a></li>
+                        <li class="nav-item" style="padding: 10px"><a href="pt">Portugais</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <nav id="navbarMobile" style="position: sticky; top: 0; border: 2px solid purple">
+                <div style="display: flex; justify-content: space-between; border: 2px solid red">
+                    <a href="/" id="logoMobileNavbar" class="" style="">MBConsulting</a>
+                    <a href="javascript:void(0);" class="icon" style="float: right; font-size: 2.5em; padding: 0 0.5em" onclick="toggleNavigationMenu()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+                <ul id="nav-items-mobile" class="" style="max-height: 0; visibility: hidden; opacity: 0; transform: translateY(-100%); list-style-type: none; margin: 0; border: 2px solid green">
+                    <li class="nav-item"><a href="#services">Services</a></li>
+                    <li class="nav-item"><a href="#about">A propos</a></li>
+                    <li class="nav-item"><a href="#moreInfo">En savoir plus</a></li>
+                    <li class="nav-item"><a href="#partners">Partenariat</a></li>
+                    <li class="nav-item"><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <section id="header" style="scroll-snap-align: start;">
+                <div class="row">
+                    <div class="col-12">
+                <h3>Mentions légales</h3>
+                <p>Nom de l'entreprise : Baptista Barata MB Consulting
+
+Adresse postale : rue Henry-Grandjean 7, 2400 Le Locle
+
+Téléphone : +41 (0)78 924 76 75
+
+Adresse électronique : info@mbconsulting-mbc.ch</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <h3>Informations juridiques</h3>
+                        <p>Ce site Internet utilise des cookies. Les cookies sont de petits fichiers textes qui sont enregistrés sur votre ordinateur, lors de la visite du site, de façon temporaire ou durable. Le but des cookies est en particulier d’analyser l’utilisation du site, en vue d’une exploitation statistique, ainsi que d’améliorations continues. Les cookies peuvent être à tout moment désactivés dans les paramètres de votre navigateur web, partiellement ou en totalité. En désactivant les cookies, certaines
+                            fonctionnalités de ce site peuvent éventuellement ne plus être disponibles.</p>
+                    </div>
+            </section>
+
+            
+
+            <footer class="" style="background: lightseagreen; text-align: center; scroll-snap-align: start">
+                <div class="row">
+                    <div class="col-12 my-2">
+                        <h3 class="text-center" style="">Footer</h3>
+                    </div>
+                    <div class="col-12">
+                        <p>Images par <a href="https://www.freepik.com/free-vector/flat-working-day-scenes-collection_14064667.htm#query=business%20svg&position=2&from_view=keyword&track=ais&uuid=1ce6e4bc-3744-4cce-a178-e96e96f2f708">Freepik</a></p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <script src="script.js"></script>
+        <script>
+            window.addEventListener('unload', function (e) {
+                console.log('unload')
+                var wrapper = document.getElementById('wrapper')
+                var previousScroll = wrapper.scrollTop
+                window.localStorage.setItem('previousScroll', previousScroll)
+            })
+            document.addEventListener('DOMContentLoaded', function (e) {
+                console.log('DOMContentLoaded')
+                var wrapper = document.getElementById('wrapper')
+                var previousScroll = window.localStorage.getItem('previousScroll')
+                wrapper.scrollTop = previousScroll
+            })
+
+            const documentHeight = () => {
+                const doc = document.documentElement
+                doc.style.setProperty('--doc-height', `${window.innerHeight}px`)
+            }
+            window.addEventListener('resize', documentHeight)
+            documentHeight()
+        </script>
+    </body>
+</html>

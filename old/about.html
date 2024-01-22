@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                margin: 0;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            #navbar {
+                display: block;
+                overflow: hidden;
+                background-color: #f1f1f1;
+                padding: 90px 10px;
+                transition: 0.4s;
+                position: fixed;
+                width: 100%;
+                top: 0;
+                z-index: 99;
+            }
+
+            #navbar-mobile {
+                display: none;
+            }
+
+            #navbar-right {
+                float: right;
+            }
+
+            .margin-top {
+                margin-top: 149px;
+            }
+
+            @media screen and (max-width: 580px) {
+                #navbar {
+                    display: none;
+                }
+                #navbar-mobile {
+                    display: block;
+                    overflow: hidden;
+                    background-color: #f1f1f1;
+                    padding: 30px 10px;
+                    transition: 0.4s;
+                    position: fixed;
+                    width: 100%;
+                    top: 0;
+                    z-index: 99;
+                }
+                .margin-top {
+                    margin-top: 384px;
+                }
+                .nav-item {
+                    padding: 10px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <nav id="navbar" style="position: sticky; top: 0; background: #fff; height: 100px; border: 2px solid blue">
+            <a href="#default" id="logo">MBConsulting</a>
+            <ul id="navbar-right">
+                <li class="nav-item"><a href="#services">Services</a></li>
+                <li class="nav-item"><a href="#about">A propos</a></li>
+                <li class="nav-item"><a href="#moreInfo">En savoir plus</a></li>
+                <li class="nav-item"><a href="#partners">Partenariat</a></li>
+                <li class="nav-item"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <nav id="navbar-mobile" style="position: sticky; top: 0; background: #FFF; border: 2px solid purple;">
+            <div style="display: flex; justify-content: space-between; border: 2px solid red;">
+                <a href="/" class="" style="">MBConsulting</a>
+                <a href="javascript:void(0);" class="icon" style="float: right; font-size: 2.5em; padding: 0 .5em;"
+                    onclick="toggleNavigationMenu()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+            <ul id="nav-items" class="" style="list-style-type: none; margin: 0; border: 2px solid green;">
+                <li class="nav-item"><a href="#services">Services</a></li>
+                <li class="nav-item"><a href="#about">A propos</a></li>
+                <li class="nav-item"><a href="#moreInfo">En savoir plus</a></li>
+                <li class="nav-item"><a href="#partners">Partenariat</a></li>
+                <li class="nav-item"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <section id="services" class="margin-top" style="height: 400px; background: lightblue; text-align: center">
+            <h3 style="margin: 0 auto">Services</h3>
+        </section>
+
+        <section id="about" style="height: 300px; background: lightgreen; text-align: center">
+            <h3 style="margin: 0 auto">About</h3>
+        </section>
+
+        <section id="moreInfo" style="height: 300px; background: lightpink; text-align: center">
+            <h3 style="margin: 0 auto">More Info</h3>
+        </section>
+
+        <section id="partners" style="height: 300px; background: lightsalmon; text-align: center">
+            <h3 style="margin: 0 auto">Partners</h3>
+        </section>
+
+        <section id="contact" style="height: 300px; background: lightyellow; text-align: center">
+            <h3 style="margin: 0 auto">Contact</h3>
+        </section>
+
+        <script>
+            // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+            window.onscroll = function () {
+                scrollFunction()
+            }
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+                    document.getElementById('navbar-mobile').style.padding = '10px 10px'
+                    document.getElementById('logo').style.fontSize = '25px'
+                } else {
+                    document.getElementById('navbar-mobile').style.padding = '30px 10px'
+                    document.getElementById('logo').style.fontSize = '35px'
+                }
+            }
+
+            /*
+                Toggle hamburger menu on mobile
+            */
+            function toggleNavigationMenu() {
+                console.log('toggleNavigationMenu')
+                var x = document.getElementById('nav-items')
+                if (x.style.visibility === 'visible') {
+                    // x.style.display = 'none'
+                    x.style.visibility = 'hidden'
+                    x.style.opacity = 0
+                    // x.style.transition = 'visibility 1s, opacity 1.5s linear'
+                    // x.style.transform = 'translateY(-100%)'
+                    x.style.transition = 'all 1s ease-in-out'
+                    document.getElementById('services').style.marginTop = '0px'
+                } else {
+                    // x.style.display = 'block'
+                    x.style.visibility = 'visible'
+                    x.style.opacity = 1
+                }
+            }
+        </script>
+    </body>
+</html>

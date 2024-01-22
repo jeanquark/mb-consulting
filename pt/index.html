@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="../style.css" />
+        <link rel="stylesheet" href="../form.css" />
+        <link rel="stylesheet" href="../index.css">
+        <style></style>
+    </head>
+
+    <body>
+        <div id="wrapper" style="position: relative; width: 100%; scroll-snap-type: y mandatory; scroll-behavior: smooth; scroll-padding-top: 108px; overflow: auto">
+            <nav id="navbar" class="background-red" style="position: sticky; top: 0; border: 2px solid blue">
+                <div style="display: flex; justify-content: space-between; padding: 30px 0px; border: 1px dashed grey">
+                    <a href="#default" class="logo" style="border: 2px solid salmon">MBConsulting</a>
+                    <ul id="nav-items" style="display: flex; list-style-type: none; margin: 0; padding: 0; border: 2px solid green">
+                        <li class="nav-item" style="padding: 10px"><a href="#services">Services</a></li>
+                        <li class="nav-item" style="padding: 10px"><a href="#about">A propos</a></li>
+                        <li class="nav-item" style="padding: 10px"><a href="#moreInfo">En savoir plus</a></li>
+                        <li class="nav-item" style="padding: 10px"><a href="#partners">Partenariat</a></li>
+                        <li class="nav-item" style="padding: 10px"><a href="#contact">Contact</a></li>
+                        <li class="nav-item" style="padding: 10px"><a href="index/pt">Portugais</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <nav id="navbarMobile" style="position: sticky; top: 0; border: 2px solid purple">
+                <div style="display: flex; justify-content: space-between; border: 2px solid red">
+                    <a href="/" id="logoMobileNavbar" class="" style="">MBConsulting</a>
+                    <a href="javascript:void(0);" class="icon" style="float: right; font-size: 2.5em; padding: 0 0.5em" onclick="toggleNavigationMenu()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+                <ul id="nav-items-mobile" class="" style="max-height: 0; visibility: hidden; opacity: 0; transform: translateY(-100%); list-style-type: none; margin: 0; border: 2px solid green">
+                    <li class="nav-item"><a href="#services">Services</a></li>
+                    <li class="nav-item"><a href="#about">A propos</a></li>
+                    <li class="nav-item"><a href="#moreInfo">En savoir plus</a></li>
+                    <li class="nav-item"><a href="#partners">Partenariat</a></li>
+                    <li class="nav-item"><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <section id="header" style="scroll-snap-align: start;">
+            <h1>Votre partenaire administratif (en portugais)</h1>
+            <h3>Entreprises</h3>
+            <h3>Particuliers</h3>
+            </section>
+
+            <section id="services" class="" style="background: lightblue; scroll-snap-align: start">
+                <div class="row">
+                    <div class="col-12 text-center my-2" style="padding-bottom: 10px">
+                        <h3 class="text-center" style="">Services</h3>
+                    </div>
+                    <div class="col-3 col-lg-4 col-md-6 col-sm-12 border">
+                        <h3>ADMINISTRATION</h3>
+                        <p>Assistance dans la gestion administrative courante (correspondances, rapports, archivage numérique de documents, gestion d'agenda, organisation de rendez-vous entreprise-client/e(s), démarches étatiques en tout genre, démarches relatives aux problématiques liées au COVID).</p>
+                        <img src="static/svg/classeurs.svg" width="400" alt="image de classeurs empilés" />
+                    </div>
+                    <div class="col-3 col-lg-4 col-md-6 col-sm-12 border">
+                        <h3>RH ET FORMATION CONTINUE</h3>
+                        <p>Soutien et accompagnement dans la mise en place de formations répondant aux besoins de l'employé/e et de l'employeur. Coaching et accompagnement RH (engagement – collaboration – fin de collaboration).</p>
+                        <!-- <img src="static/svg/formation.svg" width="400" alt="image de classeurs empilés" /> -->
+                    </div>
+                    <div class="col-3 col-lg-4 col-md-6 col-sm-12 border">
+                        <h3>TRADUCTION & INTERPRÈTE</h3>
+                        <p>Traduction de documents de français en portugais ou de portugais en français. Interprète français-portugais / portugais-français lors d'entretiens professionnels ou privés.</p>
+                        <img src="static/svg/globe.svg" width="400" alt="image de classeurs empilés" />
+                    </div>
+                    <div class="col-3 col-lg-4 col-md-6 col-sm-12 border">
+                        <h3>ADMINISTRATION</h3>
+                        <p>Assistance et conseil dans la résolution de diverses problématiques administratives liées au quotidien (assurances, médical, services étatiques). Archivage numérique et ordonnancement des documents administratifs.</p>
+                        <img src="static/svg/dossiers.svg" width="400" alt="image de classeurs empilés" />
+                    </div>
+                    <div class="col-3 col-lg-4 col-md-6 col-sm-12 border">
+                        <h3>EMPLOI</h3>
+                        <p>Accompagnement dans le processus de recherche d'emploi (création de dossier, CV + lettre de motivation, postulations et préparation d'un entretien d'engagement, mise en relation avec les services étatiques et les agences de placement).</p>
+                        <img src="static/svg/documents.svg" width="400" alt="image de classeurs empilés" />
+                    </div>
+                    <div class="col-3 col-lg-4 col-md-6 col-sm-12 border">
+                        <h3>SANTE</h3>
+                        <p>Accompagnement dans les démarches inhérentes à un problème de santé (SUVA, AI, services étatiques, assurances).</p>
+                        <img src="static/svg/documents.svg" width="400" alt="image de classeurs empilés" />
+                    </div>
+                    <div class="col-3 col-lg-4 col-md-6 col-sm-12 border">
+                        <h3>MIGRATION</h3>
+                        <p>Soutien administratif destiné à la communauté portugaise (démarches lors d'une arrivée ou départ de Suisse, contacts et démarches avec les consulats et les ambassades, permis d'établissement, services étatiques).</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about" style="background: lightgreen; text-align: center; scroll-snap-align: start">
+                <div class="row">
+                    <div class="col-12 my-2">
+                        <h3 class="text-center" style="">About</h3>
+                    </div>
+                    <div class="col-6 col-sm-12">
+                        <h3>Qui suis-je ?</h3>
+                    </div>
+                    <div class="col-6 col-sm-12">
+                        <p>Au bénéfice d'une expérience professionnelle de plus de 20 ans au sein de l'administration publique, le fondateur Marcio Barata est spécialisé dans les domaines de l'emploi, de la migration, RH et formation continue, ainsi que de la gestion administrative courante qu'elle soit privée ou professionnelle (petites entreprises de 5 collaborateurs maximum). Il lui tiendra à cœur de mettre à votre service ses compétences, de manière à trouver des solutions à toutes vos tracasseries administratives.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="moreInfo" style="background: lightpink; text-align: center; scroll-snap-align: start">
+                <div class="row">
+                    <div class="col-12 my-2">
+                        <h3 class="text-center" style="">More Info</h3>
+                    </div>
+                    <div class="col-6 col-sm-12">
+                        <h3>En savoir plus</h3>
+                    </div>
+                    <div class="col-6 col-sm-12">
+                        <h4>Une problématique administrative ?</h4>
+                        <h4>Une solution : MB Consulting !</h4>
+                        <p>Bien appréhender la résolution de nos tracasseries administratives quotidiennes, n'est pas chose aisée dans une société en permanente évolution. Je suis la bonne personne pour alléger cette charge qui pèse sur vos épaules. Mon professionnalisme, combiné à ma motivation et à mon expérience professionnelle de plus de 20 ans au sein de l'administration publique, me permet de cerner les besoins de mes clients, et de leur proposer des solutions adéquates à leurs besoins. Plus de soucis administratifs – Mon métier !</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="partners" style="background: lightsalmon; text-align: center; scroll-snap-align: start">
+                <div class="row">
+                    <div class="col-12 my-2">
+                        <h3 class="text-center" style="">Partners</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 col-sm-12">
+                        <img src="static/images/dj_fiduciaire.webp" width="100%" alt="DJ Fiduciaire" />
+                    </div>
+                    <div class="col-6 col-sm-12">
+                        <p>Comptabilité, Fiscalité et Gérances Entreprises et particuliers La structure d'un petit bureau permet à la Fiduciaire Daniel Jaggi SA à Neuchâtel, de collaborer étroitement avec les clients en toute confiance, prenant à cœur les délais et responsabilités. Les échanges réguliers de personnes à personnes assurent des prestations de qualité. En complément à ses missions, MB Consulting est heureux de proposer à ses clients, les services de la Fiduciaire Daniel Jaggi SA à Neuchâtel, gérée par M. Thierry Beuret (expert fiduciaire diplômé, expert réviseur agréé, spécialiste en finance et en comptabilité avec brevet fédéral et membre expert Suisse).</p>
+
+                        <p>
+                            Fiduciaire Jaggi SA<br />
+                            info@fidujaggi.com<br />
+                            +41 (0)32 724 40 88<br />
+                            www.fiduciairejaggi.com<br />
+                            Rue de la Promenade-Noire 5<br />
+                            2001 Neuchâtel
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 col-sm-12">
+                        <p>L'innovation digitale dès maintenant Entreprises et particuliers L'agence de communication bab-consulting vous accompagne dans la stratégie de communication digitale (réseaux sociaux), community management, gestion communautaire, stratégie de marketing et conseils médias (publicitaire et rédaction).</p>
+
+                        <p>
+                            Gabriel Davalle<br />
+                            gab@bab-consulting.com<br />
+                            +41 (0)78 860 01 59<br />
+                            www.bab-consulting.com
+                        </p>
+                    </div>
+                    <div class="col-6 col-sm-12">
+                        <img src="static/images/bab_consulting.webp" width="100%" alt="BAB Consulting" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 col-sm-12">
+                        <img src="static/images/traductions_lausanne.webp" width="100" alt="Traductions Lausanne" />
+                    </div>
+                    <div class="col-6 col-sm-12">
+                        <p>TRADUCTIONS-LAUSANNE Entreprises et particuliers Plus de 40 ans d'expérience dans de nombreux domaines et combinaisons de langues, un large réseau de traducteurs diplômés et spécialisés. Une seule interlocutrice : Jeanne Davalle, traductrice d'anglais et d'espagnol en français et membre de l'Association des Interprètes et Traducteurs de Genève. Leur expertise et leurs compétences à votre service pour vous proposer des traductions professionnelles de qualité, dans les délais et à un tarif compétitif. Expertise, proximité, compétitivité et confidentialité sont leurs meilleurs atouts!</p>
+
+                        <p>
+                            Jeanne Davalle<br />
+                            info@traductions-lausanne.com<br />
+                            +41 (0)79 279 20 88<br />
+                            www.traductions-lausanne.com
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 col-sm-12">
+                        <img src="static/images/traductions_lausanne.webp" width="100" alt="Traductions Lausanne" />
+                    </div>
+                    <div class="col-6 col-sm-12">
+                        <p>TRADUCTIONS-LAUSANNE Entreprises et particuliers Plus de 40 ans d'expérience dans de nombreux domaines et combinaisons de langues, un large réseau de traducteurs diplômés et spécialisés. Une seule interlocutrice : Jeanne Davalle, traductrice d'anglais et d'espagnol en français et membre de l'Association des Interprètes et Traducteurs de Genève. Leur expertise et leurs compétences à votre service pour vous proposer des traductions professionnelles de qualité, dans les délais et à un tarif compétitif. Expertise, proximité, compétitivité et confidentialité sont leurs meilleurs atouts!</p>
+
+                        <p>
+                            Jeanne Davalle<br />
+                            info@traductions-lausanne.com<br />
+                            +41 (0)79 279 20 88<br />
+                            www.traductions-lausanne.com
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" style="background: lightyellow; scroll-snap-align: start">
+                <div class="row">
+                    <div class="col-12 my-2">
+                        <h3 class="text-center" style="">Contact</h3>
+                    </div>
+                    <div class="col-6 col-sm-12">
+                        <h3>Contactez-moi</h3>
+                        <p>
+                            Mon adresse<br />
+                            Rue Henry-Grandjean 7<br />
+                            2400 Le Locle, Suisse<br />
+                            Mon email<br />
+                            info@mbconsulting-mbc.ch<br />
+                            Mon téléphone<br />
+                            +xx (x)xx xxx xx xx
+                        </p>
+                    </div>
+                    <div class="col-6 col-sm-12 border">
+                        <form action="">
+                            <div class="row">
+                                <div class="col-6 col-sm-6 px-2">
+                                    <!-- <input type="text" id="firstname" name="firstname" placeholder="Prénom"> -->
+                                    <div class="form-group">
+                                        <input type="text" required="required" />
+                                        <label for="input" class="control-label">Prénom</label><i class="bar"></i>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-6 px-2">
+                                    <!-- <input type="text" id="lastname" name="lastname" placeholder="Nom de famille"> -->
+                                    <div class="form-group">
+                                        <input type="text" required="required" />
+                                        <label for="input" class="control-label">Nom</label><i class="bar"></i>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-6 px-2">
+                                    <!-- <input type="text" id="email" name="email" placeholder="E-mail" style="width: 100%;"> -->
+                                    <div class="form-group">
+                                        <input type="text" required="required" />
+                                        <label for="input" class="control-label">E-mail</label><i class="bar"></i>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-6 px-2">
+                                    <!-- <input type="text" id="phone" name="phone" placeholder="Numéro de téléphone" style="width: 100%;">-->
+                                    <div class="form-group">
+                                        <input type="text" required="required" />
+                                        <label for="input" class="control-label">Numéro de téléphone</label><i class="bar"></i>
+                                    </div>
+                                </div>
+                                <div class="col-12 px-2 border">
+                                    <!-- <label for="message">Message:</label><br> -->
+                                    <!-- <textarea name="message" rows="5" cols="30" placeholder="Ecrivez votre message..." style="width: 100%;"></textarea>-->
+                                    <div class="form-group">
+                                        <textarea required="required"></textarea>
+                                        <label for="textarea" placeholder="Ecrivez votre message..." class="control-label">Message</label><i class="bar"></i>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="button-container">
+                                    <button type="button" class="button"><span>Soumettre</span></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="row">Google Map</div>
+                </div>
+            </section>
+
+            <footer class="" style="background: lightseagreen; text-align: center; scroll-snap-align: start">
+                <div class="row">
+                    <div class="col-12 my-2">
+                        <h3 class="text-center" style="">Footer</h3>
+                    </div>
+                    <div class="col-12">
+                        <p>Images par <a href="https://www.freepik.com/free-vector/flat-working-day-scenes-collection_14064667.htm#query=business%20svg&position=2&from_view=keyword&track=ais&uuid=1ce6e4bc-3744-4cce-a178-e96e96f2f708">Freepik</a></p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <script src="../script.js"></script>
+        <script>
+            window.addEventListener('unload', function (e) {
+                console.log('unload')
+                var wrapper = document.getElementById('wrapper')
+                var previousScroll = wrapper.scrollTop
+                window.localStorage.setItem('previousScroll', previousScroll)
+            })
+            document.addEventListener('DOMContentLoaded', function (e) {
+                console.log('DOMContentLoaded')
+                var wrapper = document.getElementById('wrapper')
+                var previousScroll = window.localStorage.getItem('previousScroll')
+                wrapper.scrollTop = previousScroll
+            })
+
+            const documentHeight = () => {
+                const doc = document.documentElement
+                doc.style.setProperty('--doc-height', `${window.innerHeight}px`)
+            }
+            window.addEventListener('resize', documentHeight)
+            documentHeight()
+        </script>
+    </body>
+</html>

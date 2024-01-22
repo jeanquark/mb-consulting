@@ -1,7 +1,7 @@
 // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
 const wrapper = document.getElementById('wrapper')
 wrapper.onscroll = function () {
-    scrollFunction()
+    // scrollFunction()
 }
 
 function scrollFunction() {
@@ -67,7 +67,7 @@ function observerCallback(entries, observer) {
         // console.log('entry: ', entry);
         if (entry.isIntersecting) {
             let sectionId = entry.target.id
-            console.log('sectionId: ', sectionId);
+            // console.log('sectionId: ', sectionId);
             if (sectionId === 'about') {
                 // Shrink navbar
                 // document.getElementById('navbar-mobile').style.padding = '8px 10px'
