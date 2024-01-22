@@ -1,7 +1,6 @@
 .dropdown {
     float: left;
     overflow: hidden;
-
 }
 
 .dropdown .dropbtn {
@@ -24,15 +23,14 @@
 
 .dropdown-content {
     display: none;
-    position: absolute;
+    position: fixed;
     background-color: #f9f9f9;
-    /* min-width: 160px; */
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     border: 2px dashed green;
-    /* left:auto; */
-    right:0;
-    /* margin-right:-10px; */
-    z-index: 1;
+    left: auto;
+    right: 0;
+    margin-right: 18px;
+    z-index: 99999;
 }
 
 .dropdown-content a {
@@ -50,4 +48,18 @@
 
 .show {
     display: block;
+}
+
+
+.dropdown-content-mobile {
+    display: none;
+    /* display: block; */
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    border: 2px dashed green;
+}
+
+.show-dropdown-content-mobile {
+    display: block;
+    /* background: yellow; */
 }

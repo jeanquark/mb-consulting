@@ -43,7 +43,7 @@ function toggleNavigationMenu() {
         x.style.maxHeight = '500px'
         x.style.transform = 'translateY(0%)'
         x.style.visibility = 'visible'
-        x.style.transition = 'max-height 1.5s ease-in, opacity 1.5s ease-in'
+        x.style.transition = 'max-height 1s ease-in, opacity 1.5s ease-in'
     }
 }
 
@@ -59,6 +59,7 @@ const observerOptions = {
     rootMargin: '0px',
     // threshold: .5,
     threshold: 0.5, // The threshold of 1 means that our callback will trigger when the video is fully visible, or it stops being fully visible
+    // threshold: [0.25, 0.5, 0.7, 0.5, 0.5]
 };
 
 function observerCallback(entries, observer) {
@@ -67,7 +68,7 @@ function observerCallback(entries, observer) {
         // console.log('entry: ', entry);
         if (entry.isIntersecting) {
             let sectionId = entry.target.id
-            // console.log('sectionId: ', sectionId);
+            console.log('sectionId: ', sectionId);
             if (sectionId === 'about') {
                 // Shrink navbar
                 // document.getElementById('navbar-mobile').style.padding = '8px 10px'
