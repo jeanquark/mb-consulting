@@ -38,6 +38,15 @@ body {
     float: right;
 }
 
+.nav-item a {
+    text-decoration: none;
+    font-size: 1.4em;
+}
+
+.nav-item a:hover {
+    color: pink;
+}
+
 .margin-top {
     margin-top: 149px;
 }
@@ -60,19 +69,20 @@ body {
     border: 2px solid red;
 }
 
-.list {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+.parallax {
+    /* The image used */
+    background-image: url("/static/le_locle2.jpg");
+
+    /* Set a specific height */
+    min-height: 300px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.list li {
-    border: 1px solid #ddd;
-    margin-top: -1px;
-    background-color: #83A8F0;
-    padding: 12px;
-    line-height: 1.5em;
-}
 
 .pill {
     background-color: #ddd;
@@ -87,6 +97,30 @@ body {
 }
 
 /* margins */
+.ma-0 {
+    margin: 0em 0em;
+}
+
+.ma-1 {
+    margin: 0.3em 0.3em;
+}
+
+.ma-2 {
+    margin: 0.5em 0.5em;
+}
+
+.ma-3 {
+    margin: 1em 1em;
+}
+
+.ma-4 {
+    margin: 1.5em 1.5em;
+}
+
+.ma-5 {
+    margin: 2em 2em;
+}
+
 .my-0 {
     margin-top: 0;
     margin-bottom: 0;
@@ -115,6 +149,36 @@ body {
 .my-5 {
     margin-top: 2em;
     margin-bottom: 2em;
+}
+
+.mx-0 {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.mx-1 {
+    margin-left: .3em;
+    margin-right: .3em;
+}
+
+.mx-2 {
+    margin-left: .5em;
+    margin-right: .5em;
+}
+
+.mx-3 {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.mx-4 {
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+}
+
+.mx-5 {
+    margin-left: 2em;
+    margin-right: 2em;
 }
 
 /* paddings */

@@ -1,0 +1,52 @@
+$primary-color: #155DE9;
+$red-bg : red;
+$yellow-bg: yellow;
+
+.background-primary {
+    background-color: $primary-color;
+}
+
+.background-red {
+    background-color: $red-bg;
+}
+
+.background-yellow {
+    background-color: $yellow-bg;
+}
+
+.title {
+    position: relative;
+}
+
+.title::before {
+    content: "";
+    position: absolute;
+    left: 49%;
+    bottom: -5px;
+    width: 100%;
+    height: 14px;
+    transform: skew(-12deg) translateX(-50%);
+    background: rgba($primary-color, .5);
+    z-index: 10;
+}
+
+/* Lists */
+ul.list {
+    --icon-space: 1.3em;
+    list-style: none;
+    padding: 0;
+
+    li {
+        padding-left: var(--icon-space);
+        line-height: 1.5em;
+    }
+
+    li:before {
+        content: "\f105";
+        /* FontAwesome Unicode */
+        font-family: FontAwesome;
+        display: inline-block;
+        margin-left: calc(var(--icon-space) * -1);
+        width: var(--icon-space);
+    }
+}
