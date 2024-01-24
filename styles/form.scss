@@ -1,4 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto);
+@use 'colors';
+// @import url(https://fonts.googleapis.com/css?family=Roboto);
 
 body,
 input,
@@ -9,7 +10,8 @@ body * {
     box-sizing: border-box;
 }
 
-body::after, body::before,
+body::after,
+body::before,
 input::after,
 input::before,
 select::after,
@@ -67,8 +69,8 @@ fieldset {
 .form-radio,
 .form-group {
     position: relative;
-    margin-top: 2.25rem;
-    margin-bottom: 2.25rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
 }
 
 .form-inline>.form-group,
@@ -84,7 +86,9 @@ fieldset {
     font-size: 0.8rem;
 }
 
-.checkbox .form-help, .form-radio .form-help, .form-group .form-help {
+.checkbox .form-help,
+.form-radio .form-help,
+.form-group .form-help {
     position: absolute;
     width: 100%;
 }
@@ -144,7 +148,8 @@ fieldset {
     left: 50%;
     bottom: -0.0625rem;
     position: absolute;
-    background: #337ab7;
+    // background: #337ab7;
+    background: colors.$primary-color;
     -webkit-transition: left 0.28s ease, width 0.28s ease;
     transition: left 0.28s ease, width 0.28s ease;
     z-index: 2;
@@ -210,7 +215,8 @@ fieldset {
 .form-group select:focus~.control-label,
 .form-group input:focus~.control-label,
 .form-group textarea:focus~.control-label {
-    color: #337ab7;
+    // color: #337ab7;
+    color: colors.$primary-color;
 }
 
 .form-group select:focus~.bar::before,
@@ -256,7 +262,8 @@ fieldset {
     color: #999;
 }
 
-.radio .helper::before, .radio .helper::after {
+.radio .helper::before,
+.radio .helper::after {
     content: '';
     position: absolute;
     left: 0;
@@ -275,12 +282,15 @@ fieldset {
 .radio .helper::after {
     -webkit-transform: scale(0);
     transform: scale(0);
-    background-color: #337ab7;
-    border-color: #337ab7;
+    // background-color: #337ab7;
+    background-color: colors.$primary-color;
+    // border-color: #337ab7;
+    border-color: colors.$primary-color;
 }
 
 .radio label:hover .helper {
-    color: #337ab7;
+    // color: #337ab7;
+    color: colors.$primary-color;
 }
 
 .radio input:checked~.helper::after {
@@ -289,7 +299,8 @@ fieldset {
 }
 
 .radio input:checked~.helper::before {
-    color: #337ab7;
+    // color: #337ab7;
+    color: colors.$primary-color
 }
 
 .checkbox {
@@ -311,11 +322,13 @@ fieldset {
     transition: border-color 0.28s ease;
 }
 
-.checkbox .helper::before, .checkbox .helper::after {
+.checkbox .helper::before,
+.checkbox .helper::after {
     position: absolute;
     height: 0;
     width: 0.2rem;
-    background-color: #337ab7;
+    // background-color: #337ab7;
+    background-color: colors.$primary-color;
     display: block;
     -webkit-transform-origin: left top;
     transform-origin: left top;
@@ -342,14 +355,17 @@ fieldset {
 }
 
 .checkbox label:hover .helper {
-    color: #337ab7;
+    // color: #337ab7;
+    color: colors.$primary-color
 }
 
 .checkbox input:checked~.helper {
-    color: #337ab7;
+    // color: #337ab7;
+    color: colors.$primary-color
 }
 
-.checkbox input:checked~.helper::after, .checkbox input:checked~.helper::before {
+.checkbox input:checked~.helper::after,
+.checkbox input:checked~.helper::before {
     opacity: 1;
     -webkit-transition: height 0.28s ease;
     transition: height 0.28s ease;
@@ -370,14 +386,18 @@ fieldset {
     margin-top: 1rem;
 }
 
-.has-error .legend.legend, .has-error.form-group .control-label.control-label {
+.has-error .legend.legend,
+.has-error.form-group .control-label.control-label {
     color: #d9534f;
 }
 
 .has-error.form-group .form-help,
-.has-error.form-group .helper, .has-error.checkbox .form-help,
-.has-error.checkbox .helper, .has-error.radio .form-help,
-.has-error.radio .helper, .has-error.form-radio .form-help,
+.has-error.form-group .helper,
+.has-error.checkbox .form-help,
+.has-error.checkbox .helper,
+.has-error.radio .form-help,
+.has-error.radio .helper,
+.has-error.form-radio .form-help,
 .has-error.form-radio .helper {
     color: #d9534f;
 }
@@ -393,7 +413,9 @@ fieldset {
     background: currentColor;
     border: 1px solid currentColor;
     font-size: 1.1rem;
-    color: #4f93ce;
+    // color: #4f93ce;
+    color: colors.$primary-color;
+    // color: red;
     margin: 3rem 0;
     padding: 0.75rem 3rem;
     cursor: pointer;
@@ -427,11 +449,14 @@ fieldset {
 }
 
 .button:hover {
-    color: #337ab7;
+    // color: #337ab7;
+    // color: colors.$primary-color;
+    color: rgba(colors.$primary-color, .8);
     box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
 }
 
-.button:active::before, .button:focus::before {
+.button:active::before,
+.button:focus::before {
     -webkit-transition: opacity 0.28s ease 0.364s, -webkit-transform 1.12s ease;
     transition: opacity 0.28s ease 0.364s, -webkit-transform 1.12s ease;
     transition: transform 1.12s ease, opacity 0.28s ease 0.364s;

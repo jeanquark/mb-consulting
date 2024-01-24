@@ -51,7 +51,8 @@ function toggleNavigationMenu() {
 Toggle active class on scroll 
 */
 const sections = document.querySelectorAll("section")
-const navItems = document.querySelectorAll(".nav-item")
+// const navItems = document.querySelectorAll(".nav-item")
+const navItems = document.querySelectorAll("#nav-items > li")
 
 const observerOptions = {
     root: null,
@@ -68,7 +69,7 @@ function observerCallback(entries, observer) {
         // console.log('entry: ', entry);
         if (entry.isIntersecting) {
             let sectionId = entry.target.id
-            console.log('sectionId: ', sectionId);
+            // console.log('sectionId: ', sectionId);
             if (sectionId === 'about') {
                 // Shrink navbar
                 // document.getElementById('navbar-mobile').style.padding = '8px 10px'

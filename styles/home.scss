@@ -1,0 +1,137 @@
+@use 'colors';
+
+.background-primary {
+    background-color: colors.$primary-color;
+}
+
+.background-red {
+    background-color: colors.$red-bg;
+}
+
+.background-yellow {
+    background-color: colors.$yellow-bg;
+}
+
+.title {
+    position: relative;
+}
+
+:root {
+    --doc-height: 100vh;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#wrapper {
+    height: 100vh;
+    /* fallback for Js load */
+    height: var(--doc-height);
+    scroll-padding-top: 108px;
+}
+
+.justify-center {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.border {
+    border: 2px solid red;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("/static/le_locle2.jpg");
+
+    /* Set a specific height */
+    min-height: 300px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.pill {
+    background-color: #ddd;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    border-radius: 16px;
+}
+
+
+
+.box {
+    padding: 30px;
+}
+
+.blue {
+    background: royalblue;
+}
+
+.green {
+    background: seagreen;
+}
+
+.yellow {
+    background: yellowgreen;
+}
+
+.orange {
+    background: lightsalmon;
+}
+
+.title {
+    // color: yellow;
+    z-index: 10;
+}
+
+.title::before {
+    content: "";
+    position: absolute;
+    left: 49%;
+    bottom: -5px;
+    width: 100%;
+    height: 14px;
+    transform: skew(-12deg) translateX(-50%);
+    background: rgba(colors.$primary-color, .5);
+    z-index: -1;
+}
+
+/* Lists */
+ul.list {
+    --icon-space: 1.3em;
+    list-style: none;
+    padding: 0;
+
+    li {
+        padding-left: var(--icon-space);
+        line-height: 1.5em;
+    }
+
+    li:before {
+        content: "\f105";
+        /* FontAwesome Unicode */
+        font-family: FontAwesome;
+        display: inline-block;
+        margin-left: calc(var(--icon-space) * -1);
+        width: var(--icon-space);
+    }
+}
