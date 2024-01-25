@@ -55,18 +55,23 @@ const sections = document.querySelectorAll("section")
 const navItems = document.querySelectorAll("#nav-items > li")
 
 const observerOptions = {
-    root: null,
+    // root: null,
+    root: document.querySelector("#wrapper"),
     // root: '#wrapper',
     rootMargin: '0px',
     // threshold: .5,
-    threshold: 0.5, // The threshold of 1 means that our callback will trigger when the video is fully visible, or it stops being fully visible
-    // threshold: [0.25, 0.5, 0.7, 0.5, 0.5]
+    // threshold: 0.5, // The threshold of 1 means that our callback will trigger when the video is fully visible, or it stops being fully visible
+    threshold: 0.5,
+    // threshold: [0, 1]
 };
 
-function observerCallback(entries, observer) {
-    // console.log('observer: ', observer);
+function observerCallback(entries) {
+    console.log('observerCallback entries: ', entries);
     entries.forEach((entry) => {
         // console.log('entry: ', entry);
+        const elHeight = entry.boundingClientRect.height;
+        console.log('elHeight: ', elHeight);
+        console.log('window.innerHeight: ', window.innerHeight);
         if (entry.isIntersecting) {
             let sectionId = entry.target.id
             // console.log('sectionId: ', sectionId);
@@ -109,3 +114,24 @@ function observerCallback(entries, observer) {
 const observer = new IntersectionObserver(observerCallback, observerOptions);
 
 sections.forEach((section) => observer.observe(section));
+
+
+
+
+// function doTheThing (el) {
+//     el.classList.add('active');
+// }
+
+// const threshold = 0.5;
+
+// document.querySelectorAll('section').forEach(el => {
+//     const elHeight = el.getBoundingClientRect().height;
+//     var th = threshold;
+
+//     // The element is too tall to ever hit the threshold - change threshold
+//     if (elHeight > (window.innerHeight * threshold)) {
+//         th = ((window.innerHeight * threshold) / elHeight) * threshold;
+//     }
+
+//     new IntersectionObserver(iEls => iEls.forEach(iEl => doTheThing(iEl)), {threshold: th}).observe(el);
+// });
