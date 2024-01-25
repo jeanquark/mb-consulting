@@ -70,19 +70,19 @@ function observerCallback(entries) {
     entries.forEach((entry) => {
         // console.log('entry: ', entry);
         const elHeight = entry.boundingClientRect.height;
-        console.log('elHeight: ', elHeight);
-        console.log('window.innerHeight: ', window.innerHeight);
+        // console.log('elHeight: ', elHeight);
+        // console.log('window.innerHeight: ', window.innerHeight);
         if (entry.isIntersecting) {
             let sectionId = entry.target.id
-            // console.log('sectionId: ', sectionId);
-            if (sectionId === 'about') {
+            console.log('sectionId: ', sectionId);
+            if (sectionId === 'services') {
                 // Shrink navbar
                 // document.getElementById('navbar-mobile').style.padding = '8px 10px'
                 // document.getElementById('wrapper').style.scrollPaddingTop = '70px'
                 document.getElementById('logoMobileNavbar').style.fontSize = '16px'
                 document.getElementById('navbarMobile').style.backgroundColor = 'rgba(255, 255, 255, 0.5)'
             }
-            if (sectionId === 'services') {
+            if (sectionId === 'header') {
                 // Expand navbar
                 // document.getElementById('navbar-mobile').style.padding = '35px 10px'
                 // document.getElementById('wrapper').style.scrollPaddingTop = '115px'
