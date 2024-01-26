@@ -12,7 +12,7 @@
     width: 100%;
     // top: 0;
     z-index: 99;
-    border: 2px solid blue
+    // border: 2px solid blue
 }
 
 #navbarMobile {
@@ -30,9 +30,11 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
-    border: 2px solid green;
+    // border: 2px solid green;
     // display: block;
     // height: 100%;
+
+
 
     li {
         // display: block;
@@ -40,8 +42,11 @@
         display: flex;
         align-items: center;
         padding: 0em;
-        border: 2px solid red;
+        // border: 2px solid red;
         padding: .5em;
+        // background-color: colors.$secondary-color;
+
+
 
         a {
             text-decoration: none;
@@ -54,10 +59,20 @@
             // color: #000;
             background-color: colors.$secondary-color;
             cursor: pointer;
+            transform: translateX(0) skewX(-12deg);
+
+            a {
+                transform: translateX(0) skew(12deg);
+            }
         }
 
         &.active {
             background-color: colors.$secondary-color;
+            transform: translateX(0) skewX(-12deg);
+
+            a {
+                transform: translateX(0) skew(12deg);
+            }
         }
     }
 }
@@ -69,7 +84,7 @@
 .dropdown {
     float: left;
     overflow: hidden;
-    border: 1px solid orange;
+    // border: 1px solid orange;
 }
 
 .dropdown .dropbtn {
@@ -101,13 +116,18 @@
     position: fixed;
     font-size: .6em;
     background-color: colors.$primary-color;
+    padding: 1em;
     // box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     // border: 2px dashed green;
     left: auto;
     right: 0;
-    margin-top: 70px;
-    margin-right: 20px;
+    margin-top: 82px;
+    margin-right: 16px;
     z-index: 9999;
+}
+
+.dropdown-content:hover {
+    background-color: colors.$secondary-color;
 }
 
 .dropdown-content a {
@@ -118,11 +138,25 @@
     text-decoration: none;
     display: block;
     text-align: left;
-    border: 1px solid yellow;
+    // border: 1px solid yellow;
 }
 
-.dropdown-content a:hover {
-    background-color: green;
+.dropdown {
+    transform: none !important;
+
+    .dropdown-content {
+        a {
+            transform: none !important;
+        }
+
+        &:hover {
+            transform: none !important;
+
+            a {
+                transform: none !important;
+            }
+        }
+    }
 }
 
 .show {
@@ -182,7 +216,7 @@
         z-index: 99;
         max-height: 300px;
         overflow-y: auto;
-        border: 2px solid purple;
+        // border: 2px solid purple;
     }
 
     #nav-items-mobile {

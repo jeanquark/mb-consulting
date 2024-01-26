@@ -25,12 +25,10 @@
 <body>
     <div id="wrapper">
         <nav id="navbar" class="" style="position: sticky; top: 0;">
-            <div
-                style="display: flex; justify-content: space-between; align-items: center; padding: 5px 0px; border: 2px dashed grey">
-                <a href="/" class="logo" style="border: 2px solid salmon"><img src="static/images/logo2.svg" width="100"
-                        alt="" /></a>
+            <div style="display: flex; justify-content: space-between; align-items: center; padding: 5px 0px;">
+                <a href="/" class="logo"><img src="static/images/logo2.svg" width="100" alt="" class="mx-1" /></a>
                 <ul id="nav-items">
-                    <li><a href="#services">Services</a></li>
+                    <li style=""><a href="#services">Services</a></li>
                     <li><a href="#about">A propos</a></li>
                     <li><a href="#moreInfo">En savoir plus</a></li>
                     <li><a href="#partners">Partenariat</a></li>
@@ -49,10 +47,9 @@
             </div>
         </nav>
 
-        <nav id="navbarMobile" style="">
-            <div style="display: flex; justify-content: space-between; border: 2px solid red">
-                <a href="/" class="logo" style="border: 2px solid salmon"><img src="static/images/logo2.svg" width="50"
-                        alt="" /></a>
+        <nav id="navbarMobile">
+            <div style="display: flex; justify-content: space-between;">
+                <a href="/" class="logo"><img src="static/images/logo2.svg" width="50" alt="" /></a>
                 <a href="javascript:void(0);" class="icon"
                     style="color: #fff; float: right; font-size: 2.5em; padding: 0 0.5em"
                     onclick="toggleNavigationMenu()">
@@ -60,7 +57,7 @@
                 </a>
             </div>
             <ul id="nav-items-mobile" class=""
-                style="max-height: 0; visibility: hidden; opacity: 0; transform: translateY(-100%); list-style-type: none; margin: 0; border: 2px solid green">
+                style="max-height: 0; visibility: hidden; opacity: 0; transform: translateY(-100%); list-style-type: none; margin: 0;">
                 <li class=""><a href="#services">Services</a></li>
                 <li class=""><a href="#about">A propos</a></li>
                 <li class=""><a href="#moreInfo">En savoir plus</a></li>
@@ -97,16 +94,16 @@
                     <h2 class="title mx-3" style=""><i class="fa fa-building mx-2"></i>Entreprises</h2>
                     <h2 class="title mx-3"><i class="fa fa-user mx-2"></i>Particuliers</h2>
                 </div> -->
-            <section id="header" class="border py-5 parallax2" style="scroll-snap-align: start">
-                <div class="row align-items" style="">
-                    <div class="col-6 col-md-12 border-1 slide">
+            <section id="header" class="py-5 parallax2" style="scroll-snap-align: start">
+                <div class="row align-items">
+                    <div class="col-6 col-md-12 slide">
                         <h1 class="text-center slide-up"
                             style="text-transform: uppercase; font-size: 2.5em; font-weight: 900; line-height: 2em; color: #000;">
                             Votre partenaire
                             administratif</h1>
                     </div>
-                    <div class="col-6 col-md-12 border-3" style="position: relative;">
-                        <div class="slide border-4" style="float: left;">
+                    <div class="col-6 col-md-12" style="position: relative;">
+                        <div class="slide" style="float: left;">
                             <h2 class="slide-right my-5" style="font-size: 2.0em; font-weight: 300;">
                                 <span class="pen-marker-blue"><i class="fa fa-building mx-2"
                                         style="color: #53677a;"></i>Entreprises</span>
@@ -116,28 +113,19 @@
                                         style="color: #53677a;"></i>Particuliers</span>
                             </h2>
                         </div>
-                        <!-- <div class="border-1" style="float: left; width: 100%">
-                            <div class="slide" style="width: 100%">
-                                <h2 class="slide-right" style="float: left;"><span class="pen-marker-blue"><i
-                                            class="fa fa-user mx-2"></i>Particuliers</span>
-                                </h2>
-                            </div>
-                        </div> -->
-                        <!-- <div class="border-2" style="float: right;"> -->
                         <img src="static/svg/dossiers.svg" alt="" width="40%"
                             style="position: absolute; bottom: 0; right: 0;" />
-                        <!-- </div> -->
                     </div>
                 </div>
             </section>
 
-            <section id="services" class="border-1" style="scroll-snap-align: start">
+            <section id="services" class="" style="scroll-snap-align: start">
                 <div class="row">
-                    <div class="col-12 text-center my-2" style="padding-bottom: 10px">
+                    <div class="col-12 text-center my-10" style="">
                         <h2 class="text-center">Mes services</h2>
                     </div>
-                    <div class="col-4 col-lg-4 col-md-6 col-sm-12 border pa-4"
-                        style="background-color: #8aaef4; position: relative">
+                    <div class="col-4 col-lg-4 col-md-6 col-sm-12 d-flex pa-4"
+                        style="background-color: #8aaef4; position: relative;">
                         <h3 class="text-center my-0">ADMINISTRATION</h3>
                         <span class="ribbon ribbon-orange">Entreprises</span>
                         <div style="text-align: left">
@@ -153,7 +141,7 @@
                                 class="" />
                         </div>
                     </div>
-                    <div class="col-3 col-lg-4 col-md-6 col-sm-12 border pa-4" style="position: relative">
+                    <div class="col-4 col-lg-4 col-md-6 col-sm-12 d-flex pa-4" style="position: relative;">
                         <h3 class="text-center my-0">ADMINISTRATION</h3>
                         <span class="ribbon ribbon-green">Particuliers</span>
 
@@ -169,8 +157,8 @@
                                 alt="image de classeurs rangés sur une étagère" class="" />
                         </div>
                     </div>
-                    <div class="col-4 col-lg-4 col-md-6 col-sm-12 border pa-4" style="background-color: #8aaef4; display: flex;
-  flex-direction: column;">
+                    <div class="col-4 col-lg-4 col-md-6 col-sm-12 d-flex pa-4"
+                        style="background-color: #8aaef4; display: flex; flex-direction: column;">
                         <h3 class="text-center my-0">RH ET FORMATION CONTINUE</h3>
                         <div class="" style="text-align: left">
                             <ul class="list">
@@ -180,13 +168,13 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="text-center border-2" style="margin-top: auto;">
+                        <div class="text-center" style="margin-top: auto;">
                             <img src="static/svg/human_resource.svg" width="70%"
-                                alt="image d'un homme et d'une femme s'entretenant dans un cadre professionnel" class=""
-                                style="" />
+                                alt="image d'un homme et d'une femme s'entretenant dans un cadre professionnel"
+                                class="" />
                         </div>
                     </div>
-                    <div class="col-4 col-lg-4 col-md-6 col-sm-12 d-flex border pa-4">
+                    <div class="col-4 col-lg-4 col-md-6 col-sm-12 d-flex pa-4">
                         <h3 class="text-center my-0">TRADUCTION, INTERPRETATION & MIGRATION</h3>
                         <div>
                             <ul class="list">
@@ -200,12 +188,11 @@
                             </ul>
                         </div>
                         <div class="text-center" style="margin-top: auto;">
-                            <img src="static/svg/portugal.svg" width="50%"
+                            <img src="static/svg/portugal.svg" width="90%"
                                 alt="image représentant des objects typique du Portugal" />
                         </div>
                     </div>
-                    <div class="col-3 col-lg-4 col-md-6 col-sm-12 d-flex border pa-4"
-                        style="background-color: #8aaef4; position: relative">
+                    <div class="col-4 col-lg-4 col-md-6 col-sm-12 d-flex pa-4" style="background-color: #8aaef4;">
                         <h3 class="text-center my-0">EMPLOI</h3>
                         <div style="line-height: 1.5em">
                             <ul class="list">
@@ -216,10 +203,10 @@
                         </div>
                         <div class="text-center" style="margin-top: auto;">
                             <img src="static/svg/documents.svg" width="50%"
-                                alt="image d'un dossier de candidature pour chercheur d'emploi" style="" />
+                                alt="image d'un dossier de candidature pour chercheur d'emploi" />
                         </div>
                     </div>
-                    <div class="col-3 col-lg-4 col-md-6 col-sm-12 d-flex border pa-4" style="position: relative">
+                    <div class="col-4 col-lg-4 col-md-6 col-sm-12 d-flex pa-4" style="">
                         <h3 class="text-center my-0">SANTE</h3>
                         <div style="line-height: 1.5em">
                             <ul class="list">
@@ -229,22 +216,22 @@
                         </div>
                         <div class="text-center" style="margin-top: auto;">
                             <img src="static/svg/health.svg" width="50%"
-                                alt="image d'un formulaire médical avec des cases à cocher" style="" />
+                                alt="image d'un formulaire médical avec des cases à cocher" />
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section id="about" class="border-2" style="text-align: center; scroll-snap-align: start">
-                <div class="row align-items">
-                    <div class="col-12 my-2">
+            <section id="about" class="" style="text-align: center; scroll-snap-align: start">
+                <div class="row">
+                    <div class="col-12 my-10">
                         <h2 class="text-center">A propos</h2>
                     </div>
-                    <div class="col-6 col-sm-12 border-3" style="background-color: #8aaef4;">
-                        <!-- <h3 class="text-center my-0">Qui suis-je ?</h3> -->
+                    <div class="col-6 col-sm-12"
+                        style="display: flex; justify-content: center; align-items: center; background-color: #8aaef4;">
                         <img src="static/images/avatar.png" alt="Avatar" class="avatar" />
                     </div>
-                    <div class="col-6 col-sm-12 border">
+                    <div class="col-6 col-sm-12">
                         <p style="text-align: justify; line-height: 1.5em; padding: 1em">Au bénéfice d'une expérience
                             professionnelle de plus de <span class="pen-marker-yellow">20 ans</span> au sein de
                             l'administration publique, le fondateur Marcio Barata est spécialisé dans les domaines de
@@ -258,22 +245,21 @@
                 </div>
             </section>
 
-            <section id="moreInfo" class="border-3" style="text-align: center; scroll-snap-align: start">
+            <section id="moreInfo" class="" style="text-align: center; scroll-snap-align: start">
                 <div class="row">
-                    <div class="col-12 my-2">
+                    <div class="col-12 my-10">
                         <h2 class="text-center">En savoir plus</h2>
                     </div>
-                    <div class="col-6 col-sm-12 d-flex align-items" style="">
-                        <div style="">
+                    <div class="col-6 col-sm-12 d-flex align-items">
+                        <div>
                             <h3 class="text-center">Une problématique administrative ?</h3>
                             <h3 class="text-center">Une solution : MB Consulting !</h3>
                         </div>
                         <div class="">
-                            <img src="static/svg/question.svg" width="30%" alt="un homme se pose une question"
-                                style="" />
+                            <img src="static/svg/question.svg" width="30%" alt="un homme se pose une question" />
                         </div>
                     </div>
-                    <div class="col-6 col-sm-12 border" style="background-color: #8aaef4; z-index: -10;">
+                    <div class="col-6 col-sm-12" style="background-color: #8aaef4; z-index: -10;">
                         <p style="text-align: justify; line-height: 1.5em; padding: 1em">Bien appréhender la résolution
                             de nos tracasseries administratives quotidiennes, n'est pas chose aisée dans une société en
                             permanente évolution. Je suis la <span class="pen-marker-yellow">bonne personne</span> pour
@@ -288,7 +274,7 @@
 
             <section id="partners" style="text-align: center; scroll-snap-align: start">
                 <div class="row">
-                    <div class="col-12 my-2">
+                    <div class="col-12 my-10">
                         <h2 class="text-center">Partenaires</h2>
                     </div>
                 </div>
@@ -298,7 +284,7 @@
                         <a href="http://www.fiduciairejaggi.com" target="_blank"><img
                                 src="static/images/dj_fiduciaire.webp" width="60%" alt="DJ Fiduciaire" /></a>
                     </div>
-                    <div class="col-6 col-sm-12 border px-5">
+                    <div class="col-6 col-sm-12 px-5">
                         <p style="text-align: justify; line-height: 1.5em;">Comptabilité,
                             Fiscalité et Gérances Entreprises et particuliers
                             La structure d'un petit bureau permet à la Fiduciaire Daniel Jaggi SA à Neuchâtel, de
@@ -318,7 +304,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-6 col-sm-12 border px-5">
+                    <div class="col-6 col-sm-12 px-5">
                         <p style="text-align: justify; line-height: 1.5em;">L'innovation
                             digitale dès maintenant Entreprises et particuliers
                             L'agence de communication bab-consulting vous accompagne dans la stratégie de communication
@@ -346,7 +332,7 @@
                                 src="static/images/traductions_lausanne.webp" width="50%"
                                 alt="Traductions Lausanne" /></a>
                     </div>
-                    <div class="col-6 col-sm-12 border px-5">
+                    <div class="col-6 col-sm-12 px-5">
                         <p style="text-align: justify; line-height: 1.5em;">
                             TRADUCTIONS-LAUSANNE Entreprises et particuliers Plus de 40 ans
                             d'expérience dans de nombreux domaines et combinaisons de langues, un large réseau de
@@ -370,24 +356,25 @@
 
             <section id="contact" style="scroll-snap-align: start">
                 <div class="row">
-                    <div class="col-12 my-2">
+                    <div class="col-12 my-10">
                         <h2 class="text-center">Contactez-moi</h2>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-6 col-sm-12">
-                        <p class="mr-4" style="text-align: right; line-height: 1.5em">
+                        <p class="px-4" style="text-align: right; line-height: 1.5em">
                             <b>Marcio Barata</b><br />
                             <i class="fa fa-map-marker mr-2"></i>Rue Henry-Grandjean 7<br />
                             2400 Le Locle, Suisse<br />
                             <i class="fa fa-envelope mr-2"></i>info@mbconsulting-mbc.ch<br />
                             <i class="fa fa-phone mr-2"></i>+xx (x)xx xxx xx xx
                         </p>
-                        <iframe width="100%" height="350"
-                            src="https://www.openstreetmap.org/export/embed.html?bbox=6.736571788787843%2C47.05171851363047%2C6.7586731910705575%2C47.06025586680622&amp;layer=mapnik&amp;marker=47.055987361073825%2C6.747622489929199"
-                            style="border: 1px solid black"></iframe>
+                        <div class="px-4">
+                            <iframe width="100%" height="350" class=""
+                                src="https://www.openstreetmap.org/export/embed.html?bbox=6.736571788787843%2C47.05171851363047%2C6.7586731910705575%2C47.06025586680622&amp;layer=mapnik&amp;marker=47.055987361073825%2C6.747622489929199"></iframe>
+                        </div>
                     </div>
-                    <div class="col-6 col-sm-12 border">
+                    <div class="col-6 col-sm-12">
                         <form id="form">
                             <div class="row pa-2">
                                 <div class="col-6 col-sm-6 px-2">
@@ -409,7 +396,7 @@
                                         <label for="email" class="control-label">E-mail</label><i class="bar"></i>
                                     </div>
                                 </div>
-                                <div class="col-6 col-sm-6 px-2">
+                                <div class="col-6 col-md-12 px-2">
                                     <div class="form-group" style="display: flex">
                                         <div class="mr-2 custom-select">
                                             <select id="formCountryInput">
@@ -425,7 +412,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-12 px-2 border">
+                                <div class="col-12 px-2">
                                     <div class="form-group">
                                         <textarea required="required" rows="4" id="message" name="message"></textarea>
                                         <label for="message" placeholder="Ecrivez votre message..."
@@ -444,7 +431,7 @@
             </section>
         </div>
 
-        <footer id="footer" class="my-2 py-2" style="text-align: center; scroll-snap-align: start">
+        <footer id="footer" class="mt-5 py-2" style="text-align: center; scroll-snap-align: start">
             <div class="row">
                 <div class="col-12 my-2" style="color: #FFF;">
                     <p class="text-center">Copyright © <span id="currentYear"></span>

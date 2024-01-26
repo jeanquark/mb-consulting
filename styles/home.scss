@@ -158,7 +158,7 @@ ul.list {
 }
 
 .avatar {
-    vertical-align: middle;
+    // vertical-align: middle;
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -278,7 +278,7 @@ ul.list {
     z-index: 10;
     // transform: skew(-12deg);
     // clip-path: circle(40%);
-    clip-path: polygon(28.5% 0%, 90.5% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(28.5% 0%, 92% 0%, 100% 85%, 0% 100%);
 }
 
 .ribbon-orange {
