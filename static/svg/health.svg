@@ -11,9 +11,9 @@
    version="1.1"
    id="svg3181"
    xml:space="preserve"
-   width="1589.2651"
-   height="2253.2798"
-   viewBox="0 0 1589.2651 2253.2798"
+   width="1956.881"
+   height="2563.3237"
+   viewBox="0 0 1956.8809 2563.3238"
    sodipodi:docname="health.svg"
    inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"><metadata
      id="metadata3187"><rdf:RDF><cc:Work
@@ -325,8 +325,8 @@
      id="namedview3183"
      showgrid="false"
      inkscape:zoom="0.19249018"
-     inkscape:cx="-836.34085"
-     inkscape:cy="1814.0852"
+     inkscape:cx="-853.65752"
+     inkscape:cy="1625.3851"
      inkscape:window-x="-11"
      inkscape:window-y="-11"
      inkscape:window-maximized="1"
@@ -339,7 +339,7 @@
      id="g3189"
      inkscape:groupmode="layer"
      inkscape:label="ink_ext_XXXXXX"
-     transform="matrix(1.3333333,0,0,-1.3333333,-810.73198,2337.2933)"><g
+     transform="matrix(1.3333333,0,0,-1.3333333,-810.73198,2647.3373)"><g
        id="g3191"
        transform="scale(0.1)"><path
          d="M 12749.1,3756.3 H 6290.41 v 130.5 H 13836.3 L 12749.1,3756.3 M 15159.9,8130 h -155 v 8355.7 h 155 V 8130"
@@ -881,4 +881,10 @@
          id="path4203" /><path
          d="m 16046.1,1673.3 c -3.6,0 -7.1,0.4 -10.7,1.2 l -727.3,164.9 c -25.9,5.8 -42.1,31.6 -36.3,57.4 5.1,22.4 24.9,37.5 46.8,37.5 3.5,0 7.1,-0.4 10.7,-1.2 l 727.3,-164.9 c 25.9,-5.8 42.1,-31.6 36.3,-57.4 -5.1,-22.3 -24.9,-37.5 -46.8,-37.5"
          style="fill:#d7ecf6;fill-opacity:1;fill-rule:nonzero;stroke:none"
-         id="path4205" /></g></g></svg>
+         id="path4205" /><path
+         d="m 17173.216,18473.12 c 241.137,975.141 1227.147,1569.51 2201.92,1328.188 975.049,-241.137 1569.51,-1226.962 1328.281,-2201.919 -241.229,-974.865 -1226.963,-1569.603 -2202.012,-1328.281 -974.865,241.229 -1569.602,1227.055 -1328.189,2202.012"
+         style="fill:#ee2a25;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.921071"
+         id="path972" /><path
+         d="m 20347.422,18431.763 h -1019.353 v 1019.261 h -800.69 v -1019.261 h -1018.984 v -801.058 h 1018.984 v -1019.353 h 800.69 v 1019.353 h 1019.353 v 801.058"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.921071"
+         id="path974" /></g></g></svg>
