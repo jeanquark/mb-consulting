@@ -10,11 +10,12 @@
 
 body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    // font-family: Arial, Helvetica, sans-serif;
     // background-image: linear-gradient(colors.$primary-color, #FFF);
     // background-repeat: none;
     // background-size: cover;
-    background-color: #e7eefc;
+    background-color: colors.$background-color;
 }
 
 #wrapper {
@@ -23,11 +24,10 @@ body {
     margin: 0 auto;
     /* fallback for Js load */
     height: var(--doc-height);
-    scroll-padding-top: 108px;
+    scroll-padding-top: 102px;
     position: relative;
     scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
-    scroll-padding-top: 115px;
     overflow: auto;
     // background: linear-gradient(#e66465, #9198e5);
 }
@@ -35,6 +35,14 @@ body {
 #content {
     width: 90%;
     margin: 0 auto;
+    // flex: 60%;
+}
+
+/* sm */
+@media screen and (max-width: 768px) {
+    #content {
+        width: 100%;
+    }
 }
 
 .background-primary {
@@ -112,21 +120,21 @@ body {
     padding: 30px;
 }
 
-.blue {
-    background: royalblue;
-}
+// .blue {
+//     background: royalblue;
+// }
 
-.green {
-    background: seagreen;
-}
+// .green {
+//     background: seagreen;
+// }
 
-.yellow {
-    background: yellowgreen;
-}
+// .yellow {
+//     background: yellowgreen;
+// }
 
-.orange {
-    background: lightsalmon;
-}
+// .orange {
+//     background: lightsalmon;
+// }
 
 /* Lists */
 ul.list {
@@ -203,8 +211,8 @@ ul.list {
 }
 
 .slide-up {
-    animation: 3s slideUp ease-out infinite;
-    // animation: 3s lineUp ease-out;
+    // animation: 3s slideUp ease-out infinite;
+    animation: 3s slideUp ease-out;
 }
 
 @keyframes slideUp {
@@ -230,7 +238,8 @@ ul.list {
 
 
 .slide-right {
-    animation: 3s slideRight ease-out infinite;
+    // animation: 3s slideRight ease-out infinite;
+    animation: 3s slideRight ease-out;
 }
 
 @keyframes slideRight {
@@ -255,17 +264,21 @@ ul.list {
 }
 
 .ribbon {
-    width: 100px;
+    width: 150px;
     font-size: 14px;
     padding: 4px;
+    padding-left: 14px;
     position: absolute;
     right: -15px;
     top: 15px;
     text-align: center;
-    border-radius: 15px;
+    // border-radius: 15px;
     transform: rotate(30deg);
     color: white;
     z-index: 10;
+    // transform: skew(-12deg);
+    // clip-path: circle(40%);
+    clip-path: polygon(28.5% 0%, 90.5% 0%, 100% 100%, 0% 100%);
 }
 
 .ribbon-orange {
@@ -274,4 +287,8 @@ ul.list {
 
 .ribbon-green {
     background-color: lightgreen;
+}
+
+#footer {
+    background-color: colors.$primary-color;
 }

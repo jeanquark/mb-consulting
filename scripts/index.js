@@ -77,18 +77,13 @@ function observerCallback(entries) {
             console.log('sectionId: ', sectionId);
             if (sectionId === 'services') {
                 // Shrink navbar
-                // document.getElementById('navbar-mobile').style.padding = '8px 10px'
-                // document.getElementById('wrapper').style.scrollPaddingTop = '70px'
-                document.getElementById('logoMobileNavbar').style.fontSize = '16px'
-                document.getElementById('navbarMobile').style.backgroundColor = 'rgba(255, 255, 255, 0.5)'
+                // document.getElementById('logoMobileNavbar').style.fontSize = '16px'
+                // document.getElementById('navbarMobile').style.backgroundColor = 'rgba(255, 255, 255, 0.5)'
             }
             if (sectionId === 'header') {
                 // Expand navbar
-                // document.getElementById('navbar-mobile').style.padding = '35px 10px'
-                // document.getElementById('wrapper').style.scrollPaddingTop = '115px'
-                // document.getElementById('logo').style.fontSize = '35px'
-                document.getElementById('logoMobileNavbar').style.fontSize = '20px'
-                document.getElementById('navbarMobile').style.backgroundColor = 'rgba(255, 255, 255, 1)'
+                // document.getElementById('logoMobileNavbar').style.fontSize = '20px'
+                // document.getElementById('navbarMobile').style.backgroundColor = 'rgba(255, 255, 255, 1)'
             }
 
             // Hide nav items
