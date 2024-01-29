@@ -1,31 +1,57 @@
 
 const form = document.querySelector("#form");
 
+const notifications = document.getElementsByClassName("notification");
 
 async function sendData() {
-    // Associate the FormData object with the form element
-    // console.log('form: ', form);
+    // console.log('notifications: ', notifications);
+    for (let i = 0; i < notifications.length; i++) {
+        notifications[i].classList.add("hidden");
+    }
+
     const formData = new FormData(form);
     console.log('formData: ', formData);
 
     const abc = formData.get("message")
     console.log('abc: ', abc);
 
+    const sendMessageButton = document.getElementById("sendMessageButton")
+    sendMessageButton.setAttribute('disabled', '');
+    // sendMessageButton.children[0].classList.remove("hide")
+    // console.log('sendMessageButton.currentTarget: ', sendMessageButton.currentTarget);
 
-    // const phoneNumber = libphonenumber.parsePhoneNumber('(078) 123-45-678 ', 'CH')
-    // console.log('phoneNumber: ', phoneNumber);
-    // console.log('phoneNumber.isPossible(): ', phoneNumber.isPossible());
 
-    // try {
-    //     const response = await fetch("https://example.org/post", {
-    //         method: "POST",
-    //         // Set the FormData instance as the request body
-    //         body: formData,
-    //     });
-    //     console.log(await response.json());
-    // } catch (e) {
-    //     console.error(e);
-    // }
+
+    // document.querySelector(".message.success").classList.remove("hidden");
+    // form.reset()
+    // sendMessageButton.removeAttribute('disabled');
+
+
+    try {
+        const response = await fetch("https://formspree.io/f/xrgnejnw", {
+            method: "POST",
+            body: formData,
+            headers: {
+                'Accept': 'application/json'
+            }
+        });
+        await new Promise(resolve => setTimeout(resolve, 2000));
+        console.log('response: ', response);
+        if (response.ok) {
+            document.querySelector(".message.success").classList.remove("hidden");
+
+        } else {
+            throw 'send_error'
+        }
+
+    } catch (e) {
+        console.error(e);
+        document.querySelector(".message.error").classList.remove("hidden");
+
+    } finally {
+        form.reset();
+        sendMessageButton.removeAttribute('disabled');
+    }
 }
 
 // Take over form submission
@@ -34,6 +60,13 @@ form.addEventListener("submit", (event) => {
     sendData();
 });
 
+// Close all notifications
+for (let i = 0; i < notifications.length; i++) {
+    notifications[i].addEventListener('click', () => {
+        document.querySelector(".message.success").classList.add("hidden");
+        document.querySelector(".message.error").classList.add("hidden");
+    });
+};
 
 /* Phone numbers */
 const phoneInput = document.getElementById('phone');

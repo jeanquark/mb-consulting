@@ -8,6 +8,8 @@
     <meta name="keywords" content="" />
     <meta name="author" content="" />
     <meta name="robots" content="noindex, nofollow">
+    <!-- <meta name="referrer" content="origin" /> -->
+
     <link rel="icon" type="image/x-icon" href="/static/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -362,20 +364,21 @@
                             <div class="row pa-2">
                                 <div class="col-6 col-sm-6 px-2">
                                     <div class="form-group">
-                                        <input type="text" id="firstname" name="firstname" required="required"
-                                            value="" />
+                                        <input type="text" id="firstname" name="firstname" maxlength="64"
+                                            required="required" />
                                         <label for="firstname" class="control-label">Prénom</label><i class="bar"></i>
                                     </div>
                                 </div>
                                 <div class="col-6 col-sm-6 px-2">
                                     <div class="form-group">
-                                        <input type="text" id="lastname" name="lastname" required="required" value="" />
+                                        <input type="text" id="lastname" name="lastname" required="required"
+                                            maxlength="64" value="" />
                                         <label for="lastname" class="control-label">Nom</label><i class="bar"></i>
                                     </div>
                                 </div>
                                 <div class="col-6 col-sm-6 px-2">
                                     <div class="form-group">
-                                        <input type="text" id="email" name="email" required="required" value="" />
+                                        <input type="email" id="email" name="email" required="required" value="" />
                                         <label for="email" class="control-label">E-mail</label><i class="bar"></i>
                                     </div>
                                 </div>
@@ -389,7 +392,7 @@
                                             </select>
                                         </div>
                                         <div style="flex-grow: 1">
-                                            <input type="text" id="phone" name="phone" required="required" value="" />
+                                            <input type="text" id="phone" name="phone" value="" />
                                             <label for="phone" class="control-label">Numéro de téléphone</label><i
                                                 class="bar"></i>
                                         </div>
@@ -397,14 +400,25 @@
                                 </div>
                                 <div class="col-12 px-2">
                                     <div class="form-group">
-                                        <textarea required="required" rows="4" id="message" name="message"></textarea>
+                                        <textarea required="required" rows="4" id="message" name="message"
+                                            maxlength="1024"></textarea>
                                         <label for="message" placeholder="Ecrivez votre message..."
                                             class="control-label">Message</label><i class="bar"></i>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="button-container">
-                                        <button type="submit" class="button"><span>Envoyer</span></button>
+                                        <button type="submit" id="sendMessageButton" class="button"><span>Envoyer
+                                            <i class="fa fa-spinner fa-spin hidden"></i>
+                                        </span></button>
+                                    </div>
+                                    <div class="notification message success hidden">
+                                        <i class="fa fa-close"></i>
+                                        <h4>Message envoyé avec succès!</h4>
+                                    </div>
+                                    <div class="notification message error hidden">
+                                        <i class="fa fa-close"></i>
+                                        <h4>Une erreur est survenue et le message n'a pas pu être envoyé.</h4>
                                     </div>
                                 </div>
                             </div>
@@ -458,8 +472,7 @@
         documentHeight()
     </script>
     <script>
-        /* When the user clicks on the button, 
-    toggle between hiding and showing the dropdown content */
+        /* When the user clicks on the button, toggle between hiding and showing the dropdown content */
         function toggleDropdown() {
             console.log('toggleDropdown')
             // return
@@ -481,25 +494,12 @@
     </script>
 
     <script>
-        /* When the user clicks on the button, 
-    toggle between hiding and showing the dropdown content */
+        /* When the user clicks on the button, toggle between hiding and showing the dropdown content */
         function toggleDropdownMobile() {
             console.log('toggleDropdownMobile')
             console.log('document.getElementById("dropdownMobile").classList: ', document.getElementById('dropdownMobile').classList)
             document.getElementById('dropdownMobile').classList.toggle('show-dropdown-content-mobile')
         }
-
-            // Close the dropdown if the user clicks outside of it
-            // window.onclick = function (e) {
-            //     console.log('onclick e: ', e)
-            //     if (!e.target.matches('.dropBtnTarget')) {
-            //         var dropdownMobile = document.getElementById("dropdownMobile");
-            //         console.log('dropdownMobile: ', dropdownMobile);
-            //         if (dropdownMobile.classList.contains('show-dropdown-content-mobile')) {
-            //             dropdownMobile.classList.remove('show-dropdown-content-mobile');
-            //         }
-            //     }
-            // }
     </script>
 
     <script>

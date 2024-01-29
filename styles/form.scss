@@ -416,7 +416,7 @@ fieldset {
     // color: #4f93ce;
     color: colors.$primary-color;
     // color: red;
-    margin: 3rem 0;
+    margin: 2rem 0;
     padding: 0.75rem 3rem;
     cursor: pointer;
     -webkit-transition: background-color 0.28s ease, color 0.28s ease, box-shadow 0.28s ease;
@@ -468,4 +468,50 @@ fieldset {
 
 .button:focus {
     outline: none;
+}
+
+.button:disabled {
+    background: darkgrey;
+    border: none;
+    pointer-events: none;
+
+    i {
+        display: inline-block;
+    }
+}
+
+.message {
+    display: block;
+    position: relative;
+    padding: .5em;
+    border-radius: .5em;
+
+    &.success {
+        background-color: colors.$success-color;
+    }
+
+    &.error {
+        background-color: colors.$error-color;
+    }
+
+    h4 {
+        text-align: center;
+        color: #FFF;
+    }
+
+    i {
+        position: absolute;
+        top: 5px;
+        right: 10px;
+        color: #FFF;
+
+        &:hover {
+            color: colors.$background-color;
+            cursor: pointer;
+        }
+    }
+}
+
+.hidden {
+    display: none;
 }
