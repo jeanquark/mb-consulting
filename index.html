@@ -28,7 +28,7 @@
     <div id="wrapper">
         <nav id="navbar" class="" style="position: sticky; top: 0;">
             <div style="display: flex; justify-content: space-between; align-items: center; padding: 5px 0px;">
-                <a href="./" class="logo"><img src="static/images/logo2.svg" width="100" alt="" class="mx-1" /></a>
+                <a href="./" class="logo"><img src="static/logo/logo.svg" width="100" alt="" class="mx-1" /></a>
                 <ul id="nav-items">
                     <li><a href="#services">Services</a></li>
                     <li><a href="#about">A propos</a></li>
@@ -51,7 +51,7 @@
 
         <nav id="navbarMobile">
             <div style="display: flex; justify-content: space-between;">
-                <a href="./" class="logo"><img src="static/images/logo2.svg" width="50" alt="" /></a>
+                <a href="./" class="logo"><img src="static/logo/logo.svg" width="50" alt="" /></a>
                 <a href="javascript:void(0);" class="icon"
                     style="color: #fff; float: right; font-size: 2.5em; padding: 0 0.5em"
                     onclick="toggleNavigationMenu()">
@@ -406,6 +406,9 @@
                                             class="control-label">Message</label><i class="bar"></i>
                                     </div>
                                 </div>
+                                <div class="col-12 text-center" style="">
+                                    <div class="g-recaptcha" style="display: inline-block;" data-sitekey="6Lc9xGApAAAAAIbg6FGLLentj36D9IjXStVI8hR5"></div>
+                                </div>
                                 <div class="col-12">
                                     <div class="button-container">
                                         <button type="submit" id="sendMessageButton" class="button"><span>Envoyer
@@ -447,9 +450,13 @@
     </div>
 
     <script src="scripts/index.js"></script>
+    <!-- Google reCAPTCHA -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <!-- Phone number mask -->
     <script src="https://unpkg.com/imask"></script>
+    <!-- Contact form -->
     <script src="scripts/form.js"></script>
-
+    
     <script>
         window.addEventListener('unload', function (e) {
             console.log('unload')

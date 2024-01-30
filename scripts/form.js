@@ -39,7 +39,7 @@ async function sendData() {
         console.log('response: ', response);
         if (response.ok) {
             document.querySelector(".message.success").classList.remove("hidden");
-
+            form.reset();
         } else {
             throw 'send_error'
         }
@@ -49,7 +49,6 @@ async function sendData() {
         document.querySelector(".message.error").classList.remove("hidden");
 
     } finally {
-        form.reset();
         sendMessageButton.removeAttribute('disabled');
     }
 }
