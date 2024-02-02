@@ -1,0 +1,286 @@
+@use 'colors';
+
+:root {
+    --doc-height: 100vh;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: colors.$background-color;
+}
+
+#wrapper {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    /* fallback for Js load */
+    height: var(--doc-height);
+    scroll-padding-top: 90px;
+    position: relative;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    overflow: auto;
+    // background: linear-gradient(#e66465, #9198e5);
+}
+
+#content {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* sm */
+@media screen and (max-width: 768px) {
+    #content {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+.title-1 {
+    text-transform: uppercase;
+    font-size: 2.5em;
+    font-weight: 900;
+    line-height: 2em;
+    color: #000;
+}
+
+.title-2 {
+    font-size: 2.0em;
+    font-weight: 300;
+}
+
+.margin-top-auto {
+    margin-top: auto;
+}
+
+// .title {
+//     position: relative;
+//     z-index: 10;
+// }
+
+// .title::before {
+//     content: "";
+//     position: absolute;
+//     left: 49%;
+//     bottom: -5px;
+//     width: 100%;
+//     height: 14px;
+//     transform: skew(-12deg) translateX(-50%);
+//     background: rgba(colors.$primary-color, .5);
+//     z-index: -1;
+// }
+
+
+
+.border {
+    border: 2px solid red;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("/static/le_locle2.jpg");
+
+    /* Set a specific height */
+    min-height: 300px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.pill {
+    background-color: #ddd;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    border-radius: 16px;
+}
+
+.box {
+    padding: 30px;
+}
+
+.background-primary {
+    background-color: colors.$primary-color;
+}
+
+.background-secondary {
+    background-color: colors.$secondary-color;
+}
+
+.text-white {
+    color: #FFF;
+}
+
+/* Lists */
+ul.list {
+    --icon-space: 1.3em;
+    list-style: none;
+    padding: 0;
+
+    li {
+        padding-left: var(--icon-space);
+        line-height: 1.5em;
+    }
+
+    li:before {
+        content: "\f105";
+        /* FontAwesome Unicode */
+        font-family: FontAwesome;
+        display: inline-block;
+        margin-left: calc(var(--icon-space) * -1);
+        width: var(--icon-space);
+    }
+}
+
+.avatar {
+    // vertical-align: middle;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.line-height {
+    line-height: 1.5em;
+}
+
+.pen-marker-yellow {
+    position: relative;
+}
+
+.pen-marker-yellow::before {
+    content: "";
+    position: absolute;
+    left: 49%;
+    bottom: -5px;
+    width: 100%;
+    height: 24px;
+    transform: skew(-12deg) translateX(-50%);
+    background: rgba(yellow, .5);
+    z-index: -1;
+}
+
+.pen-marker-blue {
+    position: relative;
+    // border: 1px solid black;
+    // display: inline;
+}
+
+.pen-marker-blue::before {
+    content: "";
+    position: absolute;
+    left: 52%;
+    // left: 0;
+    bottom: -5px;
+    // width: 70%;
+    width: 100%;
+    height: 14px;
+    transform: skew(-12deg) translateX(-50%);
+    background: rgba(rgba(colors.$primary-color, .5), .5);
+    z-index: -1;
+}
+
+/* Line up animation */
+.slide {
+    width: 100%;
+    // height: 10rem;
+    overflow: hidden;
+    // border: 1px solid black;
+    padding: 0;
+    // margin-bottom: 16px;
+}
+
+.slide-up {
+    // animation: 3s slideUp ease-out infinite;
+    animation: 3s slideUp ease-out;
+}
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(80%);
+    }
+
+    20% {
+        opacity: 0.2;
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+
+.slide-right {
+    // animation: 3s slideRight ease-out infinite;
+    animation: 3s slideRight ease-out;
+}
+
+@keyframes slideRight {
+    0% {
+        opacity: 0;
+        transform: translateX(80%);
+    }
+
+    20% {
+        opacity: 0.2;
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+/* Ribbons */
+.ribbon {
+    position: absolute;
+    clip-path: inset(0 -100%);
+    z-index: 1;
+    color: #FFF;
+
+    &.right {
+        inset: 0 0 auto auto;
+        transform-origin: 0 0;
+        transform: translate(29.3%) rotate(45deg);
+    }
+
+    &.orange {
+        background-color: lightsalmon;
+        box-shadow: 0 0 0 999px lightsalmon;
+    }
+
+    &.green {
+        background-color: lightgreen;
+        box-shadow: 0 0 0 999px lightgreen;
+    }
+}
+
+
+#footer {
+    background-color: colors.$primary-color;
+}

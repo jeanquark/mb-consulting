@@ -7,13 +7,64 @@
     justify-content: center;
 }
 
-.align-items {
+.align-center {
     align-items: center;
 }
 
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+.text-right {
+    text-align: right;
+}
+.text-justify {
+    text-align: justify;
+}
+
+/* Flexbox */
 .d-flex {
     display: flex;
+}
+.flex-row {
+    flex-direction: row;
+}
+.flex-column {
     flex-direction: column;
+}
+.flex-grow {
+    flex-grow: 1
+}
+
+.d-inline-block {
+    display: inline-block;
+}
+.relative {
+    position: relative;
+}
+.absolute {
+    position: absolute;
+}
+.top-0 {
+    top: 0;
+}
+.bottom-0 {
+    bottom: 0;
+}
+.right-0 {
+    right: 0;
+}
+.left-0 {
+    left: 0;
+}
+.float-left {
+    float: left;
+}
+.float-right {
+    float: right;
 }
 
 /* col */

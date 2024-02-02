@@ -2,51 +2,65 @@
 
 #navbar {
     // position: sticky;
+    position: sticky;
+    top: 0;
     display: block;
     overflow: hidden;
     // background-color: red;
     background-color: colors.$primary-color;
     /* padding: 90px 10px; */
     transition: 0.4s;
-    position: fixed;
+    // position: fixed;
     width: 100%;
     // top: 0;
     z-index: 99;
     // border: 2px solid blue
 }
 
+#navbar2 {
+    // position: sticky;
+    position: sticky;
+    top: 0;
+    display: block;
+    overflow: hidden;
+    // background-color: red;
+    background-color: colors.$primary-color;
+    /* padding: 90px 10px; */
+    transition: 0.4s;
+    // position: fixed;
+    width: 100%;
+    // top: 0;
+    z-index: 99;
+    // border: 2px solid blue
+}
+
+#navWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0px;
+}
+
 #navbarMobile {
     display: none;
 }
 
-#navbar-right {
-    float: right;
-}
+// #navbar-right {
+//     float: right;
+// }
 
-#nav-items {
+#navItems {
     display: flex;
-    // align-items: center;
     align-items: stretch;
     list-style-type: none;
     margin: 0;
     padding: 0;
-    // border: 2px solid green;
-    // display: block;
-    // height: 100%;
-
-
 
     li {
-        // display: block;
-        // height: 100%;
         display: flex;
         align-items: center;
         padding: 0em;
-        // border: 2px solid red;
         padding: .5em;
-        // background-color: colors.$secondary-color;
-
-
 
         a {
             text-decoration: none;
@@ -56,7 +70,6 @@
         }
 
         &:hover {
-            // color: #000;
             background-color: colors.$secondary-color;
             cursor: pointer;
             transform: translateX(0) skewX(-12deg);
@@ -78,7 +91,7 @@
 }
 
 .margin-top {
-    margin-top: 149px;
+    // margin-top: 149px;
 }
 
 .dropdown {
@@ -170,6 +183,8 @@
     background-color: #f9f9f9;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     // border: 2px dashed green;
+    padding-left: 0;
+    list-style-type: none
 }
 
 .show-dropdown-content-mobile {
@@ -195,34 +210,59 @@
         display: none;
     }
 
-    // #navbarMobile2 {
-    //     position: sticky;
-    //     top: 0;
-    //     max-height: 300px;
-    //     overflow-y: auto;
-    //     border: 2px solid purple
-    // }
-
     #navbarMobile {
-        display: block;
-        // position: sticky;
-        // overflow: hidden;
-        background-color: colors.$primary-color !important;
-        padding: 10px 10px;
-        transition: 0.4s;
-        position: fixed;
-        width: 100%;
+        position: sticky;
         top: 0;
+        display: block;
+        overflow: hidden;
+        background-color: colors.$primary-color !important;
+        transition: 0.4s;
+        width: 100%;
         z-index: 99;
         max-height: 300px;
         overflow-y: auto;
-        // border: 2px solid purple;
     }
 
-    #nav-items-mobile {
+    // #navbarMobile2 {
+    //     display: block;
+    //     position: sticky;
+    //     top: 0;
+    //     overflow: hidden;
+    //     background-color: colors.$primary-color !important;
+    //     padding: 10px 10px;
+    //     transition: 0.4s;
+    //     position: fixed;
+    //     width: 100%;
+    //     z-index: 99;
+    //     max-height: 300px;
+    //     overflow-y: auto;
+    //     // border: 2px solid purple;
+    // }
+
+    #navWrapperMobile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 0px;
+
+        a {
+            color: #fff;
+            float: right;
+            font-size: 2.5em;
+            padding: 0 0.5em
+        }
+    }
+
+    #navItemsMobile {
         // background-color: colors.$secondary-color;
         background-color: #FFF;
         // color: #FFF;
+        max-height: 0;
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(-100%);
+        list-style-type: none;
+        margin: 0;
 
         li {
             padding: 20px;
@@ -236,19 +276,19 @@
     }
 
     .margin-top {
-        margin-top: 384px;
+        // margin-top: 384px;
     }
 
     .nav-item {
-        padding: 20px;
+        // padding: 20px;
     }
 
     #navbar-right {
-        float: right;
-        list-style-type: none;
+        // float: right;
+        // list-style-type: none;
     }
 
     #navbar-right>li {
-        display: inline;
+        // display: inline;
     }
 }
