@@ -49,25 +49,7 @@ body {
     line-height: 2em;
     // color: #000;
     color: #261F44;
-
-    .underline {
-        position: relative;
-    }
-    .underline::after {
-        background-image: url('../../static/svg/line-shape.svg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        bottom: 0;
-        content: "";
-        height: 4px;
-        left: 0;
-        position: absolute;
-        right: 0;
-        width: 100%;
-    }
 }
-
-
 
 .title-2 {
     font-size: 2.0em;
@@ -86,6 +68,42 @@ body {
 .border {
     border: 2px solid red;
 }
+
+.underline {
+    position: relative;
+}
+.underline::after {
+    background-image: url('../../static/svg/underline.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: 0;
+    content: "";
+    height: 4px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    width: 100%;
+}
+
+.underline-small {
+    position: relative;
+}
+.underline-small::after {
+    background-image: url('../../static/svg/underline_small.svg');
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-size: contain;
+    background-size: 100%;
+    background-position: center;
+    bottom: 0px;
+    content: "";
+    height: 4px;
+    left: 0;
+    position: absolute;
+    // right: 0;
+    width: 100%;
+}
+
 
 .parallax {
     /* The image used */
@@ -159,7 +177,7 @@ ul.list {
 }
 
 .line-height {
-    line-height: 1.5em;
+    line-height: 1.8em;
 }
 
 .pen-marker-yellow {

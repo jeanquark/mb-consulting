@@ -12,8 +12,8 @@
    viewBox="0 0 299.62018 4.0002332"
    version="1.1"
    id="svg4"
-   sodipodi:docname="line-shape.svg"
-   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   sodipodi:docname="underline.svg"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
    style="fill:none">
   <metadata
      id="metadata10">
@@ -39,20 +39,21 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:window-width="1920"
-     inkscape:window-height="1001"
+     inkscape:window-height="1106"
      id="namedview6"
      showgrid="false"
      inkscape:zoom="2.3246073"
      inkscape:cx="176.25292"
      inkscape:cy="-38.08611"
-     inkscape:window-x="-9"
-     inkscape:window-y="-9"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg4"
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
-     fit-margin-bottom="0" />
+     fit-margin-bottom="0"
+     inkscape:document-rotation="0" />
   <path
      d="m 131.96788,3.6670068 c 5.16258,0.04 10.32672,0.098 15.64616,0.137 13.92531,0.118 134.71637,0.391 147.86046,-0.41 4.69353,-0.294 2.1899,-1.292 -2.66051,-1.273 h -2.34677 c 0.78278,-0.352 -0.31217,-0.587 -3.44171,-0.704 2.50363,0 5.16257,0 7.66621,0.02 6.57126,0.019 6.57126,-1.35 0,-1.37 -61.17752,-0.157 -228.596458,-0.04 -289.6171126,0.371 -5.47631308,0.04 -7.3540406,1.214 -1.4086878,1.35 9.3886384,0.216 18.7772754,0.216 28.1643444,0.412 -1.094949,0.097 -1.720858,0.254 -2.034597,0.41 -0.625909,0 -1.251818,0.02 -1.720858,0.02 -6.572831,0.078 -6.728131,1.39 0,1.37 34.578737,-0.118 69.314342,-0.235 103.893071,-0.333 z"
      id="path2"
