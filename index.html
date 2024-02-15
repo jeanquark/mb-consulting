@@ -29,9 +29,7 @@
 <body>
     <div id="wrapper">
         <!-- <nav id="navbar" class="" style="position: sticky; top: 0;"> -->
-        <nav class="" style="display: flex;
-        align-items: center;
-        justify-content: space-between;">
+        <nav id="navbar2" style="">
             <!-- <div class="d-flex flex-row" style="align-items: center;"> -->
             <div class="navbar-brand border-1">
                 <a href="./" class="logo"><img src="static/logo/logo.svg" width="100" alt="Logo de MB Consulting"
@@ -126,20 +124,19 @@
                                 class="underline">coaching personalisé</span>
                         </h1>
                         <div class="text-center">
-                        <button class="button" style="" onclick="scrollToContactForm()"><span>Prendre rendez-vous <i class="fa fa-coffee"></i></span></button>
+                        <button class="button slide-up" style="" onclick="scrollToContactForm()"><span>Prendre rendez-vous <i class="fa fa-coffee"></i></span></button>
                         </div>
                     </div>
                     <div class="col-6 col-md-12 text-center relative border-2">
 
-                        <img src="static/svg/help.svg" alt="" width="50%" class="
-                        " />
+                        <img src="static/svg/help.svg" alt="" width="50%" class="slide-right" />
                     </div>
                 </div>
             </section>
 
             <section id="services" class="" style="scroll-snap-align: start">
                 <div class="row">
-                    <div class="col-4 border-1 py-2 px-4">
+                    <div class="col-4 background-secondary border-1 py-2 px-4">
                         <div class="text-center">
                             <img src="static/svg/office_round.svg" width="35%"
                                 alt="image de bureau avec dossiers empilés" style="" />
@@ -168,7 +165,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-4 border-2 py-2 px-4">
+                    <div class="col-4 background-secondary border-2 py-2 px-4">
                         <div class="text-center">
                             <img src="static/svg/human_resource_round.svg" width="35%"
                                 alt="image de bureau avec dossiers empilés" style="" />
@@ -199,7 +196,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-4 border-4 py-2 px-4">
+                    <div class="col-4 background-secondary border-4 py-2 px-4">
                         <div class="text-center">
                             <img src="static/svg/interview_round.svg" width="35%"
                                 alt="image de bureau avec dossiers empilés" style="" />
@@ -224,109 +221,8 @@
                                 <li>Accompagnement dans les démarches inhérentes à un problème de santé (SUVA, AI,
                                     services étatiques).</li>
                                 <li>Demandes APG.</li>
-                                <li>Changement d'assureur. Optimisation de la police d'assurance.</li>
+                                <li>Changement d'assureur, optimisation de la police d'assurance.</li>
                             </ul>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section id="services" class="" style="scroll-snap-align: start; display: none;">
-                <div class="row" style="z-index: 9999;">
-                    <div class="col-12 text-center my-10">
-                        <h2 class="text-center">Mes services</h2>
-                    </div>
-                    <div class="col-4 col-lg-4 col-md-6 col-sm-12 d-flex flex-column background-secondary pa-4"
-                        style="position: relative; overflow: hidden;">
-                        <h3 class="text-center my-0">ADMINISTRATION</h3>
-                        <div class="ribbon right orange">Entreprises</div>
-                        <div class="text-left">
-                            <ul class="list">
-                                <li>Assistance dans la gestion administrative courante.</li>
-                                <li>Correspondances, rapports, archivage numérique de documents, gestion d'agenda,
-                                    organisation de rendez-vous entreprise-client/e(s), démarches étatiques en tout
-                                    genre.</li>
-                            </ul>
-                        </div>
-                        <div class="text-center margin-top-auto">
-                            <img src="static/svg/office.svg" width="100%" alt="image de bureau avec dossiers empilés" />
-                        </div>
-                    </div>
-                    <div class="col-4 col-lg-4 col-md-6 col-sm-12 d-flex flex-column relative pa-4"
-                        style="position: relative; overflow: hidden;">
-                        <h3 class="text-center my-0">ADMINISTRATION</h3>
-                        <!-- <span class="ribbon ribbon-green">Particuliers</span> -->
-                        <div class="ribbon right green">Particuliers</div>
-
-
-                        <div class="text-left">
-                            <ul class="list">
-                                <li>Assistance et conseil dans la résolution de diverses problématiques administratives
-                                    liées au quotidien (assurances, médical, services étatiques).</li>
-                                <li>Archivage numérique et ordonnancement des documents administratifs.</li>
-                            </ul>
-                        </div>
-                        <div class="text-center margin-top-auto">
-                            <img src="static/svg/classeurs.svg" width="70%"
-                                alt="image de classeurs rangés sur une étagère" class="" />
-                        </div>
-                    </div>
-                    <div class="col-4 col-lg-4 col-md-6 col-sm-12 d-flex flex-column background-secondary pa-4">
-                        <h3 class="text-center my-0">RH ET FORMATION CONTINUE</h3>
-                        <div class="text-left">
-                            <ul class="list">
-                                <li>Soutien et accompagnement dans la mise en place de formations répondant aux besoins
-                                    de l'employé/e et de l'employeur.</li>
-                                <li>Coaching et accompagnement RH (engagement – collaboration – fin de collaboration).
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="text-center margin-top-auto">
-                            <img src="static/svg/human_resource.svg" width="70%"
-                                alt="image d'un homme et d'une femme s'entretenant dans un cadre professionnel" />
-                        </div>
-                    </div>
-                    <div class="col-4 col-lg-4 col-md-6 col-sm-12 d-flex flex-column pa-4">
-                        <h3 class="text-center my-0">TRADUCTION, INTERPRETATION & MIGRATION</h3>
-                        <div>
-                            <ul class="list">
-                                <li>Interprète français-portugais / portugais-français lors d'entretiens professionnels
-                                    ou privés.</li>
-                                <li>Soutien administratif destiné à la communauté portugaise (démarches lors d'une
-                                    arrivée ou départ de Suisse, contacts et démarches avec les consulats et les
-                                    ambassades, permis d'établissement, services étatiques).</li>
-                            </ul>
-                        </div>
-                        <div class="text-center margin-top-auto">
-                            <img src="static/svg/migration.svg" width="90%"
-                                alt="image représentant des objects typique du Portugal" />
-                        </div>
-                    </div>
-                    <div class="col-4 col-lg-4 col-md-6 col-sm-12 d-flex flex-column background-secondary pa-4">
-                        <h3 class="text-center my-0">EMPLOI</h3>
-                        <div class="">
-                            <ul class="list">
-                                <li>Accompagnement dans le processus de recherche d'emploi (création de dossier, CV +
-                                    lettre de motivation, postulations et préparation d'un entretien d'engagement.</li>
-                                <li>Mise en relation avec les services étatiques et les agences de placement).</li>
-                            </ul>
-                        </div>
-                        <div class="text-center margin-top-auto">
-                            <img src="static/svg/interview.svg" width="50%"
-                                alt="image d'un dossier de candidature pour chercheur d'emploi" />
-                        </div>
-                    </div>
-                    <div class="col-4 col-lg-4 col-md-6 col-sm-12 d-flex flex-column pa-4">
-                        <h3 class="text-center my-0">SANTE</h3>
-                        <div class="">
-                            <ul class="list">
-                                <li>Accompagnement dans les démarches inhérentes à un problème de santé (SUVA, AI,
-                                    services étatiques, assurances).</li>
-                            </ul>
-                        </div>
-                        <div class="text-center margin-top-auto">
-                            <img src="static/svg/health.svg" width="50%"
-                                alt="image d'un formulaire médical avec des cases à cocher" />
                         </div>
                     </div>
                 </div>
@@ -371,12 +267,12 @@
                     <div class="col-6 col-sm-12" style="z-index: -10;">
                         <p class="text-justify line-height pa-3">Bien appréhender la résolution
                             de nos tracasseries administratives quotidiennes, n'est pas chose aisée dans une société en
-                            permanente évolution. Je suis la <span class="pen-marker-yellow">bonne personne</span> pour
+                            permanente évolution. Je suis la <span class="underline-small">bonne personne</span> pour
                             alléger cette charge qui pèse sur vos
                             épaules. Mon professionnalisme, combiné à ma motivation et à mon expérience professionnelle
                             de plus de 20 ans au sein de l'administration publique, me permet de cerner les besoins de
                             mes clients, et de leur proposer des solutions adéquates à leurs besoins. Plus de soucis
-                            administratifs – <span class="pen-marker-yellow">Mon métier</span> !</p>
+                            administratifs – <span class="underline-small">Mon métier</span> !</p>
                     </div>
                 </div>
             </section>
@@ -469,7 +365,7 @@
                 <div class="row">
                     <div class="col-6 col-sm-12">
                         <div class="d-flex flex-row" style="justify-content: end;">
-                            <img src="static/svg/le_locle.svg" width="25%" alt="Le Locle" />
+                            <img src="static/svg/le_locle.svg" width="20%" alt="Hôtel de Ville, Le Locle" class="my-2" />
                             <p class="text-right line-height px-4">
                                 <b>Marcio Barata</b><br />
                                 <i class="fa fa-map-marker mr-2"></i>Rue Henry-Grandjean 7<br />
