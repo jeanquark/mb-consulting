@@ -83,13 +83,13 @@
     // margin-top: 149px;
 }
 
-.dropdown {
+.dropdown3 {
     float: left;
     overflow: hidden;
     // border: 1px solid orange;
 }
 
-.dropdown .dropbtn {
+.dropdown3 .dropbtn3 {
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -107,13 +107,13 @@
 }
 
 .navbar a:hover,
-.dropdown:hover .dropbtn,
-.dropbtn:focus {
+.dropdown3:hover .dropbtn3,
+.dropbtn3:focus {
     // background-color: green;
     background-color: inherit;
 }
 
-.dropdown-content {
+.dropdown-content3 {
     display: none;
     position: fixed;
     font-size: .6em;
@@ -128,11 +128,11 @@
     z-index: 9999;
 }
 
-.dropdown-content:hover {
+.dropdown-content3:hover {
     background-color: colors.$secondary-color;
 }
 
-.dropdown-content a {
+.dropdown-content3 a {
     float: none;
     color: black;
     // padding: 12px 16px;
@@ -143,7 +143,7 @@
     // border: 1px solid yellow;
 }
 
-.dropdown {
+.dropdown3 {
     transform: none !important;
 
     .dropdown-content {
@@ -169,11 +169,19 @@
 .dropdown-content-mobile {
     display: none;
     /* display: block; */
-    background-color: #f9f9f9;
+    // background-color: #f9f9f9;
+    background-color: colors.$primary-color;
+    // color: #FFF;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     // border: 2px dashed green;
     padding-left: 0;
-    list-style-type: none
+    list-style-type: none;
+
+    li {
+        a {
+            color: #FFF !important;
+        }
+    }
 }
 
 .show-dropdown-content-mobile {
@@ -183,7 +191,7 @@
 
 
 
-.dropdown2 {
+.dropdown {
     float: left;
     overflow: hidden;
     // display: flex;
@@ -191,7 +199,7 @@
     // position: relative;
 }
 
-.dropdown2 .dropbtn2 {
+.dropdown .dropbtn {
     cursor: pointer;
     // font-size: 16px;  
     border: none;
@@ -205,12 +213,12 @@
     font-weight: 400;
 }
 
-.dropdown2:hover .dropbtn2,
-.dropbtn2:focus {
+.dropdown:hover .dropbtn,
+.dropbtn:focus {
     color: colors.$secondary-color;
 }
 
-.dropdown-content2 {
+.dropdown-content {
     display: none;
     position: absolute;
     color: #FFF;
@@ -220,7 +228,7 @@
     z-index: 9999;
 }
 
-.dropdown-content2 a {
+.dropdown-content a {
     float: none;
     color: #FFF !important;
     font-size: 1em !important;
@@ -230,7 +238,7 @@
     text-align: left;
 }
 
-.dropdown-content2 a:hover {
+.dropdown-content a:hover {
     // background-color: #ddd;
     color: colors.$secondary-color !important;
 }

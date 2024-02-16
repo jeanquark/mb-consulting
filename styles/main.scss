@@ -67,20 +67,27 @@ body {
     border: 2px solid red;
 }
 
+// .underline2 {
+//     position: relative;
+// }
+// .underline2::after {
+//     background-image: url('../../static/svg/underline.svg');
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     bottom: 0;
+//     content: "";
+//     height: 4px;
+//     left: 0;
+//     position: absolute;
+//     right: 0;
+//     width: 100%;
+// }
+
 .underline {
-    position: relative;
-}
-.underline::after {
     background-image: url('../../static/svg/underline.svg');
+    background-position: 0 1.05em;
     background-repeat: no-repeat;
-    background-size: cover;
-    bottom: 0;
-    content: "";
-    height: 4px;
-    left: 0;
-    position: absolute;
-    right: 0;
-    width: 100%;
+    background-size: 100%;
 }
 
 .underline-small {

@@ -36,13 +36,23 @@
                     <li><a href="#moreInfo">En savoir plus</a></li>
                     <li><a href="#partners">Partenariat</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <li class="dropdown2 border-0">
+                    <!-- <li class="dropdown2 border-0">
                         <button class="dropbtn2 dropDownTarget" onclick="toggleDropdown2()">
                             <img src="static/images/france_256.jpg" width="20" class="dropDownTarget mt-1 mx-1" />
                             Fr
                             <i class="fa fa-caret-down dropDownTarget"></i>
                         </button>
                         <div class="dropdown-content2" id="myDropdown2">
+                            <a href="pt"><img src="static/images/portugal_256.jpg" width="20" class="mx-1" />Português</a>
+                        </div>
+                    </li> -->
+                    <li class="dropdown border-0">
+                        <button class="dropbtn dropDownTarget" onclick="toggleDropdown()">
+                            <img src="static/images/france_256.jpg" width="20" class="dropDownTarget mt-1 mx-1" />
+                            Fr
+                            <i class="fa fa-caret-down dropDownTarget"></i>
+                        </button>
+                        <div id="myDropdown" class="dropdown-content">
                             <a href="pt"><img src="static/images/portugal_256.jpg" width="20" class="mx-1" />Português</a>
                         </div>
                     </li>
@@ -52,7 +62,7 @@
 
             <nav id="navbarMobile" class="border-0">
                 <div id="navWrapperMobile" class="border-0">
-                    <a href="./" class="logo"><img src="static/logo/logo.svg" width="50" alt="Image du logo" class="d-flex align-center" /></a>
+                    <a href="./" class="logo"><img src="static/logo/logo_white.svg" width="50" alt="Image du logo" class="d-flex align-center" /></a>
                     <a href="javascript:void(0);" class="icon" onclick="toggleNavigationMenu()">
                         <i class="fa fa-bars"></i>
                     </a>
@@ -81,7 +91,7 @@
                 <section id="header" class="py-5 border-0" style="scroll-snap-align: start">
                     <div class="row align-center">
                         <div class="col-6 col-md-12 slide border-0">
-                            <h1 class="text-center slide-up title-1 px-2"><span class="underline">Services administratifs</span> & <br /><span class="underline">coaching personalisé</span></h1>
+                            <h1 class="text-center slide-up title-1 px-2"><span class="underline">Services administratifs</span> & <br /><span class="underline">coaching personnalisé</span></h1>
                             <div class="text-center">
                                 <button class="button slide-up" onclick="scrollToContactForm()">
                                     <span>Prendre rendez-vous <i class="fa fa-coffee"></i></span>
@@ -394,7 +404,7 @@
         <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
         <!-- Toggle dropdown menu -->
-        <!-- <script src="scripts/toggle-dropdown.js"></script> -->
+        <script src="scripts/toggle-dropdown.js"></script>
 
         <!-- Leaflet map -->
         <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
@@ -456,7 +466,7 @@
             }
         </script>
 
-        <script>
+        <!-- <script>
             function toggleDropdown2() {
                 console.log('toggleDropdown2')
                 document.getElementById('myDropdown2').classList.toggle('show')
@@ -471,6 +481,31 @@
                     }
                 }
             }
+        </script> -->
+
+        <script>
+            // function toggleDropdown() {
+            //     console.log('toggleDropdown')
+            //     document.getElementById('myDropdown').classList.toggle('show')
+            // }
+
+            // // Close the dropdown if the user clicks outside of it
+            // window.onclick = function (e) {
+            //     if (!e.target.matches('.dropDownTarget')) {
+            //         var myDropdown = document.getElementById('myDropdown')
+            //         if (myDropdown.classList.contains('show')) {
+            //             myDropdown.classList.remove('show')
+            //         }
+            //     }
+            // }
+        </script>
+
+        <script>
+            // function toggleDropdownMobile() {
+            //     console.log('toggleDropdownMobile2')
+            //     console.log('document.getElementById("dropdownMobile").classList: ', document.getElementById('dropdownMobile').classList)
+            //     document.getElementById('dropdownMobile').classList.toggle('show-dropdown-content-mobile')
+            // }
         </script>
 
         <script>
