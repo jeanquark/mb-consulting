@@ -21,15 +21,14 @@
         <style>
             /* Model website: https://codescandy.com/coach/bootstrap-5/yoga/index.html */
         </style>
+        <link href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" rel="stylesheet" />
     </head>
 
     <body>
         <div id="wrapper">
-            <!-- <nav id="navbar" class="" style="position: sticky; top: 0;"> -->
             <nav id="navbar2">
-                <!-- <div class="d-flex flex-row" style="align-items: center;"> -->
                 <div class="navbar-brand border-0">
-                    <a href="./" class="logo"><img src="static/logo/logo.svg" width="100" alt="Logo de MB Consulting" class="mx-1" /></a>
+                    <a href="./" class="logo"><img src="static/logo/logo.svg" width="100" alt="Logo de MB Consulting" class="ma-1" /></a>
                 </div>
                 <ul class="nav-links border-0">
                     <li><a href="#services">Services</a></li>
@@ -279,7 +278,8 @@
                             </div>
 
                             <div class="px-4">
-                                <iframe width="100%" height="350" class="" src="https://www.openstreetmap.org/export/embed.html?bbox=6.736571788787843%2C47.05171851363047%2C6.7586731910705575%2C47.06025586680622&amp;layer=mapnik&amp;marker=47.055987361073825%2C6.747622489929199"></iframe>
+                                <!-- <iframe width="100%" height="350" class="" src="https://www.openstreetmap.org/export/embed.html?bbox=6.736571788787843%2C47.05171851363047%2C6.7586731910705575%2C47.06025586680622&amp;layer=mapnik&amp;marker=47.055987361073825%2C6.747622489929199"></iframe> -->
+                                <div id="osm-map"></div>
                             </div>
                         </div>
                         <div class="col-6 col-sm-12">
@@ -365,9 +365,21 @@
             </footer>
         </div>
 
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-J60YM3Z8NG"></script>
+        <script>
+            window.dataLayer = window.dataLayer || []
+            function gtag() {
+                dataLayer.push(arguments)
+            }
+            gtag('js', new Date())
+
+            gtag('config', 'G-J60YM3Z8NG')
+        </script>
+
         <script src="scripts/index.js"></script>
         <!-- Scroll observer -->
-        <script src="scripts/scroll-active.js"></script>
+        <!-- <script src="scripts/scroll-active.js"></script> -->
 
         <!-- Phone number mask -->
         <script src="https://unpkg.com/imask"></script>
@@ -376,13 +388,66 @@
         <script src="scripts/form.js"></script>
 
         <!-- Scroll to previous position on reload -->
-        <script src="scripts/scroll-memory.js"></script>
+        <!-- <script src="scripts/scroll-memory.js"></script> -->
 
         <!-- Google reCAPTCHA -->
         <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
         <!-- Toggle dropdown menu -->
         <!-- <script src="scripts/toggle-dropdown.js"></script> -->
+
+        <!-- Leaflet map -->
+        <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+        <script>
+            // Where you want to render the map.
+            var element = document.getElementById('osm-map')
+
+            // Height has to be set. You can do this in CSS too.
+            element.style = 'height:300px;'
+
+            // Create Leaflet map on map element.
+            var map = L.map(element)
+
+            // Add OSM tile layer to the Leaflet map.
+            L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
+            }).addTo(map)
+
+            // Target's GPS coordinates.
+            var target = L.latLng('47.05595', '6.74764')
+
+            // Set map's center to target with zoom 14.
+            map.setView(target, 17)
+
+            // Place a marker on the same location.
+            L.marker(target).addTo(map)
+        </script>
+
+        <!-- Smooth scrolling -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const anchors = document.querySelectorAll('a[href^="#"]')
+                anchors.forEach(function (anchor) {
+                    anchor.addEventListener('click', function (event) {
+                        event.preventDefault()
+                        const target = anchor.getAttribute('href').substring(1)
+                        console.log('target: ', target)
+                        smoothScroll(target)
+                    })
+                })
+            })
+
+            const smoothScroll = (target) => {
+                console.log('smoothScroll: ', target)
+                const element = document.getElementById(target)
+                console.log('element: ', element)
+                if (element) {
+                    element.scrollIntoView({
+                        behavior: 'smooth',
+                    })
+                }
+            }
+        </script>
 
         <script>
             function scrollToContactForm() {
