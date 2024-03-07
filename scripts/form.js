@@ -28,7 +28,8 @@ async function sendData() {
 
 
     try {
-        const response = await fetch("https://formspree.io/f/xrgnejnw", {
+        // const response = await fetch("https://formspree.io/f/xrgnejnw", {
+        const response = await fetch("https://formspree.io/f/xvoeqkkw", {
             method: "POST",
             body: formData,
             headers: {
@@ -78,23 +79,23 @@ countryInput.addEventListener("change", (event) => {
     switch (event.target.value) {
         case 'ch':
             console.log('select ch')
-            phoneNumberMask = '+{41} ({\\0}00) 000-00-00'
+            phoneNumberMask = '+{41} 000 000 00 00'
             console.log('phoneNumberMask: ', phoneNumberMask);
             mask.updateOptions({ mask: phoneNumberMask });
             break;
         case 'fr':
             console.log('select fr')
-            phoneNumberMask = "+{33} (000) 000-000"
+            phoneNumberMask = "+{33} 000 000 000"
             console.log('phoneNumberMask: ', phoneNumberMask);
             mask.updateOptions({ mask: phoneNumberMask });
             break;
         case 'pt':
-            phoneNumberMask = '+{351}-00-000-0000'
+            phoneNumberMask = '+{351} 00 000 0000'
             mask.updateOptions({ mask: phoneNumberMask });
 
             break;
         default:
-            phoneNumberMask = '+{41} ({\\0}00) 000-00-00'
+            phoneNumberMask = '+{41} 000 000 00 00'
             mask.updateOptions({ mask: phoneNumberMask });
 
 
@@ -102,7 +103,7 @@ countryInput.addEventListener("change", (event) => {
 });
 
 console.log('countryInput: ', countryInput);
-let phoneNumberMask = '+{41} ({\\0}00) 000-00-00'
+let phoneNumberMask = '+{41} 000 000 00 00'
 // let phoneNumberMask
 console.log('phoneNumberMask: ', phoneNumberMask);
 const maskOptions = {
