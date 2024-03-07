@@ -13,7 +13,7 @@
    viewBox="0 0 85 55"
    version="1.1"
    id="svg8"
-   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
    sodipodi:docname="carte_de_visite_3.svg"
    inkscape:export-filename="C:\Users\Jean-Marc\Code\Html\mb-consulting\static\carte de visite\carte_de_visite.png"
    inkscape:export-xdpi="96"
@@ -160,17 +160,17 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.979899"
-     inkscape:cx="19.832932"
-     inkscape:cy="147.06187"
+     inkscape:zoom="2.8"
+     inkscape:cx="75.285194"
+     inkscape:cy="162.37071"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer2"
+     inkscape:current-layer="layer12"
      inkscape:document-rotation="0"
      showgrid="false"
      inkscape:window-width="1920"
-     inkscape:window-height="1001"
-     inkscape:window-x="-9"
-     inkscape:window-y="-9"
+     inkscape:window-height="1106"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
      inkscape:window-maximized="1"
      showguides="true"
      inkscape:guide-bbox="true">
@@ -1799,7 +1799,7 @@
     </g>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:3.52778006px;line-height:1.25;font-family:sans-serif;letter-spacing:0.48418799px;fill:#53677a;fill-opacity:1;stroke:none;stroke-width:0.26458299"
+       style="font-style:normal;font-weight:normal;font-size:3.52778px;line-height:1.25;font-family:sans-serif;letter-spacing:0.484188px;fill:#53677a;fill-opacity:1;stroke:none;stroke-width:0.264583"
        x="4.2257571"
        y="49.907829"
        id="text2520"><tspan
@@ -1807,7 +1807,7 @@
          id="tspan2518"
          x="4.2257571"
          y="49.907829"
-         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:3.52778006px;font-family:Roboto;-inkscape-font-specification:'Roboto Light';fill:#53677a;fill-opacity:1;stroke-width:0.26458299">CONSULTING</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:3.52778px;font-family:Roboto;-inkscape-font-specification:'Roboto Light';fill:#53677a;fill-opacity:1;stroke-width:0.264583">CONSULTING</tspan></text>
   </g>
   <g
      inkscape:label="Carte de visite #1"
@@ -4911,7 +4911,7 @@
          id="image1240" />
       <text
          xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.58611012px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;fill:#155de9;fill-opacity:1;stroke:none;stroke-width:0.0862268"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.58611px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;fill:#155de9;fill-opacity:1;stroke:none;stroke-width:0.0862268"
          x="5.0211"
          y="9.1820526"
          id="text17627"><tspan
@@ -4919,20 +4919,13 @@
            id="tspan17625"
            x="5.0211"
            y="9.1820526"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.58611012px;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;fill:#155de9;fill-opacity:1;stroke-width:0.0862268">MARCIO BARATA</tspan></text>
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.58611px;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;fill:#155de9;fill-opacity:1;stroke-width:0.0862268">MARCIO BARATA</tspan></text>
     </g>
     <g
        inkscape:groupmode="layer"
        id="layer12"
        inkscape:label="Souslignage"
-       style="display:inline">
-      <path
-         style="fill:#8aaef4;fill-opacity:0.5;stroke:none;stroke-width:0.20287533px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         d="M 5.218241,8.2284843 H 47.983233 L 47.515572,10.080161 H 4.409947 Z"
-         id="path17623"
-         sodipodi:nodetypes="ccccc"
-         inkscape:connector-curvature="0" />
-    </g>
+       style="display:inline" />
     <g
        inkscape:groupmode="layer"
        id="layer6"
@@ -4940,7 +4933,7 @@
        style="display:inline">
       <text
          xml:space="preserve"
-         style="font-style:normal;font-weight:normal;font-size:3.52778006px;line-height:0;font-family:sans-serif;fill:#53677a;fill-opacity:1;stroke:none;stroke-width:0.26458299"
+         style="font-style:normal;font-weight:normal;font-size:3.52778px;line-height:0;font-family:sans-serif;fill:#53677a;fill-opacity:1;stroke:none;stroke-width:0.264583"
          x="4.2368827"
          y="17.540545"
          id="text2496"><tspan
@@ -4948,15 +4941,15 @@
            id="tspan2494"
            x="4.2368827"
            y="17.540545"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.17499995px;line-height:2;font-family:Roboto;-inkscape-font-specification:Roboto;fill:#53677a;fill-opacity:1;stroke-width:0.26458299">SERVICES ADMINISTRATIFS</tspan><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.175px;line-height:2;font-family:Roboto;-inkscape-font-specification:Roboto;fill:#53677a;fill-opacity:1;stroke-width:0.264583">COACHING PERSONNALISÉ</tspan><tspan
            sodipodi:role="line"
            x="4.2368827"
            y="23.890545"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.17499995px;line-height:2;font-family:Roboto;-inkscape-font-specification:Roboto;fill:#53677a;fill-opacity:1;stroke-width:0.26458299"
-           id="tspan2498">&amp; COACHING PERSONALISÉ</tspan></text>
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.175px;line-height:2;font-family:Roboto;-inkscape-font-specification:Roboto;fill:#53677a;fill-opacity:1;stroke-width:0.264583"
+           id="tspan2498">&amp; SERVICES ADMINISTRATIFS</tspan></text>
       <text
          xml:space="preserve"
-         style="font-style:normal;font-weight:normal;font-size:2.82222009px;line-height:1.14999998;font-family:sans-serif;letter-spacing:-0.0661458px;fill:#53677a;fill-opacity:1;stroke:none;stroke-width:0.26458299"
+         style="font-style:normal;font-weight:normal;font-size:2.82222px;line-height:1.15;font-family:sans-serif;letter-spacing:-0.0661458px;fill:#53677a;fill-opacity:1;stroke:none;stroke-width:0.264583"
          x="42.062084"
          y="38.459232"
          id="text2502"><tspan
@@ -4964,10 +4957,10 @@
            id="tspan2500"
            x="42.062084"
            y="38.459232"
-           style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:2.46944451px;font-family:Roboto;-inkscape-font-specification:'Roboto Light';letter-spacing:-0.15875px;fill:#53677a;fill-opacity:1;stroke-width:0.26458299">+41(0)78 924 76 75</tspan></text>
+           style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:2.46944px;font-family:Roboto;-inkscape-font-specification:'Roboto Light';letter-spacing:-0.15875px;fill:#53677a;fill-opacity:1;stroke-width:0.264583">+41 78 924 76 75</tspan></text>
       <text
          xml:space="preserve"
-         style="font-style:normal;font-weight:normal;font-size:2.82222009px;line-height:1.25;font-family:sans-serif;letter-spacing:-0.0529167px;fill:#53677a;fill-opacity:1;stroke:none;stroke-width:0.26458299"
+         style="font-style:normal;font-weight:normal;font-size:2.82222px;line-height:1.25;font-family:sans-serif;letter-spacing:-0.0529167px;fill:#53677a;fill-opacity:1;stroke:none;stroke-width:0.264583"
          x="41.984291"
          y="43.789803"
          id="text2506"><tspan
@@ -4975,10 +4968,10 @@
            id="tspan2504"
            x="41.984291"
            y="43.789803"
-           style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:2.46944451px;font-family:Roboto;-inkscape-font-specification:'Roboto Light';letter-spacing:-0.15875px;fill:#53677a;fill-opacity:1;stroke-width:0.26458299">marcio.barata@mb-consulting-mbc.ch</tspan></text>
+           style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:2.46944px;font-family:Roboto;-inkscape-font-specification:'Roboto Light';letter-spacing:-0.15875px;fill:#53677a;fill-opacity:1;stroke-width:0.264583">marcio.barata@mbconsulting-mbc.ch</tspan></text>
       <text
          xml:space="preserve"
-         style="font-style:normal;font-weight:normal;font-size:2.82222009px;line-height:1.25;font-family:sans-serif;letter-spacing:-0.0529167px;fill:#53677a;fill-opacity:1;stroke:none;stroke-width:0.26458299"
+         style="font-style:normal;font-weight:normal;font-size:2.82222px;line-height:1.25;font-family:sans-serif;letter-spacing:-0.0529167px;fill:#53677a;fill-opacity:1;stroke:none;stroke-width:0.264583"
          x="42.102413"
          y="49.02211"
          id="text2510"><tspan
@@ -4986,7 +4979,7 @@
            id="tspan2508"
            x="42.102413"
            y="49.02211"
-           style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:2.46944451px;font-family:Roboto;-inkscape-font-specification:'Roboto Light';letter-spacing:-0.15875px;fill:#53677a;fill-opacity:1;stroke-width:0.26458299">www.mb-consulting-mbc.ch</tspan></text>
+           style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:2.46944px;font-family:Roboto;-inkscape-font-specification:'Roboto Light';letter-spacing:-0.15875px;fill:#53677a;fill-opacity:1;stroke-width:0.264583">www.mbconsulting-mbc.ch</tspan></text>
     </g>
     <g
        inkscape:groupmode="layer"
@@ -4995,7 +4988,7 @@
        style="display:inline">
       <text
          xml:space="preserve"
-         style="font-style:normal;font-weight:normal;font-size:10.58329964px;line-height:1.25;font-family:sans-serif;display:inline;fill:#155de9;fill-opacity:1;stroke:none;stroke-width:0.26458299"
+         style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;display:inline;fill:#155de9;fill-opacity:1;stroke:none;stroke-width:0.264583"
          x="-67.157372"
          y="-4.3890409"
          id="text835"><tspan
@@ -5003,7 +4996,7 @@
            id="tspan833"
            x="-67.157372"
            y="-4.3890409"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58329964px;font-family:Roboto;-inkscape-font-specification:'Roboto, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;fill:#155de9;fill-opacity:1;stroke-width:0.26458299">MB Consulting</tspan></text>
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;font-family:Roboto;-inkscape-font-specification:'Roboto, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;fill:#155de9;fill-opacity:1;stroke-width:0.264583">MB Consulting</tspan></text>
       <path
          d="m -26.75702,45.759512 c 0,0 -0.12199,0.115772 -0.136897,0.176085 -0.01499,0.06031 0.01397,0.180854 0.01397,0.180854 0,0 0.03058,0.06261 0.188947,0.0892 0.15828,0.02649 0.387435,-0.223023 0.387435,-0.223023 l 0.01602,-0.08075 c 0,0 0.121393,-0.08928 0.215356,-0.09891 0.09413,-0.0096 0.284613,-0.14465 0.361793,-0.188095 0.07718,-0.04336 0.132553,-0.125397 0.14942,-0.26042 0.01695,-0.135023 -0.08187,-0.171228 -0.08187,-0.171228 0,0 -0.14712,-0.03134 -0.236397,0 -0.08919,0.03135 -0.877778,0.576297 -0.877778,0.576297"
          style="fill:#262729;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.00851881"
@@ -6204,7 +6197,7 @@
     <text
        xml:space="preserve"
        id="text1458"
-       style="font-style:normal;font-weight:normal;font-size:10.58329964px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect1460);fill:#000000;fill-opacity:1;stroke:none" />
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect1460);fill:#000000;fill-opacity:1;stroke:none;" />
   </g>
   <g
      inkscape:groupmode="layer"
@@ -6434,10 +6427,8 @@
          style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect5557);display:inline;fill:#000000;fill-opacity:1;stroke:none;"
          transform="translate(1.3229167,28.537202)"><tspan
            x="17.386719"
-           y="20.135224"
-           id="tspan1047"><tspan
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
-             id="tspan1045">Votre partenaire administratif</tspan></tspan></text>
+           y="20.135224"><tspan
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">Votre partenaire administratif</tspan></tspan></text>
     </g>
     <g
        inkscape:groupmode="layer"
