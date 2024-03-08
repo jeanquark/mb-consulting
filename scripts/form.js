@@ -13,16 +13,6 @@ form.addEventListener('input', function (event) {
     }
 })
 
-// const inputStreet = document.getElementById('street');
-// inputStreet.addEventListener("input", (event) => {
-//     console.log('change: ', event.target.value);
-//     if (event.target.value != '') {
-//         event.target.classList.add("ghi")
-//     } else {
-//         event.target.classList.remove("ghi")
-//     }
-// })
-
 async function sendData() {
     // console.log('notifications: ', notifications);
     for (let i = 0; i < notifications.length; i++) {
@@ -48,7 +38,13 @@ async function sendData() {
 
 
     try {
-        // const response = await fetch("https://formspree.io/f/xrgnejnw", {
+        const reCaptchaValue = grecaptcha.getResponse()
+        console.log('reCaptchaValue: ', reCaptchaValue);
+        if (reCaptchaValue.length < 1) {
+            document.querySelector(".message.warning").classList.remove("hidden");
+            return
+        }
+
         const response = await fetch("https://formspree.io/f/xvoeqkkw", {
             method: "POST",
             body: formData,

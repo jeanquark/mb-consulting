@@ -506,6 +506,10 @@ fieldset {
         background-color: colors.$success-color;
     }
 
+    &.warning {
+        background-color: colors.$warning-color;
+    }
+
     &.error {
         background-color: colors.$error-color;
     }
