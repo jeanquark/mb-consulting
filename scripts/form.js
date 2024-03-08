@@ -3,6 +3,26 @@ const form = document.querySelector("#form");
 
 const notifications = document.getElementsByClassName("notification");
 
+form.addEventListener('input', function (event) {
+    // console.log('change event: ', event);
+    // console.log('change event.target.id: ', event.target.id);
+    if (event.target.value != '') {
+        event.target.classList.add("contains-value")
+    } else {
+        event.target.classList.remove("contains-value")
+    }
+})
+
+// const inputStreet = document.getElementById('street');
+// inputStreet.addEventListener("input", (event) => {
+//     console.log('change: ', event.target.value);
+//     if (event.target.value != '') {
+//         event.target.classList.add("ghi")
+//     } else {
+//         event.target.classList.remove("ghi")
+//     }
+// })
+
 async function sendData() {
     // console.log('notifications: ', notifications);
     for (let i = 0; i < notifications.length; i++) {
@@ -97,15 +117,13 @@ countryInput.addEventListener("change", (event) => {
         default:
             phoneNumberMask = '+{41} 000 000 00 00'
             mask.updateOptions({ mask: phoneNumberMask });
-
-
     }
 });
 
-console.log('countryInput: ', countryInput);
+// console.log('countryInput: ', countryInput);
 let phoneNumberMask = '+{41} 000 000 00 00'
 // let phoneNumberMask
-console.log('phoneNumberMask: ', phoneNumberMask);
+// console.log('phoneNumberMask: ', phoneNumberMask);
 const maskOptions = {
     mask: phoneNumberMask
 };

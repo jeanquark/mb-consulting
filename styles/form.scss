@@ -148,7 +148,7 @@ fieldset {
     left: 50%;
     bottom: -0.0625rem;
     position: absolute;
-    // background: #337ab7;
+    // background: red;
     background: colors.$primary-color;
     -webkit-transition: left 0.28s ease, width 0.28s ease;
     transition: left 0.28s ease, width 0.28s ease;
@@ -191,15 +191,31 @@ fieldset {
     color: #333;
 }
 
+// .form-group select~.control-label,
+// .form-group input:focus~.control-label,
+// .form-group input:valid~.control-label,
+// .form-group input.form-file~.control-label,
+// .form-group input.has-value~.control-label,
+// .form-group textarea:focus~.control-label,
+// .form-group textarea:valid~.control-label,
+// .form-group textarea.form-file~.control-label,
+// .form-group textarea.has-value~.control-label {
+//     font-size: 0.8rem;
+//     color: gray;
+//     top: -1rem;
+//     left: 0;
+// }
+
 .form-group select~.control-label,
 .form-group input:focus~.control-label,
-.form-group input:valid~.control-label,
+// .form-group input:valid~.control-label,
 .form-group input.form-file~.control-label,
 .form-group input.has-value~.control-label,
 .form-group textarea:focus~.control-label,
 .form-group textarea:valid~.control-label,
 .form-group textarea.form-file~.control-label,
-.form-group textarea.has-value~.control-label {
+.form-group textarea.has-value~.control-label,
+.form-group .contains-value~.control-label {
     font-size: 0.8rem;
     color: gray;
     top: -1rem;
