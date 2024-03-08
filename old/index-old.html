@@ -2,152 +2,468 @@
 <html>
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-        /* .scroller {
-            height: 300px;
-            overflow-y: scroll;
-            scroll-snap-type: y mandatory;
-        }
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta name="robots" content="noindex, nofollow">
+    <!-- <meta name="referrer" content="origin" /> -->
 
-        .scroller section {
-            scroll-snap-align: start;
-        } */
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,200&family=Roboto:wght@300;600;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="styles/min/common.min.css" />
+    <link rel="stylesheet" href="styles/min/navbar.min.css" />
+    <link rel="stylesheet" href="styles/min/main.min.css" />
+    <link rel="stylesheet" href="styles/min/form.min.css" />
+    <style>
+        
     </style>
 </head>
 
 <body>
-    <!-- <div id="navbar" style="border: 2px solid blue;">
-        <a href="#default" id="logo">MBConsulting</a>
-        <div id="navbar-right">
-            <a class="active" href="">Accueil</a>
-            <a href="#services" onclick="scrollToSection('services')">Services</a>
-            <a href="#about">A propos</a>
-            <a href="#moreInfo">En savoir plus</a>
-            <a href="#partners">Partenariat</a>
-            <a href="#contact">Contact</a>
-        </div>
-    </div>
-    <div class="navbar-mobile" style="border: 2px solid purple;">
-        <a href="#home" class="active">MBConsulting</a>
-        <div id="myLinks" class="">
-            <a href="#services">Services</a>
-            <a href="#about">A propos</a>
-            <a href="#moreInfo">En savoir plus</a>
-            <a href="#partners">Partenariat</a>
-            <a href="#contact">Contact</a>
-        </div>
-        <a href="javascript:void(0);" class="icon" onclick="toggleNavigationMenu()">
-            <i class="fa fa-bars"></i>
-        </a>
-    </div> -->
-
-    <!-- <div class="row" id="content" style="border: 2px solid red">
-        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 box blue" style="border: 1px dashed orange; padding: 20px;">1
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 box green" style="border: 1px dashed orange; padding: 20px;">2
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 box yellow" style="border: 1px dashed orange; padding: 20px;">3
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 box orange" style="border: 1px dashed orange; padding: 20px;">4
-        </div>
-    </div> -->
-
-
-
-    <div id="parent" class=""
-        style="position: relative; width: 100%; height: 100vh; scroll-behavior: smooth; scroll-padding-top: 100px; overflow: auto; scroll-snap-type: y mandatory;">
-
-        <nav id="navbar"
-            style="position: sticky; top: 0; background: #FFF; height: 100px; transition: 0.4s; overflow: hidden; z-index: 99; border: 2px solid blue;">
-            <a href="#default" id="logo">MBConsulting</a>
-            <ul id="navbar-right">
-                <li class="nav-item"><a href="#services">Services</a></li>
-                <li class="nav-item"><a href="#about">A propos</a></li>
-                <li class="nav-item"><a href="#moreInfo">En savoir plus</a></li>
-                <li class="nav-item"><a href="#partners">Partenariat</a></li>
-                <li class="nav-item"><a href="#contact">Contact</a></li>
-            </ul>
+    <div id="wrapper">
+        <!-- <nav id="navbar" class="" style="position: sticky; top: 0;"> -->
+        <nav id="navbar" class="">
+            <div id="navWrapper">
+                <a href="./" class="logo"><img src="static/logo/logo.svg" width="100" alt="Image du logo"
+                        class="mx-1" /></a>
+                <ul id="navItems">
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">A propos</a></li>
+                    <li><a href="#moreInfo">En savoir plus</a></li>
+                    <li><a href="#partners">Partenariat</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li class="dropdown dropBtnTarget" onclick="toggleDropdown()">
+                        <button class="dropbtn dropBtnTarget">
+                            <img src="static/images/france_256.jpg" width="20" class="dropBtnTarget mx-1" /> Fr
+                            <i class="fa fa-caret-down dropBtnTarget mx-1"></i>
+                        </button>
+                        <div class="dropdown-content" id="myDropdown">
+                            <a href="pt"><img src="static/images/portugal_256.jpg" width="20" class="mx-1" />Português</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </nav>
 
-        <nav id="navbar-mobile"
-            style="position: sticky; top: 0; background: #FFF; height: 100px; border: 2px solid purple;">
-            <div style="display: inline;">
-                <a href="/" class="">MBConsulting</a>
-                <a href="javascript:void(0);" class="icon" style="float: right; font-size: 2.5em; padding: 0 .5em;"
-                    onclick="toggleNavigationMenu()">
+        <nav id="navbarMobile" class="border-1">
+            <div id="navWrapperMobile" class="border-2">
+                <a href="./" class="logo"><img src="static/logo/logo.svg" width="50" alt="Image du logo"
+                        class="d-flex align-center" /></a>
+                <a href="javascript:void(0);" class="icon" onclick="toggleNavigationMenu()">
                     <i class="fa fa-bars"></i>
                 </a>
             </div>
-            <ul id="navbar-links" class="">
-                <li class="nav-item"><a href="#services">Services</a></li>
-                <li class="nav-item"><a href="#about">A propos</a></li>
-                <li class="nav-item"><a href="#moreInfo">En savoir plus</a></li>
-                <li class="nav-item"><a href="#partners">Partenariat</a></li>
-                <li class="nav-item"><a href="#contact">Contact</a></li>
+            <ul id="navItemsMobile" class="">
+                <li class=""><a href="#services">Services</a></li>
+                <li class=""><a href="#about">A propos</a></li>
+                <li class=""><a href="#moreInfo">En savoir plus</a></li>
+                <li class=""><a href="#partners">Partenariat</a></li>
+                <li class=""><a href="#contact">Contact</a></li>
+                <li class="">
+                    <button class="dropBtnTarget pa-3" onclick="toggleDropdownMobile()">
+                        <img src="static/images/france_256.jpg" width="20" class="dropBtnTarget mx-1" />
+                        Fr <i class="fa fa-caret-down dropBtnTarget mx-1"></i>
+                    </button>
+                    <ul id="dropdownMobile" class="dropdown-content-mobile my-2">
+                        <li class="py-2">
+                            <a href="pt"><img src="static/images/portugal_256.jpg" width="20" class="mx-1" />Português</a>
+                        </li>
+                    </ul>
+                </li>
             </ul>
         </nav>
 
-        <section id="services" class="row"
-            style="height: 300px; background: lightblue;  width: 100%; height: 100vh; scroll-snap-align: start;">
-            <div class="col-md-12 justify-center">
-                <h3 class="">Services</h3>
-            </div>
-        </section>
-        <section id="about" class="row"
-            style="height: 300px; background: lightyellow; width: 100%; height: 100vh; scroll-snap-align: start;">
-            <div class="col-md-12 justify-center">
-                <h3 class="">A propos</h3>
-            </div>
-        </section>
-        <section id="moreInfo" class="row"
-            style="height: 300px; background: lightgreen; width: 100%; height: 100vh; scroll-snap-align: start;">
-            <div class="col-md-12 justify-center">
-                <h3 class="text-center">En savoir plus</h3>
-            </div>
-        </section>
-        <section id="partners" class="row"
-            style="height: 200px; background: lightsalmon; width: 100%; height: 100vh; scroll-snap-align: start;">
-            <div class="col-md-12 justify-center">
-                <h3 class="text-center">Partenariat</h3>
-            </div>
-        </section>
-        <section id="contact" class="row"
-            style="height: 400px; background: lightslategray; width: 100%; height: 100vh; scroll-snap-align: start;">
-            <div class="col-md-12 justify-center">
-                <h3 class="text-center">Contact</h3>
-            </div>
-        </section>
-        <footer class="row" style="height: 80px; background: lightseagreen; scroll-snap-align: start;">
-            <div class="col-md-12 justify-center">
-                <h3 class="text-center">Footer</h3>
+        <div id="content" class="">
+            <section id="header" class="py-5" style="scroll-snap-align: start">
+                <div class="row align-center">
+                    <div class="col-6 col-md-12 slide">
+                        <h1 class="text-center slide-up title-1 px-2">
+                            Services administratifs & coaching personalisé</h1>
+                    </div>
+                    <div class="col-6 col-md-12 relative">
+                        <div class="slide float-left">
+                            <h2 class="slide-right my-5 title-2">
+                                <span class="pen-marker-blue"><i class="fa fa-building mx-2"
+                                        style="color: #53677a;"></i>Entreprises</span>
+                            </h2>
+                            <h2 class="slide-right my-5 title-2">
+                                <span class="pen-marker-blue"><i class="fa fa-user mx-2"
+                                        style="color: #53677a;"></i>Particuliers</span>
+                            </h2>
+                        </div>
+                        <img src="static/svg/dossiers.svg" alt="" width="40%" class="absolute bottom-0 right-0" />
+                    </div>
+                </div>
+            </section>
+
+            <section id="services" class="" style="scroll-snap-align: start">
+                <div class="row" style="z-index: 9999;">
+                    <div class="col-12 text-center my-10">
+                        <h2 class="text-center">Mes services</h2>
+                    </div>
+                    <div class="col-4 col-lg-4 col-md-6 col-sm-12 d-flex flex-column background-secondary pa-4" style="position: relative; overflow: hidden;">
+                        <h3 class="text-center my-0">ADMINISTRATION</h3>
+                        <!-- <span class="ribbon ribbon-orange">Entreprises</span> -->
+                        <!-- <div> -->
+                            <div class="ribbon right orange">Entreprises</div>
+                        <!-- </div> -->
+                        <!-- <div class="ribbon3 right3" style="--f: 0px">50%</div> -->
+                        <div class="text-left">
+                            <ul class="list">
+                                <li>Assistance dans la gestion administrative courante.</li>
+                                <li>Correspondances, rapports, archivage numérique de documents, gestion d'agenda,
+                                    organisation de rendez-vous entreprise-client/e(s), démarches étatiques en tout
+                                    genre.</li>
+                            </ul>
+                        </div>
+                        <div class="text-center margin-top-auto">
+                            <img src="static/svg/office.svg" width="100%" alt="image de bureau avec dossiers empilés" />
+                        </div>
+                    </div>
+                    <div class="col-4 col-lg-4 col-md-6 col-sm-12 d-flex flex-column relative pa-4" style="position: relative; overflow: hidden;">
+                        <h3 class="text-center my-0">ADMINISTRATION</h3>
+                        <!-- <span class="ribbon ribbon-green">Particuliers</span> -->
+                        <div class="ribbon right green">Particuliers</div>
+
+
+                        <div class="text-left">
+                            <ul class="list">
+                                <li>Assistance et conseil dans la résolution de diverses problématiques administratives
+                                    liées au quotidien (assurances, médical, services étatiques).</li>
+                                <li>Archivage numérique et ordonnancement des documents administratifs.</li>
+                            </ul>
+                        </div>
+                        <div class="text-center margin-top-auto">
+                            <img src="static/svg/classeurs.svg" width="70%" alt="image de classeurs rangés sur une étagère" class="" />
+                        </div>
+                    </div>
+                    <div class="col-4 col-lg-4 col-md-6 col-sm-12 d-flex flex-column background-secondary pa-4">
+                        <h3 class="text-center my-0">RH ET FORMATION CONTINUE</h3>
+                        <div class="text-left">
+                            <ul class="list">
+                                <li>Soutien et accompagnement dans la mise en place de formations répondant aux besoins
+                                    de l'employé/e et de l'employeur.</li>
+                                <li>Coaching et accompagnement RH (engagement – collaboration – fin de collaboration).
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="text-center margin-top-auto">
+                            <img src="static/svg/human_resource.svg" width="70%" alt="image d'un homme et d'une femme s'entretenant dans un cadre professionnel" />
+                        </div>
+                    </div>
+                    <div class="col-4 col-lg-4 col-md-6 col-sm-12 d-flex flex-column pa-4">
+                        <h3 class="text-center my-0">TRADUCTION, INTERPRETATION & MIGRATION</h3>
+                        <div>
+                            <ul class="list">
+                                <li>Interprète français-portugais / portugais-français lors d'entretiens professionnels
+                                    ou privés.</li>
+                                <li>Soutien administratif destiné à la communauté portugaise (démarches lors d'une
+                                    arrivée ou départ de Suisse, contacts et démarches avec les consulats et les
+                                    ambassades, permis d'établissement, services étatiques).</li>
+                            </ul>
+                        </div>
+                        <div class="text-center margin-top-auto">
+                            <img src="static/svg/migration.svg" width="90%" alt="image représentant des objects typique du Portugal" />
+                        </div>
+                    </div>
+                    <div class="col-4 col-lg-4 col-md-6 col-sm-12 d-flex flex-column background-secondary pa-4">
+                        <h3 class="text-center my-0">EMPLOI</h3>
+                        <div class="">
+                            <ul class="list">
+                                <li>Accompagnement dans le processus de recherche d'emploi (création de dossier, CV +
+                                    lettre de motivation, postulations et préparation d'un entretien d'engagement.</li>
+                                <li>Mise en relation avec les services étatiques et les agences de placement).</li>
+                            </ul>
+                        </div>
+                        <div class="text-center margin-top-auto">
+                            <img src="static/svg/interview.svg" width="50%" alt="image d'un dossier de candidature pour chercheur d'emploi" />
+                        </div>
+                    </div>
+                    <div class="col-4 col-lg-4 col-md-6 col-sm-12 d-flex flex-column pa-4">
+                        <h3 class="text-center my-0">SANTE</h3>
+                        <div class="">
+                            <ul class="list">
+                                <li>Accompagnement dans les démarches inhérentes à un problème de santé (SUVA, AI,
+                                    services étatiques, assurances).</li>
+                            </ul>
+                        </div>
+                        <div class="text-center margin-top-auto">
+                            <img src="static/svg/health.svg" width="50%" alt="image d'un formulaire médical avec des cases à cocher" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about" class="text-center" style="scroll-snap-align: start">
+                <div class="row">
+                    <div class="col-12 my-10">
+                        <h2 class="text-center">A propos</h2>
+                    </div>
+                    <div class="col-6 col-sm-12 d-flex flex-column justify-center align-center background-secondary">
+                        <img src="static/images/avatar.png" alt="Avatar" class="avatar" />
+                    </div>
+                    <div class="col-6 col-sm-12">
+                        <p class="text-justify line-height pa-3">Au bénéfice d'une expérience
+                            professionnelle de plus de <span class="pen-marker-yellow">20 ans</span> au sein de
+                            l'administration publique, le fondateur Marcio Barata est spécialisé dans les domaines de
+                            l'emploi, de la migration, RH et formation continue, ainsi que de la <span
+                                class="pen-marker-yellow">gestion administrative</span> courante qu'elle soit privée ou
+                            professionnelle (petites entreprises de 5
+                            collaborateurs
+                            maximum). Il lui tiendra à cœur de mettre à votre service ses compétences, de manière à
+                            trouver des solutions à toutes vos tracasseries administratives.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="moreInfo" class="text-center" style="scroll-snap-align: start">
+                <div class="row">
+                    <div class="col-12 my-10">
+                        <h2 class="text-center">En savoir plus</h2>
+                    </div>
+                    <div class="col-6 col-sm-12 d-flex flex-column align-center">
+                        <div>
+                            <h3 class="text-center">Une problématique administrative ?</h3>
+                            <h3 class="text-center">Une solution : MB Consulting !</h3>
+                        </div>
+                        <div class="">
+                            <img src="static/svg/question.svg" width="30%" alt="un homme se pose une question" />
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-12 background-secondary" style="z-index: -10;">
+                        <p class="text-justify line-height pa-3">Bien appréhender la résolution
+                            de nos tracasseries administratives quotidiennes, n'est pas chose aisée dans une société en
+                            permanente évolution. Je suis la <span class="pen-marker-yellow">bonne personne</span> pour
+                            alléger cette charge qui pèse sur vos
+                            épaules. Mon professionnalisme, combiné à ma motivation et à mon expérience professionnelle
+                            de plus de 20 ans au sein de l'administration publique, me permet de cerner les besoins de
+                            mes clients, et de leur proposer des solutions adéquates à leurs besoins. Plus de soucis
+                            administratifs – <span class="pen-marker-yellow">Mon métier</span> !</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="partners" class="text-center" style="scroll-snap-align: start">
+                <div class="row">
+                    <div class="col-12 my-10">
+                        <h2 class="text-center">Partenaires</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 col-sm-12 d-flex justify-center align-center background-secondary">
+                        <a href="http://www.fiduciairejaggi.com" target="_blank"><img
+                                src="static/images/dj_fiduciaire.webp" width="60%" alt="DJ Fiduciaire" /></a>
+                    </div>
+                    <div class="col-6 col-sm-12 px-5">
+                        <p class="text-justify line-height">Comptabilité,
+                            Fiscalité et Gérances Entreprises et particuliers
+                            La structure d'un petit bureau permet à la Fiduciaire Daniel Jaggi SA à Neuchâtel, de
+                            collaborer étroitement avec les clients en toute confiance, prenant à cœur les délais et
+                            responsabilités. Les échanges réguliers de personnes à personnes assurent des prestations de
+                            qualité. En complément à ses missions, MB Consulting est heureux de proposer à ses clients,
+                            les services de la Fiduciaire Daniel Jaggi SA à Neuchâtel, gérée par M. Thierry Beuret
+                            (expert fiduciaire diplômé, expert réviseur agréé, spécialiste en finance et en comptabilité
+                            avec brevet fédéral et membre expert Suisse).</p>
+                        <p class="text-right">
+                            <b>Fiduciaire Jaggi SA</b><br />
+                            <i class="fa fa-envelope mr-2"></i>info@fidujaggi.com<br />
+                            <i class="fa fa-phone mr-2"></i>+41 (0)32 724 40 88<br />
+                            <i class="fa fa-chrome mr-2"></i><a href="http://www.fiduciairejaggi.com"
+                                target="_blank">www.fiduciairejaggi.com</a><br />
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 col-sm-12 px-5">
+                        <p class="text-justify line-height">L'innovation
+                            digitale dès maintenant Entreprises et particuliers
+                            L'agence de communication bab-consulting vous accompagne dans la stratégie de communication
+                            digitale (réseaux sociaux), community management, gestion communautaire, stratégie de
+                            marketing et conseils médias (publicitaire et rédaction).</p>
+
+                        <p class="text-right">
+                            <b>Gabriel Davalle</b><br />
+                            <i class="fa fa-envelope mr-2"></i>gab@bab-consulting.com<br />
+                            <i class="fa fa-phone mr-2"></i>+41 (0)78 860 01 59<br />
+                            <i class="fa fa-chrome mr-2"></i><a href="http://www.bab-consulting.com"
+                                target="_blank">www.bab-consulting.com</a>
+                        </p>
+                    </div>
+                    <div class="col-6 col-sm-12 d-flex justify-center align-center background-secondary">
+                        <a href="http://www.bab-consulting.com" target="_blank"><img
+                                src="static/images/bab_consulting.webp" width="70%" alt="BAB Consulting" /></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 col-sm-12 d-flex justify-center align-center background-secondary">
+                        <a href="http://www.traductions-lausanne.com" target="_blank"><img
+                                src="static/images/traductions_lausanne.webp" width="50%"
+                                alt="Traductions Lausanne" /></a>
+                    </div>
+                    <div class="col-6 col-sm-12 px-5">
+                        <p class="text-justify line-height">
+                            TRADUCTIONS-LAUSANNE Entreprises et particuliers Plus de 40 ans
+                            d'expérience dans de nombreux domaines et combinaisons de langues, un large réseau de
+                            traducteurs diplômés et spécialisés. Une seule interlocutrice : Jeanne Davalle, traductrice
+                            d'anglais et d'espagnol en français et membre de l'Association des Interprètes et
+                            Traducteurs de Genève. Leur expertise et leurs compétences à votre service pour vous
+                            proposer des traductions professionnelles de qualité, dans les délais et à un tarif
+                            compétitif. Expertise, proximité, compétitivité et confidentialité sont leurs meilleurs
+                            atouts!</p>
+
+                        <p class="text-right">
+                            <b>Jeanne Davalle</b><br />
+                            <i class="fa fa-envelope mr-2"></i>info@traductions-lausanne.com<br />
+                            <i class="fa fa-phone mr-2"></i>+41 (0)79 279 20 88<br />
+                            <i class="fa fa-chrome mr-2"></i><a href="http://www.traductions-lausanne.com"
+                                target="_blank">www.traductions-lausanne.com</a>
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" style="scroll-snap-align: start">
+                <div class="row">
+                    <div class="col-12 my-10">
+                        <h2 class="text-center">Contactez-moi</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 col-sm-12">
+                        <p class="text-right line-height px-4">
+                            <b>Marcio Barata</b><br />
+                            <i class="fa fa-map-marker mr-2"></i>Rue Henry-Grandjean 7<br />
+                            2400 Le Locle, Suisse<br />
+                            <i class="fa fa-envelope mr-2"></i>info@mbconsulting-mbc.ch<br />
+                            <i class="fa fa-phone mr-2"></i>+41 (0)78 924 76 75
+                        </p>
+                        <div class="px-4">
+                            <iframe width="100%" height="350" class=""
+                                src="https://www.openstreetmap.org/export/embed.html?bbox=6.736571788787843%2C47.05171851363047%2C6.7586731910705575%2C47.06025586680622&amp;layer=mapnik&amp;marker=47.055987361073825%2C6.747622489929199"></iframe>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-12">
+                        <form id="form">
+                            <div class="row pa-2">
+                                <div class="col-6 col-sm-6 px-2">
+                                    <div class="form-group">
+                                        <input type="text" id="firstname" name="firstname" maxlength="64"
+                                            required="required" />
+                                        <label for="firstname" class="control-label">Prénom</label><i class="bar"></i>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-6 px-2">
+                                    <div class="form-group">
+                                        <input type="text" id="lastname" name="lastname" required="required"
+                                            maxlength="64" value="" />
+                                        <label for="lastname" class="control-label">Nom</label><i class="bar"></i>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-6 px-2">
+                                    <div class="form-group">
+                                        <input type="email" id="email" name="email" required="required" value="" />
+                                        <label for="email" class="control-label">E-mail</label><i class="bar"></i>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-12 px-2">
+                                    <div class="form-group d-flex">
+                                            <div class="mr-2 custom-select">
+                                                <select id="formCountryInput">
+                                                    <option value="ch">CH</option>
+                                                    <option value="fr">FR</option>
+                                                    <option value="pt">PT</option>
+                                                </select>
+                                            </div>
+                                            <div class="flex-grow">
+                                                <input type="text" id="phone" name="phone" value="" />
+                                                <label for="phone" class="control-label">Numéro de téléphone</label><i
+                                                    class="bar"></i>
+                                            </div>
+                                        <!-- </div> -->
+                                    </div>
+                                </div>
+                                <div class="col-12 px-2">
+                                    <div class="form-group">
+                                        <textarea required="required" rows="4" id="message" name="message"
+                                            maxlength="1024"></textarea>
+                                        <label for="message" placeholder="Ecrivez votre message..."
+                                            class="control-label">Message</label><i class="bar"></i>
+                                    </div>
+                                </div>
+                                <div class="col-12 text-center">
+                                    <div class="d-inline-block g-recaptcha"
+                                        data-sitekey="6Lc9xGApAAAAAIbg6FGLLentj36D9IjXStVI8hR5"></div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="button-container">
+                                        <button type="submit" id="sendMessageButton" class="button"><span>Envoyer
+                                                <i class="fa fa-spinner fa-spin hidden"></i>
+                                            </span></button>
+                                    </div>
+                                    <div class="notification message success hidden">
+                                        <i class="fa fa-close"></i>
+                                        <h4>Message envoyé avec succès!</h4>
+                                    </div>
+                                    <div class="notification message error hidden">
+                                        <i class="fa fa-close"></i>
+                                        <h4>Une erreur est survenue et le message n'a pas pu être envoyé. Vérifiez les
+                                            champs et valider la case à cocher.</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <footer id="footer" class="text-center mt-5 py-2" style="scroll-snap-align: start">
+            <div class="row">
+                <div class="col-12 text-white my-2">
+                    <p class="text-center">Copyright © <span id="currentYear"></span>
+                        mbconsulting-mbc.ch. Tous droits réservés.​</p>
+                </div>
+                <div class="col-12 text-white">
+                    <a href="mentions-legales.html" class="text-white">Mentions légales</a>
+                    <small>- Images originales par <a
+                            href="https://www.freepik.com/free-vector/flat-working-day-scenes-collection_14064667.htm#query=business%20svg&position=2&from_view=keyword&track=ais&uuid=1ce6e4bc-3744-4cce-a178-e96e96f2f708" class="text-white">Freepik</a>
+                    </small>
+                </div>
             </div>
         </footer>
     </div>
 
+    <script src="scripts/index.js"></script>
+    <!-- Scroll observer -->
+    <script src="scripts/scroll-active.js"></script>
 
+    <!-- Google reCAPTCHA -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
-    <!-- <div style="margin-top:210px;padding:15px 15px 2500px;font-size:30px">
-        <p><b>This example demonstrates how to shrink a navigation bar when the user starts to scroll the page.</b></p>
-        <p>Scroll down this frame to see the effect!</p>
-        <p>Scroll to the top to remove the effect.</p>
-        <p><b>Note:</b> We have also made the navbar responsive, resize the browser window to see the effect.</p>
-        <p>Lorem ipsum dolor dummy text to enable scrolling, sit amet, consectetur adipiscing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-            ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.</p>
-    </div> -->
+    <!-- Phone number mask -->
+    <script src="https://unpkg.com/imask"></script>
 
-    <script src="script.js"></script>
+    <!-- Contact form -->
+    <script src="scripts/form.js"></script>
+
+    <!-- Scroll to previous position on reload -->
+    <script src="scripts/scroll-memory.js"></script>
+
+    <!-- Toggle dropdown menu -->
+    <script src="scripts/toggle-dropdown.js"></script>
+
     <script>
-        window.addEventListener('scroll', function () {
-            console.log('scrolling');
-        });
+        /* Get the current year */
+        let currentDateTime = new Date().getFullYear()
+        document.querySelector('#currentYear').textContent = currentDateTime
     </script>
-
 </body>
 
 </html>
