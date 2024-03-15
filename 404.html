@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="Assistance dans la gestion administrative courante des petites et très petites entreprises, coaching pour particuliers, assistance dans les démarches étatiques." />
+        <meta name="keywords" content="services administratifs, coaching, Neuchâtel, Le Locle, La Chaux-de-Fonds, services étatiques, emploi" />
+        <meta name="author" content="Marcio Barata" />
+        <!-- <meta name="robots" content="noindex, nofollow" /> -->
+        <!-- <meta name="referrer" content="origin" /> -->
+
+        <link rel="icon" type="image/x-icon" href="/static/favicon.png" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,200&family=Roboto:wght@300;400;600;900&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="styles/min/common.min.css" />
+        <link rel="stylesheet" href="styles/min/navbar.min.css" />
+        <link rel="stylesheet" href="styles/min/main.min.css" />
+        <link rel="stylesheet" href="styles/min/form.min.css" />
+        <style>
+            /* Model website: https://codescandy.com/coach/bootstrap-5/yoga/index.html */
+        </style>
+        <link href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" rel="stylesheet" />
+        <!-- Sites web de référence: -->
+        <!-- https://www.idc-coaching.com/ -->
+        <!-- https://coachingsquare.com/ -->
+        <!-- https://www.florentdrecq.com/ -->
+        <!-- https://sandro-iervolino.ch/ -->
+    </head>
+
+    <body>
+        <div id="wrapper">
+            <nav id="navbar2">
+                <div class="navbar-brand border-0">
+                    <a href="./" class="logo"><img src="static/logo/logo.svg" width="100" alt="Logo de MB Consulting" class="ma-1" /></a>
+                </div>
+                <ul class="nav-links border-0">
+                    <li><a href="/#services">Services</a></li>
+                    <li><a href="/#about">A propos</a></li>
+                    <li><a href="/#moreInfo">En savoir plus</a></li>
+                    <li><a href="/#partners">Partenariat</a></li>
+                    <li><a href="/#contact">Contact</a></li>
+                    
+                    <li class="dropdown border-0">
+                        <button class="dropbtn dropDownTarget" onclick="toggleDropdown()">
+                            <img src="static/images/france_256.jpg" width="20" class="dropDownTarget mt-1 mx-1" />
+                            Fr
+                            <i class="fa fa-caret-down dropDownTarget"></i>
+                        </button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="pt"><img src="static/images/portugal_256.jpg" width="20" class="mx-1" />Português</a>
+                        </div>
+                    </li>
+                </ul>
+                <div></div>
+            </nav>
+
+            <nav id="navbarMobile" class="border-0">
+                <div id="navWrapperMobile" class="border-0">
+                    <a href="./" class="logo"><img src="static/logo/logo_white.svg" width="50" alt="Image du logo" class="d-flex align-center" /></a>
+                    <a href="javascript:void(0);" class="icon" onclick="toggleNavigationMenu()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+                <ul id="navItemsMobile" class="">
+                    <li class=""><a href="/#services">Services</a></li>
+                    <li class=""><a href="/#about">A propos</a></li>
+                    <li class=""><a href="/#moreInfo">En savoir plus</a></li>
+                    <li class=""><a href="/#partners">Partenariat</a></li>
+                    <li class=""><a href="/#contact">Contact</a></li>
+                    <li class="">
+                        <button class="dropBtnTarget pa-3" onclick="toggleDropdownMobile()">
+                            <img src="static/images/france_256.jpg" width="20" class="dropBtnTarget mx-1" />
+                            Fr <i class="fa fa-caret-down dropBtnTarget mx-1"></i>
+                        </button>
+                        <ul id="dropdownMobile" class="dropdown-content-mobile my-2">
+                            <li class="py-2">
+                                <a href="pt"><img src="static/images/portugal_256.jpg" width="20" class="mx-1" />Português</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="" style="display: flex;
+            justify-content: center;
+            align-items: center; height: 80vh;">
+                Cette page n'existe pas.
+            </div>
+
+        </div>
+
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-J60YM3Z8NG"></script>
+        <script>
+            window.dataLayer = window.dataLayer || []
+            function gtag() {
+                dataLayer.push(arguments)
+            }
+            gtag('js', new Date())
+
+            gtag('config', 'G-J60YM3Z8NG')
+        </script>
+
+        <script src="scripts/index.js"></script>
+        <!-- Scroll observer -->
+        <!-- <script src="scripts/scroll-active.js"></script> -->
+
+        <!-- Toggle dropdown menu -->
+        <script src="scripts/toggle-dropdown.js"></script>
+
+        <!-- Smooth scrolling -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const anchors = document.querySelectorAll('a[href^="#"]')
+                anchors.forEach(function (anchor) {
+                    anchor.addEventListener('click', function (event) {
+                        event.preventDefault()
+                        const target = anchor.getAttribute('href').substring(1)
+                        console.log('target: ', target)
+                        smoothScroll(target)
+                    })
+                })
+            })
+
+            const smoothScroll = (target) => {
+                console.log('smoothScroll: ', target)
+                const element = document.getElementById(target)
+                console.log('element: ', element)
+                if (element) {
+                    element.scrollIntoView({
+                        behavior: 'smooth',
+                    })
+                }
+            }
+        </script>
+
+        <script>
+            function scrollToContactForm() {
+                // window.scrollTo(0, 1000);
+                document.getElementById('contact').scrollIntoView({ block: 'start', behavior: 'smooth' })
+            }
+        </script>
+
+        <script>
+
+        </script>
+
+        <script>
+
+        </script>
+
+        <script>
+            /* Get the current year */
+            let currentDateTime = new Date().getFullYear()
+            document.querySelector('#currentYear').textContent = currentDateTime
+        </script>
+    </body>
+</html>
