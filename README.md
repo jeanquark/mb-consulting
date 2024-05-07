@@ -7,7 +7,7 @@ MB Consulting, votre assistance dans la gestion administrative courante, soutien
 ### Developement
 
 You can simply open the index page on any web browser like Google Chrome.
-Or you can run local server on VS Code to get hot reloading.
+Or you can run local server on VS Code to get hot reloading (click "Go Live" on bottom status bar).
 
 ### Push to production
 

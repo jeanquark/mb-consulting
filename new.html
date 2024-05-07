@@ -1,47 +1,53 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="Assistance dans la gestion administrative courante des petites et très petites entreprises, coaching pour particuliers, assistance dans les démarches étatiques." />
-        <meta name="keywords" content="services administratifs, coaching, Neuchâtel, Le Locle, La Chaux-de-Fonds, services étatiques, emploi" />
-        <meta name="author" content="Marcio Barata" />
-        <meta name="robots" content="noindex, nofollow" />
-        <meta name="referrer" content="origin" />
 
-        <link rel="icon" type="image/x-icon" href="/static/favicon.ico" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,200&family=Roboto:wght@300;400;600;900&display=swap" rel="stylesheet" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-        <link rel="stylesheet" href="styles/min/common.min.css" />
-        <link rel="stylesheet" href="styles/min/navbar.min.css" />
-        <link rel="stylesheet" href="styles/min/main.min.css" />
-        <link rel="stylesheet" href="styles/min/form.min.css" />
-        <style>
-            /* Model website: https://codescandy.com/coach/bootstrap-5/yoga/index.html */
-        </style>
-        <link href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" rel="stylesheet" />
-        <!-- Sites web de référence: -->
-        <!-- https://www.idc-coaching.com/ -->
-        <!-- https://coachingsquare.com/ -->
-        <!-- https://www.florentdrecq.com/ -->
-        <!-- https://sandro-iervolino.ch/ -->
-    </head>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description"
+        content="Assistance dans la gestion administrative courante des petites et très petites entreprises, coaching pour particuliers, assistance dans les démarches étatiques." />
+    <meta name="keywords"
+        content="services administratifs, coaching, Neuchâtel, Le Locle, La Chaux-de-Fonds, services étatiques, emploi" />
+    <meta name="author" content="Marcio Barata" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="referrer" content="origin" />
 
-    <body>
-        <div id="wrapper">
-            <nav id="navbar2">
-                <div class="navbar-brand border-0">
-                    <a href="./" class="logo"><img src="static/logo/logo.svg" width="100" alt="Logo de MB Consulting" class="ma-1" /></a>
-                </div>
-                <ul class="nav-links border-0">
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#about">A propos</a></li>
-                    <li><a href="#moreInfo">En savoir plus</a></li>
-                    <li><a href="#partners">Partenariat</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <!-- <li class="dropdown2 border-0">
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,200&family=Roboto:wght@300;400;600;900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="styles/min/common.min.css" />
+    <link rel="stylesheet" href="styles/min/navbar.min.css" />
+    <link rel="stylesheet" href="styles/min/main.min.css" />
+    <link rel="stylesheet" href="styles/min/form.min.css" />
+    <style>
+        /* Model website: https://codescandy.com/coach/bootstrap-5/yoga/index.html */
+    </style>
+    <link href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" rel="stylesheet" />
+    <!-- Sites web de référence: -->
+    <!-- https://www.idc-coaching.com/ -->
+    <!-- https://coachingsquare.com/ -->
+    <!-- https://www.florentdrecq.com/ -->
+    <!-- https://sandro-iervolino.ch/ -->
+</head>
+
+<body>
+    <div id="wrapper">
+        <nav id="navbar2">
+            <div class="navbar-brand border-0">
+                <a href="./" class="logo"><img src="static/logo/logo.svg" width="100" alt="Logo de MB Consulting"
+                        class="ma-1" /></a>
+            </div>
+            <ul class="nav-links border-0">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">A propos</a></li>
+                <li><a href="#moreInfo">En savoir plus</a></li>
+                <li><a href="#partners">Partenariat</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <!-- <li class="dropdown2 border-0">
                         <button class="dropbtn2 dropDownTarget" onclick="toggleDropdown2()">
                             <img src="static/images/france_256.jpg" width="20" class="dropDownTarget mt-1 mx-1" />
                             Fr
@@ -51,447 +57,542 @@
                             <a href="pt"><img src="static/images/portugal_256.jpg" width="20" class="mx-1" />Português</a>
                         </div>
                     </li> -->
-                    <li class="dropdown border-0">
-                        <button class="dropbtn dropDownTarget" onclick="toggleDropdown()">
-                            <img src="static/images/france_256.jpg" width="20" class="dropDownTarget mt-1 mx-1" />
-                            Fr
-                            <i class="fa fa-caret-down dropDownTarget"></i>
-                        </button>
-                        <div id="myDropdown" class="dropdown-content">
-                            <a href="pt"><img src="static/images/portugal_256.jpg" width="20" class="mx-1" />Português</a>
-                        </div>
-                    </li>
-                </ul>
-                <div></div>
-            </nav>
+                <li class="dropdown border-0">
+                    <button class="dropbtn dropDownTarget" onclick="toggleDropdown()">
+                        <img src="static/images/france_256.jpg" width="20" class="dropDownTarget mt-1 mx-1" />
+                        Fr
+                        <i class="fa fa-caret-down dropDownTarget"></i>
+                    </button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="pt"><img src="static/images/portugal_256.jpg" width="20" class="mx-1" />Português</a>
+                    </div>
+                </li>
+            </ul>
+            <div></div>
+        </nav>
 
-            <nav id="navbarMobile" class="border-0">
-                <div id="navWrapperMobile" class="border-0">
-                    <a href="./" class="logo"><img src="static/logo/logo_white.svg" width="50" alt="Image du logo" class="d-flex align-center" /></a>
-                    <a href="javascript:void(0);" class="icon" onclick="toggleNavigationMenu()">
-                        <i class="fa fa-bars"></i>
-                    </a>
+        <nav id="navbarMobile" class="border-0">
+            <div id="navWrapperMobile" class="border-0">
+                <a href="./" class="logo"><img src="static/logo/logo_white.svg" width="50" alt="Image du logo"
+                        class="d-flex align-center" /></a>
+                <a href="javascript:void(0);" class="icon" onclick="toggleNavigationMenu()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+            <ul id="navItemsMobile" class="">
+                <li class=""><a href="#services">Services</a></li>
+                <li class=""><a href="#about">A propos</a></li>
+                <li class=""><a href="#moreInfo">En savoir plus</a></li>
+                <li class=""><a href="#partners">Partenariat</a></li>
+                <li class=""><a href="#contact">Contact</a></li>
+                <li class="">
+                    <button class="dropBtnTarget pa-3" onclick="toggleDropdownMobile()">
+                        <img src="static/images/france_256.jpg" width="20" class="dropBtnTarget mx-1" />
+                        Fr <i class="fa fa-caret-down dropBtnTarget mx-1"></i>
+                    </button>
+                    <ul id="dropdownMobile" class="dropdown-content-mobile my-2">
+                        <li class="py-2">
+                            <a href="pt"><img src="static/images/portugal_256.jpg" width="20"
+                                    class="mx-1" />Português</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <div id="content" class="">
+            <section id="header" class="py-5 border-0" style="scroll-snap-align: start">
+                <div class="row align-center">
+                    <div class="col-6 col-md-12 slide border-0">
+                        <h1 class="text-center slide-up title-1 px-2"><span class="underline">Coaching
+                                personnalisé</span> & <br /><span class="underline">Services administratifs</span></h1>
+                        <div class="text-center">
+                            <button class="button slide-up" onclick="scrollToContactForm()">
+                                <span>Prendre rendez-vous <i class="fa fa-coffee"></i></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-12 text-center relative border-0">
+                        <img src="static/svg/help.svg" alt="" width="50%" class="slide-right" />
+                    </div>
                 </div>
-                <ul id="navItemsMobile" class="">
-                    <li class=""><a href="#services">Services</a></li>
-                    <li class=""><a href="#about">A propos</a></li>
-                    <li class=""><a href="#moreInfo">En savoir plus</a></li>
-                    <li class=""><a href="#partners">Partenariat</a></li>
-                    <li class=""><a href="#contact">Contact</a></li>
-                    <li class="">
-                        <button class="dropBtnTarget pa-3" onclick="toggleDropdownMobile()">
-                            <img src="static/images/france_256.jpg" width="20" class="dropBtnTarget mx-1" />
-                            Fr <i class="fa fa-caret-down dropBtnTarget mx-1"></i>
-                        </button>
-                        <ul id="dropdownMobile" class="dropdown-content-mobile my-2">
-                            <li class="py-2">
-                                <a href="pt"><img src="static/images/portugal_256.jpg" width="20" class="mx-1" />Português</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
+            </section>
 
-            <div id="content" class="">
-                <section id="header" class="py-5 border-0" style="scroll-snap-align: start">
-                    <div class="row align-center">
-                        <div class="col-6 col-md-12 slide border-0">
-                            <h1 class="text-center slide-up title-1 px-2"><span class="underline">Coaching personnalisé</span> & <br /><span class="underline">Services administratifs</span></h1>
-                            <div class="text-center">
-                                <button class="button slide-up" onclick="scrollToContactForm()">
-                                    <span>Prendre rendez-vous <i class="fa fa-coffee"></i></span>
-                                </button>
-                            </div>
+            <section>
+                <div class="row my-3" style="border: 2px dashed purple;">
+                    <div class="col-6 col-md-12 px-2">
+                        <h3 class="text-center">Vous cherchez à mettre de clarté dans vos vécus et émotions?</h3>
+                        <p class="text-justify line-height pa-3">Vous aimeriez mieux comprendre les résistances qui vous
+                            empêchent d'avancer dans le chemin de vie qui est le vôtre?<br />
+                            Vous avez des difficultés à atteindre vos objectifs, qu'ils soient professionnels ou privés?
+                            Je vous propose de vous <span class="underline">accompagner</span> pendant ce trajet, basé
+                            sur un processus de <span class="underline">coaching</span> puissant, confidentiel et
+                            bienveillant qui fera émerger les ressources qui sont en vous.<br />
+                            En présentiel ou en ligne avec des prix préférentiels.
+                            N'hésitez pas à me contacter.
+                        </p>
+                    </div>
+                    <div class="col-6 col-sm-12 px-2">
+                        <video width="100%" height="350" controls autoplay muted>
+                            <source src="static/videos/john_lennon_imagine.mp4" type="video/mp4">
+                            Votre navigateur ne supporte pas les format mp4
+                        </video>
+                    </div>
+                </div>
+            </section>
+
+            <section id="services" class="" style="scroll-snap-align: start">
+                <div class="row">
+                    <div class="col-4 col-lg-4 col-md-6 col-sm-12 background-secondary border-0 py-2 px-4"
+                        style="border: 2px dashed red;">
+                        <div class="text-center">
+                            <img src="static/svg/coaching_work_round.svg" width="35%"
+                                alt="image de bureau avec dossiers empilés" />
                         </div>
-                        <div class="col-6 col-md-12 text-center relative border-0">
-                            <img src="static/svg/help.svg" alt="" width="50%" class="slide-right" />
+                        <h3 class="text-center">Coaching Travail</h3>
+                        <div>
+                            <ul class="list">
+                                <li>Perte d'emploi, changement d'orientation professionnelle, perte de motivation, je
+                                    vous conseille et vous assiste pour vous permettre d'aller de l'avant et donner un
+                                    nouveau souffle à vos ambitions.</li>
+                                <li>Vous rencontrez des difficultés relationnelles avec vos collègues ou supérieurs?
+                                    Faisons le point ensemble pour vous permettre de retrouver une tranquilité d'esprit
+                                    et vous recentrer sur l'essentiel.</li>
+                            </ul>
                         </div>
                     </div>
-                </section>
-
-                <section id="services" class="" style="scroll-snap-align: start">
-                    <div class="row">
-                        <div class="col-4 col-lg-4 col-md-6 col-sm-12 background-secondary border-0 py-2 px-4" style="border: 2px dashed red;">
-                            <div class="text-center">
-                                <img src="static/svg/coaching_work_round.svg" width="35%" alt="image de bureau avec dossiers empilés" />
-                            </div>
-                            <h3 class="text-center">Coaching Travail</h3>
-                            <div>
-                                <ul class="list">
-                                    <li>Perte d'emploi, changement d'orientation professionnelle, perte de motivation, je vous conseille et vous assiste pour vous permettre d'aller de l'avant et donner un nouveau souffle à vos ambitions.</li>
-                                    <li>Vous rencontrez des difficultés relationnelles avec vos collègues ou supérieurs? Faisons le point ensemble pour vous permettre de retrouver une tranquilité d'esprit et vous recentrer sur l'essentiel.</li>
-                                </ul>
-                            </div>
+                    <div class="col-4 col-lg-4 col-md-6 col-sm-12 border-0 py-2 px-4"
+                        style="border: 2px dashed orangered;">
+                        <div class="text-center">
+                            <img src="static/svg/coaching_health_round.svg" width="35%"
+                                alt="image de bureau avec dossiers empilés" />
                         </div>
-                        <div class="col-4 col-lg-4 col-md-6 col-sm-12 border-0 py-2 px-4" style="border: 2px dashed orangered;">
-                            <div class="text-center">
-                                <img src="static/svg/coaching_health_round.svg" width="35%" alt="image de bureau avec dossiers empilés" />
-                            </div>
-                            <h3 class="text-center">Coaching Santé</h3>
-                            <div>
-                                <ul class="list">
-                                    <li>Parce que la vie n'est pas toujours un long fleuve tranquille, les pépins physique ou atteintes psychiques peuvent nous freiner, mais ne doivent pas nous stopper.</li>
-                                    <li>Je vous donne des pistes pour retrouver votre plein potentiel après un burnout ou un boreout.</li>
-                                    <li>Je vous aide à vous remettre sur les rails après un accident, aidé en cela par ma propre expérience du handicap.</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-4 col-lg-4 col-md-6 col-sm-12 background-secondary border-0 py-2 px-4" style="border: 2px dashed orange;">
-                            <div class="text-center">
-                                <img src="static/svg/coaching_life_round.svg" width="35%" alt="image de bureau avec dossiers empilés" />
-                            </div>
-                            <h3 class="text-center">Coaching Vie</h3>
-                            <div>
-                                <ul class="list">
-                                    <li>Quels sont vos objectifs? Ou vous voyez-vous dans 3 ans? Dans 5 ans? Parlons ensemble de vos ambitions et de ce qui éventuellement vous contraint. Mettons dès aujourd'hui en place les bonnes pratiques pour tendre vers cet idéal.</li>
-                                    <li>Aiguisez votre sens du savoir être.</li>
-                                    <li>Redonner du sens à votre projet de vie.</li>
-                                    <li>Définissez de nouvelles priorités.</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-4 col-lg-4 col-md-6 col-sm-12 border-0 py-2 px-4">
-                            <div class="text-center">
-                                <img src="static/svg/office_round.svg" width="35%" alt="image de bureau avec dossiers empilés" />
-                            </div>
-                            <h3 class="text-center">Gestion administrative TPE</h3>
-                            <div>
-                                <ul class="list">
-                                    <li>Assistance dans la gestion administrative courante des petites et très petites entreprises (TPE).</li>
-                                    <li>Correspondances, rapports, archivage numérique de documents, gestion d'agenda, organisation de rendez-vous entreprise-client/e(s), démarches étatiques en tout genre.</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-4 col-lg-4 col-md-6 col-sm-12 background-secondary border-0 py-2 px-4">
-                            <div class="text-center">
-                                <img src="static/svg/folders_round.svg" width="35%" alt="image de bureau avec dossiers empilés" />
-                            </div>
-                            <h3 class="text-center">Gestion administrative individuelle</h3>
-                            <div>
-                                <ul class="list">
-                                    <li>Assistance et conseil dans la résolution de diverses problématiques administratives liées au quotidien (assurances, médical, services étatiques).</li>
-                                    <li>Archivage numérique et ordonnancement des documents administratifs.</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-4 col-lg-4 col-md-6 col-sm-12 border-0 py-2 px-4">
-                            <div class="text-center">
-                                <img src="static/svg/migration_round.svg" width="35%" alt="image de bureau avec dossiers empilés" />
-                            </div>
-                            <h3 class="text-center">Migration</h3>
-                            <div>
-                                <ul class="list">
-                                    <!-- <li>Interprète français-portugais / portugais-français lors d'entretiens professionnels ou privés.</li> -->
-                                    <li>Soutien administratif destiné à la communauté portugaise (démarches lors d'une arrivée ou départ de Suisse, contacts et démarches avec les consulats et les ambassades, permis d'établissement, services étatiques).</li>
-                                </ul>
-                            </div>
+                        <h3 class="text-center">Coaching Santé</h3>
+                        <div>
+                            <ul class="list">
+                                <li>Parce que la vie n'est pas toujours un long fleuve tranquille, les pépins physique
+                                    ou atteintes psychiques peuvent nous freiner, mais ne doivent pas nous stopper.</li>
+                                <li>Je vous donne des pistes pour retrouver votre plein potentiel après un burnout ou un
+                                    boreout.</li>
+                                <li>Je vous aide à vous remettre sur les rails après un accident, aidé en cela par ma
+                                    propre expérience du handicap.</li>
+                            </ul>
                         </div>
                     </div>
-                </section>
-
-                <section id="about" class="text-center" style="scroll-snap-align: start">
-                    <div class="row">
-                        <div class="col-12 my-10">
-                            <h2 class="text-center">A propos</h2>
+                    <div class="col-4 col-lg-4 col-md-6 col-sm-12 background-secondary border-0 py-2 px-4"
+                        style="border: 2px dashed orange;">
+                        <div class="text-center">
+                            <img src="static/svg/coaching_life_round.svg" width="35%"
+                                alt="image de bureau avec dossiers empilés" />
                         </div>
-                        <div class="col-6 col-sm-12 d-flex flex-column justify-center align-center">
-                            <img src="static/images/avatar.png" alt="Avatar" class="avatar" />
-                        </div>
-                        <div class="col-6 col-sm-12">
-                            <p class="text-justify line-height pa-3">Au bénéfice d'une expérience professionnelle de plus de <span class="underline-small">20 ans</span> au sein de l'administration publique, je me suis spécialisé dans les domaines de l'emploi, de la migration, RH et formation continue, ainsi que de la <span class="underline-small">gestion administrative</span> courante qu'elle soit privée ou professionnelle (petites entreprises de 5 collaborateurs maximum). Il me tiendra à cœur de mettre à votre service mes compétences, de manière à trouver des solutions à toutes vos tracasseries administratives.</p>
-                        </div>
-                    </div>
-                </section>
-
-                <section id="moreInfo" class="text-center" style="scroll-snap-align: start">
-                    <div class="row">
-                        <div class="col-12 my-10">
-                            <h2 class="text-center">En savoir plus</h2>
-                        </div>
-                        <div class="col-6 col-sm-12 d-flex flex-column align-center">
-                            <div>
-                                <h3 class="text-center">Une problématique administrative ?</h3>
-                                <h3 class="text-center">Une solution : MB Consulting !</h3>
-                            </div>
-                            <div class="">
-                                <img src="static/svg/question.svg" width="30%" alt="un homme se pose une question" />
-                            </div>
-                        </div>
-                        <div class="col-6 col-sm-12" style="z-index: -10">
-                            <p class="text-justify line-height pa-3">Bien appréhender la résolution de nos tracasseries administratives quotidiennes, n'est pas chose aisée dans une société en permanente évolution. Je suis la <span class="underline-small">bonne personne</span> pour alléger cette charge qui pèse sur vos épaules. Mon professionnalisme, combiné à ma motivation et à mon expérience professionnelle de plus de 20 ans au sein de l'administration publique, me permet de cerner les besoins de mes clients, et de leur proposer des solutions adéquates à leurs besoins. Plus de soucis administratifs – <span class="underline-small">Mon métier!</span></p>
+                        <h3 class="text-center">Coaching Vie</h3>
+                        <div>
+                            <ul class="list">
+                                <li>Quels sont vos objectifs? Ou vous voyez-vous dans 3 ans? Dans 5 ans? Parlons
+                                    ensemble de vos ambitions et de ce qui éventuellement vous contraint. Mettons dès
+                                    aujourd'hui en place les bonnes pratiques pour tendre vers cet idéal.</li>
+                                <li>Aiguisez votre sens du savoir être.</li>
+                                <li>Redonner du sens à votre projet de vie.</li>
+                                <li>Définissez vos nouvelles priorités.</li>
+                            </ul>
                         </div>
                     </div>
-                </section>
-
-                <section id="partners" class="text-center" style="scroll-snap-align: start">
-                    <div class="row">
-                        <div class="col-12 my-10">
-                            <h2 class="text-center">Partenaires</h2>
+                    <div class="col-4 col-lg-4 col-md-6 col-sm-12 border-0 py-2 px-4">
+                        <div class="text-center">
+                            <img src="static/svg/office_round.svg" width="35%"
+                                alt="image de bureau avec dossiers empilés" />
+                        </div>
+                        <h3 class="text-center">Gestion administrative TPE</h3>
+                        <div>
+                            <ul class="list">
+                                <li>Assistance dans la gestion administrative courante des petites et très petites
+                                    entreprises (TPE).</li>
+                                <li>Correspondances, rapports, archivage numérique de documents, gestion d'agenda,
+                                    organisation de rendez-vous entreprise-client/e(s), démarches étatiques en tout
+                                    genre.</li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-6 col-sm-12 d-flex justify-center align-center background-secondary">
-                            <a href="https://figestinfo.ch" target="_blank"><img src="static/images/figestinfo.png" width="60%" class="py-3" alt="Logo de Figestinfo" /></a>
+                    <div class="col-4 col-lg-4 col-md-6 col-sm-12 background-secondary border-0 py-2 px-4">
+                        <div class="text-center">
+                            <img src="static/svg/folders_round.svg" width="35%"
+                                alt="image de bureau avec dossiers empilés" />
                         </div>
-                        <div class="col-6 col-sm-12 px-5">
-                            <p class="text-justify line-height">La société anonyme Figestinfo SA a été créée le 1er janvier 1990. Elle s'est développée régulièrement tout au long des années.
+                        <h3 class="text-center">Gestion administrative individuelle</h3>
+                        <div>
+                            <ul class="list">
+                                <li>Assistance et conseil dans la résolution de diverses problématiques administratives
+                                    liées au quotidien (assurances, médical, services étatiques).</li>
+                                <li>Archivage numérique et ordonnancement des documents administratifs.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-4 col-lg-4 col-md-6 col-sm-12 border-0 py-2 px-4">
+                        <div class="text-center">
+                            <img src="static/svg/migration_round.svg" width="35%"
+                                alt="image de bureau avec dossiers empilés" />
+                        </div>
+                        <h3 class="text-center">Migration</h3>
+                        <div>
+                            <ul class="list">
+                                <!-- <li>Interprète français-portugais / portugais-français lors d'entretiens professionnels ou privés.</li> -->
+                                <li>Soutien administratif destiné à la communauté portugaise (démarches lors d'une
+                                    arrivée ou départ de Suisse, contacts et démarches avec les consulats et les
+                                    ambassades, permis d'établissement, services étatiques).</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-                                La société compte actuellement sept employés. En plus des services traditionnels d'une fiduciaire, elle continue la vente et la formation des programmes Infoniqa ONE Start (anciennement Sage Start).
-                                
-                                La pérennité de notre entreprise nous réjouit et nous sommes persuadés qu'elle n'est pas terminée. Ce succès est obtenu grâce à un sérieux, un professionnalisme et un dévouement constant du personnel vis-à-vis de la clientèle.
-                                Cette réussite est également atteinte grâce à une précieuse collaboration avec nos clients.</p>
-                            <p class="text-right">
-                                <b>Figestinfo SA</b><br />
-                                <i class="fa fa-envelope mr-2"></i>figestinfo@figestinfo.ch<br />
-                                <i class="fa fa-phone mr-2"></i>+41 (0)32 913 49 79<br />
-                                <i class="fa fa-chrome mr-2"></i><a href="https://figestinfo.ch/" target="_blank">www.figestinfo.ch</a><br />
+            <section id="about" class="text-center" style="scroll-snap-align: start">
+                <div class="row">
+                    <div class="col-12 my-10">
+                        <h2 class="text-center">A propos</h2>
+                    </div>
+                    <div class="col-6 col-sm-12 d-flex flex-column justify-center align-center">
+                        <img src="static/images/avatar.png" alt="Avatar" class="avatar" />
+                    </div>
+                    <div class="col-6 col-sm-12">
+                        <p class="text-justify line-height pa-3">Au bénéfice d'une expérience professionnelle de plus de
+                            <span class="underline-small">20 ans</span> au sein de l'administration publique, je me suis
+                            spécialisé dans les domaines de l'emploi, de la migration, RH et formation continue, ainsi
+                            que de la <span class="underline-small">gestion administrative</span> courante qu'elle soit
+                            privée ou professionnelle (petites entreprises de 5 collaborateurs maximum). Il me tiendra à
+                            cœur de mettre à votre service mes compétences, de manière à trouver des solutions à toutes
+                            vos tracasseries administratives.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="moreInfo" class="text-center" style="scroll-snap-align: start">
+                <div class="row">
+                    <div class="col-12 my-10">
+                        <h2 class="text-center">En savoir plus</h2>
+                    </div>
+                    <div class="col-6 col-sm-12 d-flex flex-column align-center">
+                        <div>
+                            <h3 class="text-center">Une problématique administrative ?</h3>
+                            <h3 class="text-center">Une solution : MB Consulting !</h3>
+                        </div>
+                        <div class="">
+                            <img src="static/svg/question.svg" width="30%" alt="un homme se pose une question" />
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-12" style="z-index: -10">
+                        <p class="text-justify line-height pa-3">Bien appréhender la résolution de nos tracasseries
+                            administratives quotidiennes, n'est pas chose aisée dans une société en permanente
+                            évolution. Je suis la <span class="underline-small">bonne personne</span> pour alléger cette
+                            charge qui pèse sur vos épaules. Mon professionnalisme, combiné à ma motivation et à mon
+                            expérience professionnelle de plus de 20 ans au sein de l'administration publique, me permet
+                            de cerner les besoins de mes clients, et de leur proposer des solutions adéquates à leurs
+                            besoins. Plus de soucis administratifs – <span class="underline-small">Mon métier!</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="partners" class="text-center" style="scroll-snap-align: start">
+                <div class="row">
+                    <div class="col-12 my-10">
+                        <h2 class="text-center">Partenaires</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 col-sm-12 d-flex justify-center align-center background-secondary">
+                        <a href="https://figestinfo.ch" target="_blank"><img src="static/images/figestinfo.png"
+                                width="60%" class="py-3" alt="Logo de Figestinfo" /></a>
+                    </div>
+                    <div class="col-6 col-sm-12 px-5">
+                        <p class="text-justify line-height">La société anonyme Figestinfo SA a été créée le 1er janvier
+                            1990. Elle s'est développée régulièrement tout au long des années.
+
+                            La société compte actuellement sept employés. En plus des services traditionnels d'une
+                            fiduciaire, elle continue la vente et la formation des programmes Infoniqa ONE Start
+                            (anciennement Sage Start).
+
+                            La pérennité de notre entreprise nous réjouit et nous sommes persuadés qu'elle n'est pas
+                            terminée. Ce succès est obtenu grâce à un sérieux, un professionnalisme et un dévouement
+                            constant du personnel vis-à-vis de la clientèle.
+                            Cette réussite est également atteinte grâce à une précieuse collaboration avec nos clients.
+                        </p>
+                        <p class="text-right">
+                            <b>Figestinfo SA</b><br />
+                            <i class="fa fa-envelope mr-2"></i>figestinfo@figestinfo.ch<br />
+                            <i class="fa fa-phone mr-2"></i>+41 (0)32 913 49 79<br />
+                            <i class="fa fa-chrome mr-2"></i><a href="https://figestinfo.ch/"
+                                target="_blank">www.figestinfo.ch</a><br />
+                        </p>
+                    </div>
+                </div>
+                <div class="row" style="flex-direction: row-reverse;">
+                    <div class="col-6 col-sm-12 d-flex align-center background-secondary">
+                        <a href="http://www.bab-consulting.com" target="_blank"><img
+                                src="static/images/bab_consulting.webp" width="70%" alt="Logo de BAB Consulting" /></a>
+                    </div>
+                    <div class="col-6 col-sm-12 px-5">
+                        <p class="text-justify line-height">L'agence de communication Bab-Consulting vous accompagne
+                            dans la stratégie de communication digitale (réseaux sociaux), community management, gestion
+                            communautaire, stratégie de marketing et conseils médias (publicitaire et rédaction).</p>
+
+                        <p class="text-right">
+                            <b>Gabriel Davalle</b><br />
+                            <i class="fa fa-envelope mr-2"></i>gab@bab-consulting.com<br />
+                            <i class="fa fa-phone mr-2"></i>+41 (0)78 860 01 59<br />
+                            <i class="fa fa-chrome mr-2"></i><a href="http://www.bab-consulting.com"
+                                target="_blank">www.bab-consulting.com</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 col-sm-12 d-flex justify-center align-center background-secondary">
+                        <a href="http://www.traductions-lausanne.com" target="_blank"><img
+                                src="static/images/traductions_lausanne.webp" width="50%" class="py-3"
+                                alt="Logo de Traductions Lausanne" /></a>
+                    </div>
+                    <div class="col-6 col-sm-12 px-5">
+                        <p class="text-justify line-height">Plus de 40 ans d'expérience dans de nombreux domaines et
+                            combinaisons de langues, un large réseau de traducteurs diplômés et spécialisés. Une seule
+                            interlocutrice : Jeanne Davalle, traductrice d'anglais et d'espagnol en français et membre
+                            de l'Association des Interprètes et Traducteurs de Genève. Son expertise et ses compétences
+                            à votre service pour vous proposer des traductions professionnelles de qualité, dans les
+                            délais et à un tarif compétitif. Expertise, proximité, compétitivité et confidentialité sont
+                            ses meilleurs atouts!</p>
+
+                        <p class="text-right">
+                            <b>Jeanne Davalle</b><br />
+                            <i class="fa fa-envelope mr-2"></i>info@traductions-lausanne.com<br />
+                            <i class="fa fa-phone mr-2"></i>+41 (0)79 279 20 88<br />
+                            <i class="fa fa-chrome mr-2"></i><a href="http://www.traductions-lausanne.com"
+                                target="_blank">www.traductions-lausanne.com</a>
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" style="scroll-snap-align: start">
+                <div class="row">
+                    <div class="col-12 my-10">
+                        <h2 class="text-center">Contactez-moi</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 col-sm-12">
+                        <div class="d-flex flex-row" style="justify-content: end">
+                            <img src="static/svg/le_locle.svg" width="20%" alt="Hôtel de Ville, Le Locle"
+                                class="my-2" />
+                            <p class="text-right line-height px-4">
+                                <b>Marcio Barata</b><br />
+                                <i class="fa fa-map-marker mr-2"></i>Rue Henry-Grandjean 7<br />
+                                2400 Le Locle, Suisse<br />
+                                <i class="fa fa-envelope mr-2"></i>info@mbconsulting-mbc.ch<br />
+                                <i class="fa fa-phone mr-2"></i>+41 78 924 76 75
                             </p>
                         </div>
-                    </div>
-                    <div class="row" style="flex-direction: row-reverse;">
-                        <div class="col-6 col-sm-12 d-flex align-center background-secondary">
-                            <a href="http://www.bab-consulting.com" target="_blank"><img src="static/images/bab_consulting.webp" width="70%" alt="Logo de BAB Consulting" /></a>
-                        </div>
-                        <div class="col-6 col-sm-12 px-5">
-                            <p class="text-justify line-height">L'agence de communication Bab-Consulting vous accompagne dans la stratégie de communication digitale (réseaux sociaux), community management, gestion communautaire, stratégie de marketing et conseils médias (publicitaire et rédaction).</p>
 
-                            <p class="text-right">
-                                <b>Gabriel Davalle</b><br />
-                                <i class="fa fa-envelope mr-2"></i>gab@bab-consulting.com<br />
-                                <i class="fa fa-phone mr-2"></i>+41 (0)78 860 01 59<br />
-                                <i class="fa fa-chrome mr-2"></i><a href="http://www.bab-consulting.com" target="_blank">www.bab-consulting.com</a>
-                            </p>
+                        <div class="px-4">
+                            <!-- <iframe width="100%" height="350" class="" src="https://www.openstreetmap.org/export/embed.html?bbox=6.736571788787843%2C47.05171851363047%2C6.7586731910705575%2C47.06025586680622&amp;layer=mapnik&amp;marker=47.055987361073825%2C6.747622489929199"></iframe> -->
+                            <div id="osm-map"></div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-6 col-sm-12 d-flex justify-center align-center background-secondary">
-                            <a href="http://www.traductions-lausanne.com" target="_blank"><img src="static/images/traductions_lausanne.webp" width="50%" class="py-3" alt="Logo de Traductions Lausanne" /></a>
-                        </div>
-                        <div class="col-6 col-sm-12 px-5">
-                            <p class="text-justify line-height">Plus de 40 ans d'expérience dans de nombreux domaines et combinaisons de langues, un large réseau de traducteurs diplômés et spécialisés. Une seule interlocutrice : Jeanne Davalle, traductrice d'anglais et d'espagnol en français et membre de l'Association des Interprètes et Traducteurs de Genève. Son expertise et ses compétences à votre service pour vous proposer des traductions professionnelles de qualité, dans les délais et à un tarif compétitif. Expertise, proximité, compétitivité et confidentialité sont ses meilleurs atouts!</p>
-
-                            <p class="text-right">
-                                <b>Jeanne Davalle</b><br />
-                                <i class="fa fa-envelope mr-2"></i>info@traductions-lausanne.com<br />
-                                <i class="fa fa-phone mr-2"></i>+41 (0)79 279 20 88<br />
-                                <i class="fa fa-chrome mr-2"></i><a href="http://www.traductions-lausanne.com" target="_blank">www.traductions-lausanne.com</a>
-                            </p>
-                        </div>
-                    </div>
-                </section>
-
-                <section id="contact" style="scroll-snap-align: start">
-                    <div class="row">
-                        <div class="col-12 my-10">
-                            <h2 class="text-center">Contactez-moi</h2>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-6 col-sm-12">
-                            <div class="d-flex flex-row" style="justify-content: end">
-                                <img src="static/svg/le_locle.svg" width="20%" alt="Hôtel de Ville, Le Locle" class="my-2" />
-                                <p class="text-right line-height px-4">
-                                    <b>Marcio Barata</b><br />
-                                    <i class="fa fa-map-marker mr-2"></i>Rue Henry-Grandjean 7<br />
-                                    2400 Le Locle, Suisse<br />
-                                    <i class="fa fa-envelope mr-2"></i>info@mbconsulting-mbc.ch<br />
-                                    <i class="fa fa-phone mr-2"></i>+41 78 924 76 75
-                                </p>
-                            </div>
-
-                            <div class="px-4">
-                                <!-- <iframe width="100%" height="350" class="" src="https://www.openstreetmap.org/export/embed.html?bbox=6.736571788787843%2C47.05171851363047%2C6.7586731910705575%2C47.06025586680622&amp;layer=mapnik&amp;marker=47.055987361073825%2C6.747622489929199"></iframe> -->
-                                <div id="osm-map"></div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-sm-12">
-                            <form id="form">
-                                <div class="row pa-2">
-                                    <div class="col-6 col-sm-6 px-2">
-                                        <div class="form-group">
-                                            <input type="text" id="firstname" class="
+                    <div class="col-6 col-sm-12">
+                        <form id="form">
+                            <div class="row pa-2">
+                                <div class="col-6 col-sm-6 px-2">
+                                    <div class="form-group">
+                                        <input type="text" id="firstname" class="
                                             " name="firstname" maxlength="64" required="required" value="" />
-                                            <label for="firstname" class="control-label">Prénom</label><i class="bar"></i>
-                                        </div>
+                                        <label for="firstname" class="control-label">Prénom</label><i class="bar"></i>
                                     </div>
-                                    <div class="col-6 col-sm-6 px-2">
-                                        <div class="form-group">
-                                            <input type="text" id="lastname" name="lastname" required="required" maxlength="64" value="" />
-                                            <label for="lastname" class="control-label">Nom</label><i class="bar"></i>
-                                        </div>
+                                </div>
+                                <div class="col-6 col-sm-6 px-2">
+                                    <div class="form-group">
+                                        <input type="text" id="lastname" name="lastname" required="required"
+                                            maxlength="64" value="" />
+                                        <label for="lastname" class="control-label">Nom</label><i class="bar"></i>
                                     </div>
-                                    <div class="col-6 col-sm-6 px-2">
-                                        <div class="form-group">
-                                            <input type="email" id="email" name="email" required="required" value="" />
-                                            <label for="email" class="control-label">E-mail</label><i class="bar"></i>
-                                        </div>
+                                </div>
+                                <div class="col-6 col-sm-6 px-2">
+                                    <div class="form-group">
+                                        <input type="email" id="email" name="email" required="required" value="" />
+                                        <label for="email" class="control-label">E-mail</label><i class="bar"></i>
                                     </div>
-                                    <div class="col-6 col-md-12 px-2">
-                                        <div class="form-group d-flex">
-                                            <div class="mr-2 custom-select">
-                                                <select id="formCountryInput">
-                                                    <option value="ch">CH</option>
-                                                    <option value="fr">FR</option>
-                                                    <option value="pt">PT</option>
-                                                </select>
-                                            </div>
-                                            <div class="flex-grow">
-                                                <input type="text" id="phone" name="phone" value="" />
-                                                <label for="phone" class="control-label">Numéro de téléphone</label><i class="bar"></i>
-                                            </div>
+                                </div>
+                                <div class="col-6 col-md-12 px-2">
+                                    <div class="form-group d-flex">
+                                        <div class="mr-2 custom-select">
+                                            <select id="formCountryInput">
+                                                <option value="ch">CH</option>
+                                                <option value="fr">FR</option>
+                                                <option value="pt">PT</option>
+                                            </select>
                                         </div>
-                                    </div>
-                                    <div class="col-6 col-sm-12 col-xs-12 px-2">
-                                        <div class="form-group">
-                                            <input type="text" id="street" class="" name="street" value="" />
-                                            <label for="street" class="control-label">Rue & numéro</label><i class="bar"></i>
-                                        </div>
-                                    </div>
-                                    <div class="col-6 col-sm-12 col-xs-12 px-2">
-                                        <div class="form-group">
-                                            <input type="text" id="city" name="city" value="" />
-                                            <label for="city" class="control-label">Code postal et localité</label><i class="bar"></i>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 px-2">
-                                        <div class="form-group">
-                                            <textarea required="required" rows="4" id="message" name="message" maxlength="1024"></textarea>
-                                            <label for="message" placeholder="Ecrivez votre message..." class="control-label">Message</label><i class="bar"></i>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 text-center">
-                                        <div class="d-inline-block g-recaptcha" data-sitekey="6Lc9xGApAAAAAIbg6FGLLentj36D9IjXStVI8hR5"></div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="button-container">
-                                            <button type="submit" id="sendMessageButton" class="button">
-                                                <span
-                                                    >Envoyer
-                                                    <i class="fa fa-spinner fa-spin hidden"></i>
-                                                </span>
-                                            </button>
-                                        </div>
-                                        <div class="notification message success hidden">
-                                            <i class="fa fa-close"></i>
-                                            <h4>Message envoyé avec succès!</h4>
-                                        </div>
-                                        <div class="notification message error hidden">
-                                            <i class="fa fa-close"></i>
-                                            <h4>Une erreur est survenue et le message n'a pas pu être envoyé. Vérifiez les champs et valider la case à cocher.</h4>
+                                        <div class="flex-grow">
+                                            <input type="text" id="phone" name="phone" value="" />
+                                            <label for="phone" class="control-label">Numéro de téléphone</label><i
+                                                class="bar"></i>
                                         </div>
                                     </div>
                                 </div>
-                            </form>
-                        </div>
-                    </div>
-                </section>
-            </div>
-
-            <footer id="footer" class="text-center mt-5 py-2" style="scroll-snap-align: start">
-                <div class="row">
-                    <div class="col-12 text-white my-2">
-                        <p class="text-center">Copyright © <span id="currentYear"></span> mbconsulting-mbc.ch. Tous droits réservés.​</p>
-                    </div>
-                    <div class="col-12 text-white">
-                        <a href="mentions-legales.html" class="text-white">Mentions légales</a>
-                        <small>- Images originales par <a href="https://www.freepik.com/free-vector/flat-working-day-scenes-collection_14064667.htm#query=business%20svg&position=2&from_view=keyword&track=ais&uuid=1ce6e4bc-3744-4cce-a178-e96e96f2f708" class="text-white">Freepik</a> </small>
+                                <div class="col-6 col-sm-12 col-xs-12 px-2">
+                                    <div class="form-group">
+                                        <input type="text" id="street" class="" name="street" value="" />
+                                        <label for="street" class="control-label">Rue & numéro</label><i
+                                            class="bar"></i>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-12 col-xs-12 px-2">
+                                    <div class="form-group">
+                                        <input type="text" id="city" name="city" value="" />
+                                        <label for="city" class="control-label">Code postal et localité</label><i
+                                            class="bar"></i>
+                                    </div>
+                                </div>
+                                <div class="col-12 px-2">
+                                    <div class="form-group">
+                                        <textarea required="required" rows="4" id="message" name="message"
+                                            maxlength="1024"></textarea>
+                                        <label for="message" placeholder="Ecrivez votre message..."
+                                            class="control-label">Message</label><i class="bar"></i>
+                                    </div>
+                                </div>
+                                <div class="col-12 text-center">
+                                    <div class="d-inline-block g-recaptcha"
+                                        data-sitekey="6Lc9xGApAAAAAIbg6FGLLentj36D9IjXStVI8hR5"></div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="button-container">
+                                        <button type="submit" id="sendMessageButton" class="button">
+                                            <span>Envoyer
+                                                <i class="fa fa-spinner fa-spin hidden"></i>
+                                            </span>
+                                        </button>
+                                    </div>
+                                    <div class="notification message success hidden">
+                                        <i class="fa fa-close"></i>
+                                        <h4>Message envoyé avec succès!</h4>
+                                    </div>
+                                    <div class="notification message error hidden">
+                                        <i class="fa fa-close"></i>
+                                        <h4>Une erreur est survenue et le message n'a pas pu être envoyé. Vérifiez les
+                                            champs et valider la case à cocher.</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
-            </footer>
+            </section>
         </div>
 
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-J60YM3Z8NG"></script>
-        <script>
-            window.dataLayer = window.dataLayer || []
-            function gtag() {
-                dataLayer.push(arguments)
-            }
-            gtag('js', new Date())
+        <footer id="footer" class="text-center mt-5 py-2" style="scroll-snap-align: start">
+            <div class="row">
+                <div class="col-12 text-white my-2">
+                    <p class="text-center">Copyright © <span id="currentYear"></span> mbconsulting-mbc.ch. Tous droits
+                        réservés.​</p>
+                </div>
+                <div class="col-12 text-white">
+                    <a href="mentions-legales.html" class="text-white">Mentions légales</a>
+                    <small>- Images originales par <a
+                            href="https://www.freepik.com/free-vector/flat-working-day-scenes-collection_14064667.htm#query=business%20svg&position=2&from_view=keyword&track=ais&uuid=1ce6e4bc-3744-4cce-a178-e96e96f2f708"
+                            class="text-white">Freepik</a> </small>
+                </div>
+            </div>
+        </footer>
+    </div>
 
-            gtag('config', 'G-J60YM3Z8NG')
-        </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-J60YM3Z8NG"></script>
+    <script>
+        window.dataLayer = window.dataLayer || []
+        function gtag() {
+            dataLayer.push(arguments)
+        }
+        gtag('js', new Date())
 
-        <script src="scripts/index.js"></script>
-        <!-- Scroll observer -->
-        <!-- <script src="scripts/scroll-active.js"></script> -->
+        gtag('config', 'G-J60YM3Z8NG')
+    </script>
 
-        <!-- Phone number mask -->
-        <script src="https://unpkg.com/imask"></script>
+    <script src="scripts/index.js"></script>
+    <!-- Scroll observer -->
+    <!-- <script src="scripts/scroll-active.js"></script> -->
 
-        <!-- Contact form -->
-        <script src="scripts/form.js"></script>
+    <!-- Phone number mask -->
+    <script src="https://unpkg.com/imask"></script>
 
-        <!-- Scroll to previous position on reload -->
-        <!-- <script src="scripts/scroll-memory.js"></script> -->
+    <!-- Contact form -->
+    <script src="scripts/form.js"></script>
 
-        <!-- Google reCAPTCHA -->
-        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <!-- Scroll to previous position on reload -->
+    <!-- <script src="scripts/scroll-memory.js"></script> -->
 
-        <!-- Toggle dropdown menu -->
-        <script src="scripts/toggle-dropdown.js"></script>
+    <!-- Google reCAPTCHA -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
-        <!-- Leaflet map -->
-        <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
-        <script>
-            // Where you want to render the map.
-            var element = document.getElementById('osm-map')
+    <!-- Toggle dropdown menu -->
+    <script src="scripts/toggle-dropdown.js"></script>
 
-            // Height has to be set. You can do this in CSS too.
-            element.style = 'height:300px;'
+    <!-- Leaflet map -->
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script>
+        // Where you want to render the map.
+        var element = document.getElementById('osm-map')
 
-            // Create Leaflet map on map element.
-            var map = L.map(element)
+        // Height has to be set. You can do this in CSS too.
+        element.style = 'height:300px;'
 
-            // Add OSM tile layer to the Leaflet map.
-            L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-                attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
-            }).addTo(map)
+        // Create Leaflet map on map element.
+        var map = L.map(element)
 
-            // Target's GPS coordinates.
-            var target = L.latLng('47.05595', '6.74764')
+        // Add OSM tile layer to the Leaflet map.
+        L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
+        }).addTo(map)
 
-            // Set map's center to target with zoom 14.
-            map.setView(target, 17)
+        // Target's GPS coordinates.
+        var target = L.latLng('47.05595', '6.74764')
 
-            // Place a marker on the same location.
-            L.marker(target).addTo(map)
-        </script>
+        // Set map's center to target with zoom 14.
+        map.setView(target, 17)
 
-        <!-- Smooth scrolling -->
-        <script>
-            document.addEventListener('DOMContentLoaded', function () {
-                const anchors = document.querySelectorAll('a[href^="#"]')
-                anchors.forEach(function (anchor) {
-                    anchor.addEventListener('click', function (event) {
-                        event.preventDefault()
-                        const target = anchor.getAttribute('href').substring(1)
-                        console.log('target: ', target)
-                        smoothScroll(target)
-                    })
+        // Place a marker on the same location.
+        L.marker(target).addTo(map)
+    </script>
+
+    <!-- Smooth scrolling -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const anchors = document.querySelectorAll('a[href^="#"]')
+            anchors.forEach(function (anchor) {
+                anchor.addEventListener('click', function (event) {
+                    event.preventDefault()
+                    const target = anchor.getAttribute('href').substring(1)
+                    console.log('target: ', target)
+                    smoothScroll(target)
                 })
             })
+        })
 
-            const smoothScroll = (target) => {
-                console.log('smoothScroll: ', target)
-                const element = document.getElementById(target)
-                console.log('element: ', element)
-                if (element) {
-                    element.scrollIntoView({
-                        behavior: 'smooth',
-                    })
-                }
+        const smoothScroll = (target) => {
+            console.log('smoothScroll: ', target)
+            const element = document.getElementById(target)
+            console.log('element: ', element)
+            if (element) {
+                element.scrollIntoView({
+                    behavior: 'smooth',
+                })
             }
-        </script>
+        }
+    </script>
 
-        <script>
-            function scrollToContactForm() {
-                // window.scrollTo(0, 1000);
-                document.getElementById('contact').scrollIntoView({ block: 'start', behavior: 'smooth' })
-            }
-        </script>
+    <script>
+        function scrollToContactForm() {
+            // window.scrollTo(0, 1000);
+            document.getElementById('contact').scrollIntoView({ block: 'start', behavior: 'smooth' })
+        }
+    </script>
 
-        <!-- <script>
+    <!-- <script>
             function toggleDropdown2() {
                 console.log('toggleDropdown2')
                 document.getElementById('myDropdown2').classList.toggle('show')
@@ -508,7 +609,7 @@
             }
         </script> -->
 
-        <script>
+    <script>
             // function toggleDropdown() {
             //     console.log('toggleDropdown')
             //     document.getElementById('myDropdown').classList.toggle('show')
@@ -523,20 +624,21 @@
             //         }
             //     }
             // }
-        </script>
+    </script>
 
-        <script>
+    <script>
             // function toggleDropdownMobile() {
             //     console.log('toggleDropdownMobile2')
             //     console.log('document.getElementById("dropdownMobile").classList: ', document.getElementById('dropdownMobile').classList)
             //     document.getElementById('dropdownMobile').classList.toggle('show-dropdown-content-mobile')
             // }
-        </script>
+    </script>
 
-        <script>
-            /* Get the current year */
-            let currentDateTime = new Date().getFullYear()
-            document.querySelector('#currentYear').textContent = currentDateTime
-        </script>
-    </body>
+    <script>
+        /* Get the current year */
+        let currentDateTime = new Date().getFullYear()
+        document.querySelector('#currentYear').textContent = currentDateTime
+    </script>
+</body>
+
 </html>
