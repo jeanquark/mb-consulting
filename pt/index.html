@@ -21,6 +21,7 @@
         <style>
             /* Model website: https://codescandy.com/coach/bootstrap-5/yoga/index.html */
         </style>
+        <link href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" rel="stylesheet" />
     </head>
 
     <body>
@@ -98,17 +99,16 @@
                 <section>
                     <div class="row my-3" style="border: 0px dashed purple;">
                         <div class="col-6 col-md-12 px-2">
-                            <h3 class="text-center">Você está procurando trazer clareza às suas experiências e emoções?</h3>
-                            <p class="text-justify line-height pa-3">Gostaria de compreender melhor a resistência que o impede de avançar no seu caminho de vida?<br />Você tem dificuldade em atingir seus objetivos, sejam eles profissionais ou particulares?
-                                Ofereço-me para <span class="underline">acompanhá-lo</span> nesta jornada, com base em uma mensagem poderosa, confidencial e benevolente que irá trazer à tona os recursos dentro de você.<br />Presencial ou online com preços preferenciais. Não hesite em contactar-me.
+                            <h3 class="text-center">Você está procurando trazer clareza ao seu caminho de vida ?</h3>
+                            <p class="text-justify line-height pa-3">Você sente uma necessidade séria de compreender a resistência que o impede de avançar em seu caminho de vida ?<br /><br />Você tem dificuldade em atingir seus objetivos, sejam eles profissionais ou particulares? Como membro da Federação Internacional de Coaching (ICF), <a href="https://coachingfederation.org/" target="_blank"><img src="../static/images/icf-member-badge.png" width="120" style="float: right; padding: .5em;" /></a>proponho-me <span class="underline">acompanhá-lo</span> durante esta jornada, com base em um processo de <span class="underline">coaching profissional</span>, confidencial e atencioso, que irá trazer à tona os recursos que existem dentro de você.
                             </p>
                         </div>
                         <div class="col-6 col-sm-12 px-2">
                             <video width="100%" height="350" controls poster="../static/images/poster.jpg">
                                 <source src="../static/videos/john_lennon_imagine.mp4" type="video/mp4">
-                                Votre navigateur ne supporte pas les format mp4
+                                Seu navegador não suporta formatos mp4
                             </video>
-                            <div class="text-center"><small>Source de la vidéo: TikTok@the_motivador</small></div>
+                            <div class="text-center"><small>Fonte de vídeo: TikTok@the_motivador</small></div>
                         </div>
                     </div>
                 </section>
@@ -123,9 +123,8 @@
                             <h3 class="text-center">Coaching de trabalho</h3>
                             <div>
                                 <ul class="list">
-                                    <li>Perda de emprego, mudança de rumo profissional, perda de motivação, aconselho-o e ajudo-o para que possa seguir em frente e dar nova vida às suas ambições.</li>
-                                    <li>Você está tendo dificuldades de relacionamento com seus colegas ou superiores?
-                                        Vamos fazer um balanço juntos para ajudá-lo a encontrar paz de espírito e focar novamente no essencial.</li>
+                                    <li>Perda de emprego, mudança de orientação profissional, perda de motivação, apoio-te neste processo de coaching que te permitirá avançar e desencadear um novo sopro de vida para suas ambições profissionais.</li>
+                                    <li>Você está enfrentando dificuldades de relacionamento com seus colegas ou superiores ? Vamos fazer um balanço juntos para ajudá-lo a encontrar paz de espírito e concentre-se novamente no essencial.</li>
                                 </ul>
                             </div>
                         </div>
@@ -137,11 +136,9 @@
                             <h3 class="text-center">Coaching em saúde</h3>
                             <div>
                                 <ul class="list">
-                                    <li>
-                                        Como a vida nem sempre é um rio longo e tranquilo, falhas físicas ou problemas psicológicos podem nos atrasar, mas não devem nos impedir.</li>
-                                    <li>
-                                        Dou dicas para você recuperar todo o seu potencial após um esgotamento ou estresse.</li>
-                                    <li>Eu ajudo você a voltar aos trilhos após um acidente, auxiliado pela minha própria experiência de deficiência.</li>
+                                    <li>Como a vida nem sempre é um rio longo e tranquilo, problemas físicos ou psicológicos podem nos atrasar, mas não devem nos impedir.</li>
+                                    <li>Este processo permitirá que você delineie caminhos que o tornarão consciente de todo o seu potencial após um esgotamento ou um esgotamento.</li>
+                                    <li>Graças a esta abordagem, você será capaz de recuperar um pouco o rumo após um acidente. O meu percurso de vida como paraplégico irá acompanhar-nos ao longo deste processo de evolução.</li>
                                 </ul>
                             </div>
                         </div>
@@ -153,50 +150,14 @@
                             <h3 class="text-center">Coaching de vida</h3>
                             <div>
                                 <ul class="list">
-                                    <li>Quais são seus objetivos? Onde você se vê daqui a 3 anos? Em 5 anos? Vamos conversar sobre suas ambições e o que possivelmente o restringe. Vamos implementar boas práticas hoje para avançarmos em direção a esse ideal.</li>
+                                    <li>Quais são seus objetivos ? Onde você se vê no curto ou médio prazo? Vamos conversar juntos sobre suas ambições e o que o restringe. Implemente as melhores práticas hoje para avançar em direção a esse ideal.</li>
                                     <li>Afie seu senso de habilidades interpessoais.</li>
                                     <li>Dê sentido ao seu projeto de vida.</li>
-                                    <li>Defina suas novas prioridades.</li>
+                                    <li>Redefina o que é verdadeiramente essencial para você.</li>
                                 </ul>
                             </div>
                         </div>
 
-                        <!-- <div class="col-4 col-lg-4 col-md-6 col-sm-12 background-secondary border-0 py-2 px-4">
-                            <div class="text-center">
-                                <img src="../static/svg/office_round.svg" width="35%" alt="image de bureau avec dossiers empilés" />
-                            </div>
-                            <h3 class="text-center">Administração</h3>
-                            <div>
-                                <ul class="list">
-                                    <li>Auxílio na gestão administrativa do dia a dia.</li>
-                                    <li>Correspondência, relatórios, arquivo digital de documentos, gestão de agendas, organização de reuniões empresa-clientes, procedimentos estatais de todo o tipo.</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-4 col-lg-4 col-md-6 col-sm-12 border-0 py-2 px-4">
-                            <div class="text-center">
-                                <img src="../static/svg/folders_round.svg" width="35%" alt="image de bureau avec dossiers empilés" />
-                            </div>
-                            <h3 class="text-center">Gestão administrativa individual</h3>
-                            <div>
-                                <ul class="list">
-                                    <li>Assistência e aconselhamento na resolução de diversas questões administrativas relacionadas com a vida quotidiana (seguros, médicos, serviços estatais).</li>
-                                    <li>Arquivamento e agendamento digital de documentos administrativos.</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-4 col-lg-4 col-md-6 col-sm-12 background-secondary border-0 py-2 px-4">
-                            <div class="text-center">
-                                <img src="../static/svg/human_resource_round.svg" width="35%" alt="image de bureau avec dossiers empilés" />
-                            </div>
-                            <h3 class="text-center">RH e formação contínua</h3>
-                            <div>
-                                <ul class="list">
-                                    <li>Apoio e assistência na implementação de formação que vá ao encontro das necessidades do trabalhador e do empregador.</li>
-                                    <li>Coaching e suporte de RH (compromisso – colaboração – fim da colaboração).</li>
-                                </ul>
-                            </div>
-                        </div> -->
                         <div class="col-4 col-lg-4 col-md-6 col-sm-12 border-0 py-2 px-4">
                             <div class="text-center">
                                 <img src="../static/svg/migration_round.svg" width="35%" alt="image de bureau avec dossiers empilés" />
@@ -245,7 +206,7 @@
                             <img src="../static/images/marcio_01.jpg" alt="Avatar" class="avatar" />
                         </div>
                         <div class="col-6 col-sm-12">
-                            <p class="text-justify line-height pa-3">Com mais de <span class="underline-small">20 anos</span> de experiência profissional na administração pública, o fundador Marcio Barata é especialista nas áreas de emprego, migração, RH e formação continuada, bem como na <span class="underline-small">gestão do dia-a-dia administrativo</span>, seja privada ou profissional (pequenas empresas com capacidade máxima de 5 funcionários). Ele fará questão de colocar as suas competências ao seu serviço, de forma a encontrar soluções para todos os seus problemas administrativos.</p>
+                            <p class="text-justify line-height pa-3">Com mais de 20 anos de experiência profissional, especializo-me em <span class="underline-small">processos de apoio pessoal</span>, nomeadamente nas áreas de emprego, migração, RH e formação contínua, bem como na gestão de <span class="underline-small">assuntos administrativos</span> correntes, sejam eles privados ou profissionais (pequenas empresas com um máximo de 200.000 pessoas). 5 funcionários). Será importante para mim colocar as minhas competências ao seu serviço para encontrar soluções para os seus problemas.</p>
                         </div>
                     </div>
                 </section>
@@ -257,15 +218,15 @@
                         </div>
                         <div class="col-6 col-sm-12 d-flex flex-column align-center">
                             <div>
-                                <h3 class="text-center">Um problema administrativo?</h3>
-                                <h3 class="text-center">Uma solução: MB Consulting!</h3>
+                                <h3 class="text-center">Seu apoio atencioso:</h3>
+                                <h3 class="text-center">MB Consulting!</h3>
                             </div>
                             <div class="">
                                 <img src="../static/svg/question.svg" width="30%" alt="un homme se pose une question" />
                             </div>
                         </div>
                         <div class="col-6 col-sm-12" style="z-index: -10">
-                            <p class="text-justify line-height pa-3">Compreender a resolução dos nossos problemas administrativos diários não é fácil numa sociedade em constante evolução. Sou a <span class="underline-small">pessoa certa</span> para aliviar essa carga sobre seus ombros. O meu profissionalismo, aliado à minha motivação e à minha experiência profissional de mais de 20 anos na administração pública, permite-me identificar as necessidades dos meus clientes e oferecer-lhes soluções adequadas às suas necessidades. Chega de preocupações administrativas – <span class="underline-small">Meu trabalho</span>!</p>
+                            <p class="text-justify line-height pa-3">O meu profissionalismo, aliado aos meus valores, às minhas competências e ao meu percurso de vida permitem-me apoiá-lo de forma respeitosa, profissional e atenciosa na concretização dos seus objetivos.</p>
                         </div>
                     </div>
                 </section>
@@ -278,7 +239,7 @@
                     </div>
                     <div class="row">
                         <div class="col-6 col-sm-12 d-flex justify-center align-center background-secondary">
-                            <a href="https://figestinfo.ch" target="_blank"><img src="static/images/figestinfo.png" width="60%" class="py-3" alt="Logo de Figestinfo" /></a>
+                            <a href="https://figestinfo.ch" target="_blank"><img src="../static/images/figestinfo.png" width="60%" class="py-3" alt="Logo de Figestinfo" /></a>
                         </div>
                         <div class="col-6 col-sm-12 px-5">
                             <p class="text-justify line-height">La société anonyme Figestinfo SA a été créée le 1er janvier 1990. Elle s'est développée régulièrement tout au long des années.
@@ -297,7 +258,7 @@
                     </div>
                     <div class="row" style="flex-direction: row-reverse;">
                         <div class="col-6 col-sm-12 d-flex align-center background-secondary">
-                            <a href="http://www.bab-consulting.com" target="_blank"><img src="static/images/bab_consulting.webp" width="70%" alt="Logo de BAB Consulting" /></a>
+                            <a href="http://www.bab-consulting.com" target="_blank"><img src="../static/images/bab_consulting.webp" width="70%" alt="Logo de BAB Consulting" /></a>
                         </div>
                         <div class="col-6 col-sm-12 px-5">
                             <p class="text-justify line-height">L'agence de communication Bab-Consulting vous accompagne dans la stratégie de communication digitale (réseaux sociaux), community management, gestion communautaire, stratégie de marketing et conseils médias (publicitaire et rédaction).</p>
@@ -312,7 +273,7 @@
                     </div>
                     <div class="row">
                         <div class="col-6 col-sm-12 d-flex justify-center align-center background-secondary">
-                            <a href="http://www.traductions-lausanne.com" target="_blank"><img src="static/images/traductions_lausanne.webp" width="50%" class="py-3" alt="Logo de Traductions Lausanne" /></a>
+                            <a href="http://www.traductions-lausanne.com" target="_blank"><img src="../static/images/traductions_lausanne.webp" width="50%" class="py-3" alt="Logo de Traductions Lausanne" /></a>
                         </div>
                         <div class="col-6 col-sm-12 px-5">
                             <p class="text-justify line-height">Plus de 40 ans d'expérience dans de nombreux domaines et combinaisons de langues, un large réseau de traducteurs diplômés et spécialisés. Une seule interlocutrice : Jeanne Davalle, traductrice d'anglais et d'espagnol en français et membre de l'Association des Interprètes et Traducteurs de Genève. Son expertise et ses compétences à votre service pour vous proposer des traductions professionnelles de qualité, dans les délais et à un tarif compétitif. Expertise, proximité, compétitivité et confidentialité sont ses meilleurs atouts!</p>
@@ -347,7 +308,7 @@
                             </div>
 
                             <div class="px-4">
-                                <iframe width="100%" height="350" class="" src="https://www.openstreetmap.org/export/embed.html?bbox=6.736571788787843%2C47.05171851363047%2C6.7586731910705575%2C47.06025586680622&amp;layer=mapnik&amp;marker=47.055987361073825%2C6.747622489929199"></iframe>
+                                <div id="osm-map"></div>
                             </div>
                         </div>
                         <div class="col-6 col-sm-12">
@@ -480,36 +441,64 @@
         <!-- Toggle dropdown menu -->
         <script src="../scripts/toggle-dropdown.js"></script>
 
+        <!-- Leaflet map -->
+        <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+        <script>
+            // Where you want to render the map.
+            var element = document.getElementById('osm-map')
+
+            // Height has to be set. You can do this in CSS too.
+            element.style = 'height:300px;'
+
+            // Create Leaflet map on map element.
+            var map = L.map(element)
+
+            // Add OSM tile layer to the Leaflet map.
+            L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
+            }).addTo(map)
+
+            // Target's GPS coordinates.
+            var target = L.latLng('47.05595', '6.74764')
+
+            // Set map's center to target with zoom 14.
+            map.setView(target, 17)
+
+            // Place a marker on the same location.
+            L.marker(target).addTo(map)
+        </script>
+
+        <!-- Smooth scrolling -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const anchors = document.querySelectorAll('a[href^="#"]')
+                anchors.forEach(function (anchor) {
+                    anchor.addEventListener('click', function (event) {
+                        event.preventDefault()
+                        const target = anchor.getAttribute('href').substring(1)
+                        console.log('target: ', target)
+                        smoothScroll(target)
+                    })
+                })
+            })
+
+            const smoothScroll = (target) => {
+                console.log('smoothScroll: ', target)
+                const element = document.getElementById(target)
+                console.log('element: ', element)
+                if (element) {
+                    element.scrollIntoView({
+                        behavior: 'smooth',
+                    })
+                }
+            }
+        </script>
+
         <script>
             function scrollToContactForm() {
                 // window.scrollTo(0, 1000);
                 document.getElementById('contact').scrollIntoView({ block: 'start', behavior: 'smooth' })
             }
-        </script>
-
-        <script>
-            // function toggleDropdown2() {
-            //     console.log('toggleDropdown2')
-            //     document.getElementById('myDropdown2').classList.toggle('show')
-            // }
-
-            // // Close the dropdown if the user clicks outside of it
-            // window.onclick = function (e) {
-            //     if (!e.target.matches('.dropDownTarget')) {
-            //         var myDropdown = document.getElementById('myDropdown2')
-            //         if (myDropdown.classList.contains('show')) {
-            //             myDropdown.classList.remove('show')
-            //         }
-            //     }
-            // }
-        </script>
-
-        <script>
-            // function toggleDropdownMobile2() {
-            //     console.log('toggleDropdownMobile2')
-            //     console.log('document.getElementById("dropdownMobile2").classList: ', document.getElementById('dropdownMobile2').classList)
-            //     document.getElementById('dropdownMobile2').classList.toggle('show-dropdown-content-mobile')
-            // }
         </script>
 
         <script>
